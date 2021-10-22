@@ -1,14 +1,14 @@
 const codepoints = require('./font/bootstrap-icons.json');
 
 module.exports = {
-  inputDir: './icons', // (required)
+  inputDir: './icons-ellevate', // (required)
   outputDir: './font', // (required)
-  fontTypes: ['woff2', 'woff'],
+  fontTypes: ['woff2', 'woff', 'ttf', 'eot', 'svg'],
   assetTypes: ['css', 'scss', 'json', 'html'],
-  name: 'bootstrap-icons',
+  name: 'ellevate-icons',
   codepoints: codepoints,
-  prefix: 'bi',
-  selector: '.bi',
+  prefix: 'ei',
+  selector: '.ei',
   fontsUrl: './fonts',
   formatOptions: {
     json: {
@@ -23,12 +23,12 @@ module.exports = {
   },
   pathOptions: {
     json: './font/bootstrap-icons.json',
-    css: './font/bootstrap-icons.css',
-    scss: './font/bootstrap-icons.scss',
+    css: './font/ellevate-icons.css',
+    scss: './font/ellevate-icons.scss',
     html: './font/index.html',
-    ttf: './font/fonts/bootstrap-icons.ttf',
-    woff: './font/fonts/bootstrap-icons.woff',
-    woff2: './font/fonts/bootstrap-icons.woff2',
-    eot: './font/fonts/bootstrap-icons.eot'
+    ttf: './font/fonts/ellevate-icons.ttf',
+    woff: './font/fonts/ellevate-icons.woff',
+    woff2: './font/fonts/ellevate-icons.woff2',
+    eot: './font/fonts/ellevate-icons.eot'
   }
 };

@@ -1,0 +1,2842 @@
+$ellevate-icons-font: "ellevate-icons" !default;
+$ellevate-icons-font-src: url("./fonts/ellevate-icons.woff2?41f7fe8d0bf6feeb27f7c151e6c00e0f") format("woff2"),
+url("./fonts/ellevate-icons.woff?41f7fe8d0bf6feeb27f7c151e6c00e0f") format("woff"),
+url("./fonts/ellevate-icons.ttf?41f7fe8d0bf6feeb27f7c151e6c00e0f") format("truetype"),
+url("./fonts/ellevate-icons.eot?41f7fe8d0bf6feeb27f7c151e6c00e0f#iefix") format("embedded-opentype"),
+url("./fonts/ellevate-icons.svg?41f7fe8d0bf6feeb27f7c151e6c00e0f#ellevate-icons") format("svg") !default;
+
+@font-face {
+  font-family: $ellevate-icons-font;
+  src: $ellevate-icons-font-src;
+}
+
+.ei::before,
+[class^="ei-"]::before,
+[class*=" ei-"]::before {
+  display: inline-block;
+  font-family: $ellevate-icons-font !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$ellevate-icons-map: (
+  "alarm-fill": "\f101",
+  "alarm": "\f102",
+  "align-bottom": "\f103",
+  "align-center": "\f104",
+  "align-end": "\f105",
+  "align-middle": "\f106",
+  "align-start": "\f107",
+  "align-top": "\f108",
+  "alt": "\f109",
+  "app-indicator": "\f10a",
+  "app": "\f10b",
+  "archive-fill": "\f10c",
+  "archive": "\f10d",
+  "arrow-90deg-down": "\f10e",
+  "arrow-90deg-left": "\f10f",
+  "arrow-90deg-right": "\f110",
+  "arrow-90deg-up": "\f111",
+  "arrow-bar-down": "\f112",
+  "arrow-bar-left": "\f113",
+  "arrow-bar-right": "\f114",
+  "arrow-bar-up": "\f115",
+  "arrow-clockwise": "\f116",
+  "arrow-counterclockwise": "\f117",
+  "arrow-down-circle-fill": "\f118",
+  "arrow-down-circle": "\f119",
+  "arrow-down-left-circle-fill": "\f11a",
+  "arrow-down-left-circle": "\f11b",
+  "arrow-down-left-square-fill": "\f11c",
+  "arrow-down-left-square": "\f11d",
+  "arrow-down-left": "\f11e",
+  "arrow-down-right-circle-fill": "\f11f",
+  "arrow-down-right-circle": "\f120",
+  "arrow-down-right-square-fill": "\f121",
+  "arrow-down-right-square": "\f122",
+  "arrow-down-right": "\f123",
+  "arrow-down-short": "\f124",
+  "arrow-down-square-fill": "\f125",
+  "arrow-down-square": "\f126",
+  "arrow-down-up": "\f127",
+  "arrow-down": "\f128",
+  "arrow-left-circle-fill": "\f129",
+  "arrow-left-circle": "\f12a",
+  "arrow-left-right": "\f12b",
+  "arrow-left-short": "\f12c",
+  "arrow-left-square-fill": "\f12d",
+  "arrow-left-square": "\f12e",
+  "arrow-left": "\f12f",
+  "arrow-repeat": "\f130",
+  "arrow-return-left": "\f131",
+  "arrow-return-right": "\f132",
+  "arrow-right-circle-fill": "\f133",
+  "arrow-right-circle": "\f134",
+  "arrow-right-short": "\f135",
+  "arrow-right-square-fill": "\f136",
+  "arrow-right-square": "\f137",
+  "arrow-right": "\f138",
+  "arrow-up-circle-fill": "\f139",
+  "arrow-up-circle": "\f13a",
+  "arrow-up-left-circle-fill": "\f13b",
+  "arrow-up-left-circle": "\f13c",
+  "arrow-up-left-square-fill": "\f13d",
+  "arrow-up-left-square": "\f13e",
+  "arrow-up-left": "\f13f",
+  "arrow-up-right-circle-fill": "\f140",
+  "arrow-up-right-circle": "\f141",
+  "arrow-up-right-square-fill": "\f142",
+  "arrow-up-right-square": "\f143",
+  "arrow-up-right": "\f144",
+  "arrow-up-short": "\f145",
+  "arrow-up-square-fill": "\f146",
+  "arrow-up-square": "\f147",
+  "arrow-up": "\f148",
+  "arrows-angle-contract": "\f149",
+  "arrows-angle-expand": "\f14a",
+  "arrows-collapse": "\f14b",
+  "arrows-expand": "\f14c",
+  "arrows-fullscreen": "\f14d",
+  "arrows-move": "\f14e",
+  "aspect-ratio-fill": "\f14f",
+  "aspect-ratio": "\f150",
+  "asterisk": "\f151",
+  "at": "\f152",
+  "award-fill": "\f153",
+  "award": "\f154",
+  "back": "\f155",
+  "backspace-fill": "\f156",
+  "backspace-reverse-fill": "\f157",
+  "backspace-reverse": "\f158",
+  "backspace": "\f159",
+  "badge-3d-fill": "\f15a",
+  "badge-3d": "\f15b",
+  "badge-4k-fill": "\f15c",
+  "badge-4k": "\f15d",
+  "badge-8k-fill": "\f15e",
+  "badge-8k": "\f15f",
+  "badge-ad-fill": "\f160",
+  "badge-ad": "\f161",
+  "badge-ar-fill": "\f162",
+  "badge-ar": "\f163",
+  "badge-cc-fill": "\f164",
+  "badge-cc": "\f165",
+  "badge-hd-fill": "\f166",
+  "badge-hd": "\f167",
+  "badge-tm-fill": "\f168",
+  "badge-tm": "\f169",
+  "badge-vo-fill": "\f16a",
+  "badge-vo": "\f16b",
+  "badge-vr-fill": "\f16c",
+  "badge-vr": "\f16d",
+  "badge-wc-fill": "\f16e",
+  "badge-wc": "\f16f",
+  "bag-check-fill": "\f170",
+  "bag-check": "\f171",
+  "bag-dash-fill": "\f172",
+  "bag-dash": "\f173",
+  "bag-fill": "\f174",
+  "bag-plus-fill": "\f175",
+  "bag-plus": "\f176",
+  "bag-x-fill": "\f177",
+  "bag-x": "\f178",
+  "bag": "\f179",
+  "bar-chart-fill": "\f17a",
+  "bar-chart-line-fill": "\f17b",
+  "bar-chart-line": "\f17c",
+  "bar-chart-steps": "\f17d",
+  "bar-chart": "\f17e",
+  "basket-fill": "\f17f",
+  "basket": "\f180",
+  "basket2-fill": "\f181",
+  "basket2": "\f182",
+  "basket3-fill": "\f183",
+  "basket3": "\f184",
+  "battery-charging": "\f185",
+  "battery-full": "\f186",
+  "battery-half": "\f187",
+  "battery": "\f188",
+  "bell-fill": "\f189",
+  "bell": "\f18a",
+  "bezier": "\f18b",
+  "bezier2": "\f18c",
+  "bicycle": "\f18d",
+  "binoculars-fill": "\f18e",
+  "binoculars": "\f18f",
+  "blockquote-left": "\f190",
+  "blockquote-right": "\f191",
+  "book-fill": "\f192",
+  "book-half": "\f193",
+  "book": "\f194",
+  "bookmark-check-fill": "\f195",
+  "bookmark-check": "\f196",
+  "bookmark-dash-fill": "\f197",
+  "bookmark-dash": "\f198",
+  "bookmark-fill": "\f199",
+  "bookmark-heart-fill": "\f19a",
+  "bookmark-heart": "\f19b",
+  "bookmark-plus-fill": "\f19c",
+  "bookmark-plus": "\f19d",
+  "bookmark-star-fill": "\f19e",
+  "bookmark-star": "\f19f",
+  "bookmark-x-fill": "\f1a0",
+  "bookmark-x": "\f1a1",
+  "bookmark": "\f1a2",
+  "bookmarks-fill": "\f1a3",
+  "bookmarks": "\f1a4",
+  "bookshelf": "\f1a5",
+  "bootstrap-fill": "\f1a6",
+  "bootstrap-reboot": "\f1a7",
+  "bootstrap": "\f1a8",
+  "border-all": "\f1a9",
+  "border-bottom": "\f1aa",
+  "border-center": "\f1ab",
+  "border-inner": "\f1ac",
+  "border-left": "\f1ad",
+  "border-middle": "\f1ae",
+  "border-outer": "\f1af",
+  "border-right": "\f1b0",
+  "border-style": "\f1b1",
+  "border-top": "\f1b2",
+  "border-width": "\f1b3",
+  "border": "\f1b4",
+  "bounding-box-circles": "\f1b5",
+  "bounding-box": "\f1b6",
+  "box-arrow-down-left": "\f1b7",
+  "box-arrow-down-right": "\f1b8",
+  "box-arrow-down": "\f1b9",
+  "box-arrow-in-down-left": "\f1ba",
+  "box-arrow-in-down-right": "\f1bb",
+  "box-arrow-in-down": "\f1bc",
+  "box-arrow-in-left": "\f1bd",
+  "box-arrow-in-right": "\f1be",
+  "box-arrow-in-up-left": "\f1bf",
+  "box-arrow-in-up-right": "\f1c0",
+  "box-arrow-in-up": "\f1c1",
+  "box-arrow-left": "\f1c2",
+  "box-arrow-right": "\f1c3",
+  "box-arrow-up-left": "\f1c4",
+  "box-arrow-up-right": "\f1c5",
+  "box-arrow-up": "\f1c6",
+  "box-seam": "\f1c7",
+  "box": "\f1c8",
+  "braces": "\f1c9",
+  "bricks": "\f1ca",
+  "briefcase-fill": "\f1cb",
+  "briefcase": "\f1cc",
+  "brightness-alt-high-fill": "\f1cd",
+  "brightness-alt-high": "\f1ce",
+  "brightness-alt-low-fill": "\f1cf",
+  "brightness-alt-low": "\f1d0",
+  "brightness-high-fill": "\f1d1",
+  "brightness-high": "\f1d2",
+  "brightness-low-fill": "\f1d3",
+  "brightness-low": "\f1d4",
+  "broadcast-pin": "\f1d5",
+  "broadcast": "\f1d6",
+  "brush-fill": "\f1d7",
+  "brush": "\f1d8",
+  "bucket-fill": "\f1d9",
+  "bucket": "\f1da",
+  "bug-fill": "\f1db",
+  "bug": "\f1dc",
+  "building": "\f1dd",
+  "bullseye": "\f1de",
+  "calculator-fill": "\f1df",
+  "calculator": "\f1e0",
+  "calendar-check-fill": "\f1e1",
+  "calendar-check": "\f1e2",
+  "calendar-date-fill": "\f1e3",
+  "calendar-date": "\f1e4",
+  "calendar-day-fill": "\f1e5",
+  "calendar-day": "\f1e6",
+  "calendar-event-fill": "\f1e7",
+  "calendar-event": "\f1e8",
+  "calendar-fill": "\f1e9",
+  "calendar-minus-fill": "\f1ea",
+  "calendar-minus": "\f1eb",
+  "calendar-month-fill": "\f1ec",
+  "calendar-month": "\f1ed",
+  "calendar-plus-fill": "\f1ee",
+  "calendar-plus": "\f1ef",
+  "calendar-range-fill": "\f1f0",
+  "calendar-range": "\f1f1",
+  "calendar-week-fill": "\f1f2",
+  "calendar-week": "\f1f3",
+  "calendar-x-fill": "\f1f4",
+  "calendar-x": "\f1f5",
+  "calendar": "\f1f6",
+  "calendar2-check-fill": "\f1f7",
+  "calendar2-check": "\f1f8",
+  "calendar2-date-fill": "\f1f9",
+  "calendar2-date": "\f1fa",
+  "calendar2-day-fill": "\f1fb",
+  "calendar2-day": "\f1fc",
+  "calendar2-event-fill": "\f1fd",
+  "calendar2-event": "\f1fe",
+  "calendar2-fill": "\f1ff",
+  "calendar2-minus-fill": "\f200",
+  "calendar2-minus": "\f201",
+  "calendar2-month-fill": "\f202",
+  "calendar2-month": "\f203",
+  "calendar2-plus-fill": "\f204",
+  "calendar2-plus": "\f205",
+  "calendar2-range-fill": "\f206",
+  "calendar2-range": "\f207",
+  "calendar2-week-fill": "\f208",
+  "calendar2-week": "\f209",
+  "calendar2-x-fill": "\f20a",
+  "calendar2-x": "\f20b",
+  "calendar2": "\f20c",
+  "calendar3-event-fill": "\f20d",
+  "calendar3-event": "\f20e",
+  "calendar3-fill": "\f20f",
+  "calendar3-range-fill": "\f210",
+  "calendar3-range": "\f211",
+  "calendar3-week-fill": "\f212",
+  "calendar3-week": "\f213",
+  "calendar3": "\f214",
+  "calendar4-event": "\f215",
+  "calendar4-range": "\f216",
+  "calendar4-week": "\f217",
+  "calendar4": "\f218",
+  "camera-fill": "\f219",
+  "camera-reels-fill": "\f21a",
+  "camera-reels": "\f21b",
+  "camera-video-fill": "\f21c",
+  "camera-video-off-fill": "\f21d",
+  "camera-video-off": "\f21e",
+  "camera-video": "\f21f",
+  "camera": "\f220",
+  "camera2": "\f221",
+  "capslock-fill": "\f222",
+  "capslock": "\f223",
+  "card-checklist": "\f224",
+  "card-heading": "\f225",
+  "card-image": "\f226",
+  "card-list": "\f227",
+  "card-text": "\f228",
+  "caret-down-fill": "\f229",
+  "caret-down-square-fill": "\f22a",
+  "caret-down-square": "\f22b",
+  "caret-down": "\f22c",
+  "caret-left-fill": "\f22d",
+  "caret-left-square-fill": "\f22e",
+  "caret-left-square": "\f22f",
+  "caret-left": "\f230",
+  "caret-right-fill": "\f231",
+  "caret-right-square-fill": "\f232",
+  "caret-right-square": "\f233",
+  "caret-right": "\f234",
+  "caret-up-fill": "\f235",
+  "caret-up-square-fill": "\f236",
+  "caret-up-square": "\f237",
+  "caret-up": "\f238",
+  "cart-check-fill": "\f239",
+  "cart-check": "\f23a",
+  "cart-dash-fill": "\f23b",
+  "cart-dash": "\f23c",
+  "cart-fill": "\f23d",
+  "cart-plus-fill": "\f23e",
+  "cart-plus": "\f23f",
+  "cart-x-fill": "\f240",
+  "cart-x": "\f241",
+  "cart": "\f242",
+  "cart2": "\f243",
+  "cart3": "\f244",
+  "cart4": "\f245",
+  "cash-stack": "\f246",
+  "cash": "\f247",
+  "cast": "\f248",
+  "chat-dots-fill": "\f249",
+  "chat-dots": "\f24a",
+  "chat-fill": "\f24b",
+  "chat-left-dots-fill": "\f24c",
+  "chat-left-dots": "\f24d",
+  "chat-left-fill": "\f24e",
+  "chat-left-quote-fill": "\f24f",
+  "chat-left-quote": "\f250",
+  "chat-left-text-fill": "\f251",
+  "chat-left-text": "\f252",
+  "chat-left": "\f253",
+  "chat-quote-fill": "\f254",
+  "chat-quote": "\f255",
+  "chat-right-dots-fill": "\f256",
+  "chat-right-dots": "\f257",
+  "chat-right-fill": "\f258",
+  "chat-right-quote-fill": "\f259",
+  "chat-right-quote": "\f25a",
+  "chat-right-text-fill": "\f25b",
+  "chat-right-text": "\f25c",
+  "chat-right": "\f25d",
+  "chat-square-dots-fill": "\f25e",
+  "chat-square-dots": "\f25f",
+  "chat-square-fill": "\f260",
+  "chat-square-quote-fill": "\f261",
+  "chat-square-quote": "\f262",
+  "chat-square-text-fill": "\f263",
+  "chat-square-text": "\f264",
+  "chat-square": "\f265",
+  "chat-text-fill": "\f266",
+  "chat-text": "\f267",
+  "chat": "\f268",
+  "check-all": "\f269",
+  "check-circle-fill": "\f26a",
+  "check-circle": "\f26b",
+  "check-square-fill": "\f26c",
+  "check-square": "\f26d",
+  "check": "\f26e",
+  "check2-all": "\f26f",
+  "check2-circle": "\f270",
+  "check2-square": "\f271",
+  "check2": "\f272",
+  "chevron-bar-contract": "\f273",
+  "chevron-bar-down": "\f274",
+  "chevron-bar-expand": "\f275",
+  "chevron-bar-left": "\f276",
+  "chevron-bar-right": "\f277",
+  "chevron-bar-up": "\f278",
+  "chevron-compact-down": "\f279",
+  "chevron-compact-left": "\f27a",
+  "chevron-compact-right": "\f27b",
+  "chevron-compact-up": "\f27c",
+  "chevron-contract": "\f27d",
+  "chevron-double-down": "\f27e",
+  "chevron-double-left": "\f27f",
+  "chevron-double-right": "\f280",
+  "chevron-double-up": "\f281",
+  "chevron-down": "\f282",
+  "chevron-expand": "\f283",
+  "chevron-left": "\f284",
+  "chevron-right": "\f285",
+  "chevron-up": "\f286",
+  "circle-fill": "\f287",
+  "circle-half": "\f288",
+  "circle-square": "\f289",
+  "circle": "\f28a",
+  "clipboard-check": "\f28b",
+  "clipboard-data": "\f28c",
+  "clipboard-minus": "\f28d",
+  "clipboard-plus": "\f28e",
+  "clipboard-x": "\f28f",
+  "clipboard": "\f290",
+  "clock-fill": "\f291",
+  "clock-history": "\f292",
+  "clock": "\f293",
+  "cloud-arrow-down-fill": "\f294",
+  "cloud-arrow-down": "\f295",
+  "cloud-arrow-up-fill": "\f296",
+  "cloud-arrow-up": "\f297",
+  "cloud-check-fill": "\f298",
+  "cloud-check": "\f299",
+  "cloud-download-fill": "\f29a",
+  "cloud-download": "\f29b",
+  "cloud-drizzle-fill": "\f29c",
+  "cloud-drizzle": "\f29d",
+  "cloud-fill": "\f29e",
+  "cloud-fog-fill": "\f29f",
+  "cloud-fog": "\f2a0",
+  "cloud-fog2-fill": "\f2a1",
+  "cloud-fog2": "\f2a2",
+  "cloud-hail-fill": "\f2a3",
+  "cloud-hail": "\f2a4",
+  "cloud-haze-1": "\f2a5",
+  "cloud-haze-fill": "\f2a6",
+  "cloud-haze": "\f2a7",
+  "cloud-haze2-fill": "\f2a8",
+  "cloud-lightning-fill": "\f2a9",
+  "cloud-lightning-rain-fill": "\f2aa",
+  "cloud-lightning-rain": "\f2ab",
+  "cloud-lightning": "\f2ac",
+  "cloud-minus-fill": "\f2ad",
+  "cloud-minus": "\f2ae",
+  "cloud-moon-fill": "\f2af",
+  "cloud-moon": "\f2b0",
+  "cloud-plus-fill": "\f2b1",
+  "cloud-plus": "\f2b2",
+  "cloud-rain-fill": "\f2b3",
+  "cloud-rain-heavy-fill": "\f2b4",
+  "cloud-rain-heavy": "\f2b5",
+  "cloud-rain": "\f2b6",
+  "cloud-slash-fill": "\f2b7",
+  "cloud-slash": "\f2b8",
+  "cloud-sleet-fill": "\f2b9",
+  "cloud-sleet": "\f2ba",
+  "cloud-snow-fill": "\f2bb",
+  "cloud-snow": "\f2bc",
+  "cloud-sun-fill": "\f2bd",
+  "cloud-sun": "\f2be",
+  "cloud-upload-fill": "\f2bf",
+  "cloud-upload": "\f2c0",
+  "cloud": "\f2c1",
+  "clouds-fill": "\f2c2",
+  "clouds": "\f2c3",
+  "cloudy-fill": "\f2c4",
+  "cloudy": "\f2c5",
+  "code-slash": "\f2c6",
+  "code-square": "\f2c7",
+  "code": "\f2c8",
+  "collection-fill": "\f2c9",
+  "collection-play-fill": "\f2ca",
+  "collection-play": "\f2cb",
+  "collection": "\f2cc",
+  "columns-gap": "\f2cd",
+  "columns": "\f2ce",
+  "command": "\f2cf",
+  "compass-fill": "\f2d0",
+  "compass": "\f2d1",
+  "cone-striped": "\f2d2",
+  "cone": "\f2d3",
+  "controller": "\f2d4",
+  "cpu-fill": "\f2d5",
+  "cpu": "\f2d6",
+  "credit-card-2-back-fill": "\f2d7",
+  "credit-card-2-back": "\f2d8",
+  "credit-card-2-front-fill": "\f2d9",
+  "credit-card-2-front": "\f2da",
+  "credit-card-fill": "\f2db",
+  "credit-card": "\f2dc",
+  "crop": "\f2dd",
+  "cup-fill": "\f2de",
+  "cup-straw": "\f2df",
+  "cup": "\f2e0",
+  "cursor-fill": "\f2e1",
+  "cursor-text": "\f2e2",
+  "cursor": "\f2e3",
+  "dash-circle-dotted": "\f2e4",
+  "dash-circle-fill": "\f2e5",
+  "dash-circle": "\f2e6",
+  "dash-square-dotted": "\f2e7",
+  "dash-square-fill": "\f2e8",
+  "dash-square": "\f2e9",
+  "dash": "\f2ea",
+  "diagram-2-fill": "\f2eb",
+  "diagram-2": "\f2ec",
+  "diagram-3-fill": "\f2ed",
+  "diagram-3": "\f2ee",
+  "diamond-fill": "\f2ef",
+  "diamond-half": "\f2f0",
+  "diamond": "\f2f1",
+  "dice-1-fill": "\f2f2",
+  "dice-1": "\f2f3",
+  "dice-2-fill": "\f2f4",
+  "dice-2": "\f2f5",
+  "dice-3-fill": "\f2f6",
+  "dice-3": "\f2f7",
+  "dice-4-fill": "\f2f8",
+  "dice-4": "\f2f9",
+  "dice-5-fill": "\f2fa",
+  "dice-5": "\f2fb",
+  "dice-6-fill": "\f2fc",
+  "dice-6": "\f2fd",
+  "disc-fill": "\f2fe",
+  "disc": "\f2ff",
+  "discord": "\f300",
+  "display-fill": "\f301",
+  "display": "\f302",
+  "distribute-horizontal": "\f303",
+  "distribute-vertical": "\f304",
+  "door-closed-fill": "\f305",
+  "door-closed": "\f306",
+  "door-open-fill": "\f307",
+  "door-open": "\f308",
+  "dot": "\f309",
+  "download": "\f30a",
+  "droplet-fill": "\f30b",
+  "droplet-half": "\f30c",
+  "droplet": "\f30d",
+  "earbuds": "\f30e",
+  "easel-fill": "\f30f",
+  "easel": "\f310",
+  "egg-fill": "\f311",
+  "egg-fried": "\f312",
+  "egg": "\f313",
+  "eject-fill": "\f314",
+  "eject": "\f315",
+  "emoji-angry-fill": "\f316",
+  "emoji-angry": "\f317",
+  "emoji-dizzy-fill": "\f318",
+  "emoji-dizzy": "\f319",
+  "emoji-expressionless-fill": "\f31a",
+  "emoji-expressionless": "\f31b",
+  "emoji-frown-fill": "\f31c",
+  "emoji-frown": "\f31d",
+  "emoji-heart-eyes-fill": "\f31e",
+  "emoji-heart-eyes": "\f31f",
+  "emoji-laughing-fill": "\f320",
+  "emoji-laughing": "\f321",
+  "emoji-neutral-fill": "\f322",
+  "emoji-neutral": "\f323",
+  "emoji-smile-fill": "\f324",
+  "emoji-smile-upside-down-fill": "\f325",
+  "emoji-smile-upside-down": "\f326",
+  "emoji-smile": "\f327",
+  "emoji-sunglasses-fill": "\f328",
+  "emoji-sunglasses": "\f329",
+  "emoji-wink-fill": "\f32a",
+  "emoji-wink": "\f32b",
+  "envelope-fill": "\f32c",
+  "envelope-open-fill": "\f32d",
+  "envelope-open": "\f32e",
+  "envelope": "\f32f",
+  "eraser-fill": "\f330",
+  "eraser": "\f331",
+  "exclamation-circle-fill": "\f332",
+  "exclamation-circle": "\f333",
+  "exclamation-diamond-fill": "\f334",
+  "exclamation-diamond": "\f335",
+  "exclamation-octagon-fill": "\f336",
+  "exclamation-octagon": "\f337",
+  "exclamation-square-fill": "\f338",
+  "exclamation-square": "\f339",
+  "exclamation-triangle-fill": "\f33a",
+  "exclamation-triangle": "\f33b",
+  "exclamation": "\f33c",
+  "exclude": "\f33d",
+  "eye-fill": "\f33e",
+  "eye-slash-fill": "\f33f",
+  "eye-slash": "\f340",
+  "eye": "\f341",
+  "eyedropper": "\f342",
+  "eyeglasses": "\f343",
+  "facebook": "\f344",
+  "file-arrow-down-fill": "\f345",
+  "file-arrow-down": "\f346",
+  "file-arrow-up-fill": "\f347",
+  "file-arrow-up": "\f348",
+  "file-bar-graph-fill": "\f349",
+  "file-bar-graph": "\f34a",
+  "file-binary-fill": "\f34b",
+  "file-binary": "\f34c",
+  "file-break-fill": "\f34d",
+  "file-break": "\f34e",
+  "file-check-fill": "\f34f",
+  "file-check": "\f350",
+  "file-code-fill": "\f351",
+  "file-code": "\f352",
+  "file-diff-fill": "\f353",
+  "file-diff": "\f354",
+  "file-earmark-arrow-down-fill": "\f355",
+  "file-earmark-arrow-down": "\f356",
+  "file-earmark-arrow-up-fill": "\f357",
+  "file-earmark-arrow-up": "\f358",
+  "file-earmark-bar-graph-fill": "\f359",
+  "file-earmark-bar-graph": "\f35a",
+  "file-earmark-binary-fill": "\f35b",
+  "file-earmark-binary": "\f35c",
+  "file-earmark-break-fill": "\f35d",
+  "file-earmark-break": "\f35e",
+  "file-earmark-check-fill": "\f35f",
+  "file-earmark-check": "\f360",
+  "file-earmark-code-fill": "\f361",
+  "file-earmark-code": "\f362",
+  "file-earmark-diff-fill": "\f363",
+  "file-earmark-diff": "\f364",
+  "file-earmark-easel-fill": "\f365",
+  "file-earmark-easel": "\f366",
+  "file-earmark-excel-fill": "\f367",
+  "file-earmark-excel": "\f368",
+  "file-earmark-fill": "\f369",
+  "file-earmark-font-fill": "\f36a",
+  "file-earmark-font": "\f36b",
+  "file-earmark-image-fill": "\f36c",
+  "file-earmark-image": "\f36d",
+  "file-earmark-lock-fill": "\f36e",
+  "file-earmark-lock": "\f36f",
+  "file-earmark-lock2-fill": "\f370",
+  "file-earmark-lock2": "\f371",
+  "file-earmark-medical-fill": "\f372",
+  "file-earmark-medical": "\f373",
+  "file-earmark-minus-fill": "\f374",
+  "file-earmark-minus": "\f375",
+  "file-earmark-music-fill": "\f376",
+  "file-earmark-music": "\f377",
+  "file-earmark-person-fill": "\f378",
+  "file-earmark-person": "\f379",
+  "file-earmark-play-fill": "\f37a",
+  "file-earmark-play": "\f37b",
+  "file-earmark-plus-fill": "\f37c",
+  "file-earmark-plus": "\f37d",
+  "file-earmark-post-fill": "\f37e",
+  "file-earmark-post": "\f37f",
+  "file-earmark-ppt-fill": "\f380",
+  "file-earmark-ppt": "\f381",
+  "file-earmark-richtext-fill": "\f382",
+  "file-earmark-richtext": "\f383",
+  "file-earmark-ruled-fill": "\f384",
+  "file-earmark-ruled": "\f385",
+  "file-earmark-slides-fill": "\f386",
+  "file-earmark-slides": "\f387",
+  "file-earmark-spreadsheet-fill": "\f388",
+  "file-earmark-spreadsheet": "\f389",
+  "file-earmark-text-fill": "\f38a",
+  "file-earmark-text": "\f38b",
+  "file-earmark-word-fill": "\f38c",
+  "file-earmark-word": "\f38d",
+  "file-earmark-x-fill": "\f38e",
+  "file-earmark-x": "\f38f",
+  "file-earmark-zip-fill": "\f390",
+  "file-earmark-zip": "\f391",
+  "file-earmark": "\f392",
+  "file-easel-fill": "\f393",
+  "file-easel": "\f394",
+  "file-excel-fill": "\f395",
+  "file-excel": "\f396",
+  "file-fill": "\f397",
+  "file-font-fill": "\f398",
+  "file-font": "\f399",
+  "file-image-fill": "\f39a",
+  "file-image": "\f39b",
+  "file-lock-fill": "\f39c",
+  "file-lock": "\f39d",
+  "file-lock2-fill": "\f39e",
+  "file-lock2": "\f39f",
+  "file-medical-fill": "\f3a0",
+  "file-medical": "\f3a1",
+  "file-minus-fill": "\f3a2",
+  "file-minus": "\f3a3",
+  "file-music-fill": "\f3a4",
+  "file-music": "\f3a5",
+  "file-person-fill": "\f3a6",
+  "file-person": "\f3a7",
+  "file-play-fill": "\f3a8",
+  "file-play": "\f3a9",
+  "file-plus-fill": "\f3aa",
+  "file-plus": "\f3ab",
+  "file-post-fill": "\f3ac",
+  "file-post": "\f3ad",
+  "file-ppt-fill": "\f3ae",
+  "file-ppt": "\f3af",
+  "file-richtext-fill": "\f3b0",
+  "file-richtext": "\f3b1",
+  "file-ruled-fill": "\f3b2",
+  "file-ruled": "\f3b3",
+  "file-slides-fill": "\f3b4",
+  "file-slides": "\f3b5",
+  "file-spreadsheet-fill": "\f3b6",
+  "file-spreadsheet": "\f3b7",
+  "file-text-fill": "\f3b8",
+  "file-text": "\f3b9",
+  "file-word-fill": "\f3ba",
+  "file-word": "\f3bb",
+  "file-x-fill": "\f3bc",
+  "file-x": "\f3bd",
+  "file-zip-fill": "\f3be",
+  "file-zip": "\f3bf",
+  "file": "\f3c0",
+  "files-alt": "\f3c1",
+  "files": "\f3c2",
+  "film": "\f3c3",
+  "filter-circle-fill": "\f3c4",
+  "filter-circle": "\f3c5",
+  "filter-left": "\f3c6",
+  "filter-right": "\f3c7",
+  "filter-square-fill": "\f3c8",
+  "filter-square": "\f3c9",
+  "filter": "\f3ca",
+  "flag-fill": "\f3cb",
+  "flag": "\f3cc",
+  "flower1": "\f3cd",
+  "flower2": "\f3ce",
+  "flower3": "\f3cf",
+  "folder-check": "\f3d0",
+  "folder-fill": "\f3d1",
+  "folder-minus": "\f3d2",
+  "folder-plus": "\f3d3",
+  "folder-symlink-fill": "\f3d4",
+  "folder-symlink": "\f3d5",
+  "folder-x": "\f3d6",
+  "folder": "\f3d7",
+  "folder2-open": "\f3d8",
+  "folder2": "\f3d9",
+  "fonts": "\f3da",
+  "forward-fill": "\f3db",
+  "forward": "\f3dc",
+  "front": "\f3dd",
+  "fullscreen-exit": "\f3de",
+  "fullscreen": "\f3df",
+  "funnel-fill": "\f3e0",
+  "funnel": "\f3e1",
+  "gear-fill": "\f3e2",
+  "gear-wide-connected": "\f3e3",
+  "gear-wide": "\f3e4",
+  "gear": "\f3e5",
+  "gem": "\f3e6",
+  "geo-alt-fill": "\f3e7",
+  "geo-alt": "\f3e8",
+  "geo-fill": "\f3e9",
+  "geo": "\f3ea",
+  "gift-fill": "\f3eb",
+  "gift": "\f3ec",
+  "github": "\f3ed",
+  "globe": "\f3ee",
+  "globe2": "\f3ef",
+  "google": "\f3f0",
+  "graph-down": "\f3f1",
+  "graph-up": "\f3f2",
+  "grid-1x2-fill": "\f3f3",
+  "grid-1x2": "\f3f4",
+  "grid-3x2-gap-fill": "\f3f5",
+  "grid-3x2-gap": "\f3f6",
+  "grid-3x2": "\f3f7",
+  "grid-3x3-gap-fill": "\f3f8",
+  "grid-3x3-gap": "\f3f9",
+  "grid-3x3": "\f3fa",
+  "grid-fill": "\f3fb",
+  "grid": "\f3fc",
+  "grip-horizontal": "\f3fd",
+  "grip-vertical": "\f3fe",
+  "hammer": "\f3ff",
+  "hand-index-fill": "\f400",
+  "hand-index-thumb-fill": "\f401",
+  "hand-index-thumb": "\f402",
+  "hand-index": "\f403",
+  "hand-thumbs-down-fill": "\f404",
+  "hand-thumbs-down": "\f405",
+  "hand-thumbs-up-fill": "\f406",
+  "hand-thumbs-up": "\f407",
+  "handbag-fill": "\f408",
+  "handbag": "\f409",
+  "hash": "\f40a",
+  "hdd-fill": "\f40b",
+  "hdd-network-fill": "\f40c",
+  "hdd-network": "\f40d",
+  "hdd-rack-fill": "\f40e",
+  "hdd-rack": "\f40f",
+  "hdd-stack-fill": "\f410",
+  "hdd-stack": "\f411",
+  "hdd": "\f412",
+  "headphones": "\f413",
+  "headset": "\f414",
+  "heart-fill": "\f415",
+  "heart-half": "\f416",
+  "heart": "\f417",
+  "heptagon-fill": "\f418",
+  "heptagon-half": "\f419",
+  "heptagon": "\f41a",
+  "hexagon-fill": "\f41b",
+  "hexagon-half": "\f41c",
+  "hexagon": "\f41d",
+  "hourglass-bottom": "\f41e",
+  "hourglass-split": "\f41f",
+  "hourglass-top": "\f420",
+  "hourglass": "\f421",
+  "house-door-fill": "\f422",
+  "house-door": "\f423",
+  "house-fill": "\f424",
+  "house": "\f425",
+  "hr": "\f426",
+  "hurricane": "\f427",
+  "image-alt": "\f428",
+  "image-fill": "\f429",
+  "image": "\f42a",
+  "images": "\f42b",
+  "inbox-fill": "\f42c",
+  "inbox": "\f42d",
+  "inboxes-fill": "\f42e",
+  "inboxes": "\f42f",
+  "info-circle-fill": "\f430",
+  "info-circle": "\f431",
+  "info-square-fill": "\f432",
+  "info-square": "\f433",
+  "info": "\f434",
+  "input-cursor-text": "\f435",
+  "input-cursor": "\f436",
+  "instagram": "\f437",
+  "intersect": "\f438",
+  "journal-album": "\f439",
+  "journal-arrow-down": "\f43a",
+  "journal-arrow-up": "\f43b",
+  "journal-bookmark-fill": "\f43c",
+  "journal-bookmark": "\f43d",
+  "journal-check": "\f43e",
+  "journal-code": "\f43f",
+  "journal-medical": "\f440",
+  "journal-minus": "\f441",
+  "journal-plus": "\f442",
+  "journal-richtext": "\f443",
+  "journal-text": "\f444",
+  "journal-x": "\f445",
+  "journal": "\f446",
+  "journals": "\f447",
+  "joystick": "\f448",
+  "justify-left": "\f449",
+  "justify-right": "\f44a",
+  "justify": "\f44b",
+  "kanban-fill": "\f44c",
+  "kanban": "\f44d",
+  "key-fill": "\f44e",
+  "key": "\f44f",
+  "keyboard-fill": "\f450",
+  "keyboard": "\f451",
+  "ladder": "\f452",
+  "lamp-fill": "\f453",
+  "lamp": "\f454",
+  "laptop-fill": "\f455",
+  "laptop": "\f456",
+  "layer-backward": "\f457",
+  "layer-forward": "\f458",
+  "layers-fill": "\f459",
+  "layers-half": "\f45a",
+  "layers": "\f45b",
+  "layout-sidebar-inset-reverse": "\f45c",
+  "layout-sidebar-inset": "\f45d",
+  "layout-sidebar-reverse": "\f45e",
+  "layout-sidebar": "\f45f",
+  "layout-split": "\f460",
+  "layout-text-sidebar-reverse": "\f461",
+  "layout-text-sidebar": "\f462",
+  "layout-text-window-reverse": "\f463",
+  "layout-text-window": "\f464",
+  "layout-three-columns": "\f465",
+  "layout-wtf": "\f466",
+  "life-preserver": "\f467",
+  "lightbulb-fill": "\f468",
+  "lightbulb-off-fill": "\f469",
+  "lightbulb-off": "\f46a",
+  "lightbulb": "\f46b",
+  "lightning-charge-fill": "\f46c",
+  "lightning-charge": "\f46d",
+  "lightning-fill": "\f46e",
+  "lightning": "\f46f",
+  "link-45deg": "\f470",
+  "link": "\f471",
+  "linkedin": "\f472",
+  "list-check": "\f473",
+  "list-nested": "\f474",
+  "list-ol": "\f475",
+  "list-stars": "\f476",
+  "list-task": "\f477",
+  "list-ul": "\f478",
+  "list": "\f479",
+  "lock-fill": "\f47a",
+  "lock": "\f47b",
+  "mailbox": "\f47c",
+  "mailbox2": "\f47d",
+  "map-fill": "\f47e",
+  "map": "\f47f",
+  "markdown-fill": "\f480",
+  "markdown": "\f481",
+  "mask": "\f482",
+  "megaphone-fill": "\f483",
+  "megaphone": "\f484",
+  "menu-app-fill": "\f485",
+  "menu-app": "\f486",
+  "menu-button-fill": "\f487",
+  "menu-button-wide-fill": "\f488",
+  "menu-button-wide": "\f489",
+  "menu-button": "\f48a",
+  "menu-down": "\f48b",
+  "menu-up": "\f48c",
+  "mic-fill": "\f48d",
+  "mic-mute-fill": "\f48e",
+  "mic-mute": "\f48f",
+  "mic": "\f490",
+  "minecart-loaded": "\f491",
+  "minecart": "\f492",
+  "moisture": "\f493",
+  "moon-fill": "\f494",
+  "moon-stars-fill": "\f495",
+  "moon-stars": "\f496",
+  "moon": "\f497",
+  "mouse-fill": "\f498",
+  "mouse": "\f499",
+  "mouse2-fill": "\f49a",
+  "mouse2": "\f49b",
+  "mouse3-fill": "\f49c",
+  "mouse3": "\f49d",
+  "music-note-beamed": "\f49e",
+  "music-note-list": "\f49f",
+  "music-note": "\f4a0",
+  "music-player-fill": "\f4a1",
+  "music-player": "\f4a2",
+  "newspaper": "\f4a3",
+  "node-minus-fill": "\f4a4",
+  "node-minus": "\f4a5",
+  "node-plus-fill": "\f4a6",
+  "node-plus": "\f4a7",
+  "nut-fill": "\f4a8",
+  "nut": "\f4a9",
+  "octagon-fill": "\f4aa",
+  "octagon-half": "\f4ab",
+  "octagon": "\f4ac",
+  "option": "\f4ad",
+  "outlet": "\f4ae",
+  "paint-bucket": "\f4af",
+  "palette-fill": "\f4b0",
+  "palette": "\f4b1",
+  "palette2": "\f4b2",
+  "paperclip": "\f4b3",
+  "paragraph": "\f4b4",
+  "patch-check-fill": "\f4b5",
+  "patch-check": "\f4b6",
+  "patch-exclamation-fill": "\f4b7",
+  "patch-exclamation": "\f4b8",
+  "patch-minus-fill": "\f4b9",
+  "patch-minus": "\f4ba",
+  "patch-plus-fill": "\f4bb",
+  "patch-plus": "\f4bc",
+  "patch-question-fill": "\f4bd",
+  "patch-question": "\f4be",
+  "pause-btn-fill": "\f4bf",
+  "pause-btn": "\f4c0",
+  "pause-circle-fill": "\f4c1",
+  "pause-circle": "\f4c2",
+  "pause-fill": "\f4c3",
+  "pause": "\f4c4",
+  "peace-fill": "\f4c5",
+  "peace": "\f4c6",
+  "pen-fill": "\f4c7",
+  "pen": "\f4c8",
+  "pencil-fill": "\f4c9",
+  "pencil-square": "\f4ca",
+  "pencil": "\f4cb",
+  "pentagon-fill": "\f4cc",
+  "pentagon-half": "\f4cd",
+  "pentagon": "\f4ce",
+  "people-fill": "\f4cf",
+  "people": "\f4d0",
+  "percent": "\f4d1",
+  "person-badge-fill": "\f4d2",
+  "person-badge": "\f4d3",
+  "person-bounding-box": "\f4d4",
+  "person-check-fill": "\f4d5",
+  "person-check": "\f4d6",
+  "person-circle": "\f4d7",
+  "person-dash-fill": "\f4d8",
+  "person-dash": "\f4d9",
+  "person-fill": "\f4da",
+  "person-lines-fill": "\f4db",
+  "person-plus-fill": "\f4dc",
+  "person-plus": "\f4dd",
+  "person-square": "\f4de",
+  "person-x-fill": "\f4df",
+  "person-x": "\f4e0",
+  "person": "\f4e1",
+  "phone-fill": "\f4e2",
+  "phone-landscape-fill": "\f4e3",
+  "phone-landscape": "\f4e4",
+  "phone-vibrate-fill": "\f4e5",
+  "phone-vibrate": "\f4e6",
+  "phone": "\f4e7",
+  "pie-chart-fill": "\f4e8",
+  "pie-chart": "\f4e9",
+  "pin-angle-fill": "\f4ea",
+  "pin-angle": "\f4eb",
+  "pin-fill": "\f4ec",
+  "pin": "\f4ed",
+  "pip-fill": "\f4ee",
+  "pip": "\f4ef",
+  "play-btn-fill": "\f4f0",
+  "play-btn": "\f4f1",
+  "play-circle-fill": "\f4f2",
+  "play-circle": "\f4f3",
+  "play-fill": "\f4f4",
+  "play": "\f4f5",
+  "plug-fill": "\f4f6",
+  "plug": "\f4f7",
+  "plus-circle-dotted": "\f4f8",
+  "plus-circle-fill": "\f4f9",
+  "plus-circle": "\f4fa",
+  "plus-square-dotted": "\f4fb",
+  "plus-square-fill": "\f4fc",
+  "plus-square": "\f4fd",
+  "plus": "\f4fe",
+  "power": "\f4ff",
+  "printer-fill": "\f500",
+  "printer": "\f501",
+  "puzzle-fill": "\f502",
+  "puzzle": "\f503",
+  "question-circle-fill": "\f504",
+  "question-circle": "\f505",
+  "question-diamond-fill": "\f506",
+  "question-diamond": "\f507",
+  "question-octagon-fill": "\f508",
+  "question-octagon": "\f509",
+  "question-square-fill": "\f50a",
+  "question-square": "\f50b",
+  "question": "\f50c",
+  "rainbow": "\f50d",
+  "receipt-cutoff": "\f50e",
+  "receipt": "\f50f",
+  "reception-0": "\f510",
+  "reception-1": "\f511",
+  "reception-2": "\f512",
+  "reception-3": "\f513",
+  "reception-4": "\f514",
+  "record-btn-fill": "\f515",
+  "record-btn": "\f516",
+  "record-circle-fill": "\f517",
+  "record-circle": "\f518",
+  "record-fill": "\f519",
+  "record": "\f51a",
+  "record2-fill": "\f51b",
+  "record2": "\f51c",
+  "reply-all-fill": "\f51d",
+  "reply-all": "\f51e",
+  "reply-fill": "\f51f",
+  "reply": "\f520",
+  "rss-fill": "\f521",
+  "rss": "\f522",
+  "rulers": "\f523",
+  "save-fill": "\f524",
+  "save": "\f525",
+  "save2-fill": "\f526",
+  "save2": "\f527",
+  "scissors": "\f528",
+  "screwdriver": "\f529",
+  "search": "\f52a",
+  "segmented-nav": "\f52b",
+  "server": "\f52c",
+  "share-fill": "\f52d",
+  "share": "\f52e",
+  "shield-check": "\f52f",
+  "shield-exclamation": "\f530",
+  "shield-fill-check": "\f531",
+  "shield-fill-exclamation": "\f532",
+  "shield-fill-minus": "\f533",
+  "shield-fill-plus": "\f534",
+  "shield-fill-x": "\f535",
+  "shield-fill": "\f536",
+  "shield-lock-fill": "\f537",
+  "shield-lock": "\f538",
+  "shield-minus": "\f539",
+  "shield-plus": "\f53a",
+  "shield-shaded": "\f53b",
+  "shield-slash-fill": "\f53c",
+  "shield-slash": "\f53d",
+  "shield-x": "\f53e",
+  "shield": "\f53f",
+  "shift-fill": "\f540",
+  "shift": "\f541",
+  "shop-window": "\f542",
+  "shop": "\f543",
+  "shuffle": "\f544",
+  "signpost-2-fill": "\f545",
+  "signpost-2": "\f546",
+  "signpost-fill": "\f547",
+  "signpost-split-fill": "\f548",
+  "signpost-split": "\f549",
+  "signpost": "\f54a",
+  "sim-fill": "\f54b",
+  "sim": "\f54c",
+  "skip-backward-btn-fill": "\f54d",
+  "skip-backward-btn": "\f54e",
+  "skip-backward-circle-fill": "\f54f",
+  "skip-backward-circle": "\f550",
+  "skip-backward-fill": "\f551",
+  "skip-backward": "\f552",
+  "skip-end-btn-fill": "\f553",
+  "skip-end-btn": "\f554",
+  "skip-end-circle-fill": "\f555",
+  "skip-end-circle": "\f556",
+  "skip-end-fill": "\f557",
+  "skip-end": "\f558",
+  "skip-forward-btn-fill": "\f559",
+  "skip-forward-btn": "\f55a",
+  "skip-forward-circle-fill": "\f55b",
+  "skip-forward-circle": "\f55c",
+  "skip-forward-fill": "\f55d",
+  "skip-forward": "\f55e",
+  "skip-start-btn-fill": "\f55f",
+  "skip-start-btn": "\f560",
+  "skip-start-circle-fill": "\f561",
+  "skip-start-circle": "\f562",
+  "skip-start-fill": "\f563",
+  "skip-start": "\f564",
+  "slack": "\f565",
+  "slash-circle-fill": "\f566",
+  "slash-circle": "\f567",
+  "slash-square-fill": "\f568",
+  "slash-square": "\f569",
+  "slash": "\f56a",
+  "sliders": "\f56b",
+  "smartwatch": "\f56c",
+  "snow": "\f56d",
+  "snow2": "\f56e",
+  "snow3": "\f56f",
+  "sort-alpha-down-alt": "\f570",
+  "sort-alpha-down": "\f571",
+  "sort-alpha-up-alt": "\f572",
+  "sort-alpha-up": "\f573",
+  "sort-down-alt": "\f574",
+  "sort-down": "\f575",
+  "sort-numeric-down-alt": "\f576",
+  "sort-numeric-down": "\f577",
+  "sort-numeric-up-alt": "\f578",
+  "sort-numeric-up": "\f579",
+  "sort-up-alt": "\f57a",
+  "sort-up": "\f57b",
+  "soundwave": "\f57c",
+  "speaker-fill": "\f57d",
+  "speaker": "\f57e",
+  "speedometer": "\f57f",
+  "speedometer2": "\f580",
+  "spellcheck": "\f581",
+  "square-fill": "\f582",
+  "square-half": "\f583",
+  "square": "\f584",
+  "stack": "\f585",
+  "star-fill": "\f586",
+  "star-half": "\f587",
+  "star": "\f588",
+  "stars": "\f589",
+  "stickies-fill": "\f58a",
+  "stickies": "\f58b",
+  "sticky-fill": "\f58c",
+  "sticky": "\f58d",
+  "stop-btn-fill": "\f58e",
+  "stop-btn": "\f58f",
+  "stop-circle-fill": "\f590",
+  "stop-circle": "\f591",
+  "stop-fill": "\f592",
+  "stop": "\f593",
+  "stoplights-fill": "\f594",
+  "stoplights": "\f595",
+  "stopwatch-fill": "\f596",
+  "stopwatch": "\f597",
+  "subtract": "\f598",
+  "suit-club-fill": "\f599",
+  "suit-club": "\f59a",
+  "suit-diamond-fill": "\f59b",
+  "suit-diamond": "\f59c",
+  "suit-heart-fill": "\f59d",
+  "suit-heart": "\f59e",
+  "suit-spade-fill": "\f59f",
+  "suit-spade": "\f5a0",
+  "sun-fill": "\f5a1",
+  "sun": "\f5a2",
+  "sunglasses": "\f5a3",
+  "sunrise-fill": "\f5a4",
+  "sunrise": "\f5a5",
+  "sunset-fill": "\f5a6",
+  "sunset": "\f5a7",
+  "symmetry-horizontal": "\f5a8",
+  "symmetry-vertical": "\f5a9",
+  "table": "\f5aa",
+  "tablet-fill": "\f5ab",
+  "tablet-landscape-fill": "\f5ac",
+  "tablet-landscape": "\f5ad",
+  "tablet": "\f5ae",
+  "tag-fill": "\f5af",
+  "tag": "\f5b0",
+  "tags-fill": "\f5b1",
+  "tags": "\f5b2",
+  "telegram": "\f5b3",
+  "telephone-fill": "\f5b4",
+  "telephone-forward-fill": "\f5b5",
+  "telephone-forward": "\f5b6",
+  "telephone-inbound-fill": "\f5b7",
+  "telephone-inbound": "\f5b8",
+  "telephone-minus-fill": "\f5b9",
+  "telephone-minus": "\f5ba",
+  "telephone-outbound-fill": "\f5bb",
+  "telephone-outbound": "\f5bc",
+  "telephone-plus-fill": "\f5bd",
+  "telephone-plus": "\f5be",
+  "telephone-x-fill": "\f5bf",
+  "telephone-x": "\f5c0",
+  "telephone": "\f5c1",
+  "terminal-fill": "\f5c2",
+  "terminal": "\f5c3",
+  "text-center": "\f5c4",
+  "text-indent-left": "\f5c5",
+  "text-indent-right": "\f5c6",
+  "text-left": "\f5c7",
+  "text-paragraph": "\f5c8",
+  "text-right": "\f5c9",
+  "textarea-resize": "\f5ca",
+  "textarea-t": "\f5cb",
+  "textarea": "\f5cc",
+  "thermometer-half": "\f5cd",
+  "thermometer-high": "\f5ce",
+  "thermometer-low": "\f5cf",
+  "thermometer-snow": "\f5d0",
+  "thermometer-sun": "\f5d1",
+  "thermometer": "\f5d2",
+  "three-dots-vertical": "\f5d3",
+  "three-dots": "\f5d4",
+  "toggle-off": "\f5d5",
+  "toggle-on": "\f5d6",
+  "toggle2-off": "\f5d7",
+  "toggle2-on": "\f5d8",
+  "toggles": "\f5d9",
+  "toggles2": "\f5da",
+  "tools": "\f5db",
+  "tornado": "\f5dc",
+  "trash-fill": "\f5dd",
+  "trash": "\f5de",
+  "trash2-fill": "\f5df",
+  "trash2": "\f5e0",
+  "tree-fill": "\f5e1",
+  "tree": "\f5e2",
+  "triangle-fill": "\f5e3",
+  "triangle-half": "\f5e4",
+  "triangle": "\f5e5",
+  "trophy-fill": "\f5e6",
+  "trophy": "\f5e7",
+  "tropical-storm": "\f5e8",
+  "truck-flatbed": "\f5e9",
+  "truck": "\f5ea",
+  "tsunami": "\f5eb",
+  "tv-fill": "\f5ec",
+  "tv": "\f5ed",
+  "twitch": "\f5ee",
+  "twitter": "\f5ef",
+  "type-bold": "\f5f0",
+  "type-h1": "\f5f1",
+  "type-h2": "\f5f2",
+  "type-h3": "\f5f3",
+  "type-italic": "\f5f4",
+  "type-strikethrough": "\f5f5",
+  "type-underline": "\f5f6",
+  "type": "\f5f7",
+  "ui-checks-grid": "\f5f8",
+  "ui-checks": "\f5f9",
+  "ui-radios-grid": "\f5fa",
+  "ui-radios": "\f5fb",
+  "umbrella-fill": "\f5fc",
+  "umbrella": "\f5fd",
+  "union": "\f5fe",
+  "unlock-fill": "\f5ff",
+  "unlock": "\f600",
+  "upc-scan": "\f601",
+  "upc": "\f602",
+  "upload": "\f603",
+  "vector-pen": "\f604",
+  "view-list": "\f605",
+  "view-stacked": "\f606",
+  "vinyl-fill": "\f607",
+  "vinyl": "\f608",
+  "voicemail": "\f609",
+  "volume-down-fill": "\f60a",
+  "volume-down": "\f60b",
+  "volume-mute-fill": "\f60c",
+  "volume-mute": "\f60d",
+  "volume-off-fill": "\f60e",
+  "volume-off": "\f60f",
+  "volume-up-fill": "\f610",
+  "volume-up": "\f611",
+  "vr": "\f612",
+  "wallet-fill": "\f613",
+  "wallet": "\f614",
+  "wallet2": "\f615",
+  "watch": "\f616",
+  "water": "\f617",
+  "whatsapp": "\f618",
+  "wifi-1": "\f619",
+  "wifi-2": "\f61a",
+  "wifi-off": "\f61b",
+  "wifi": "\f61c",
+  "wind": "\f61d",
+  "window-dock": "\f61e",
+  "window-sidebar": "\f61f",
+  "window": "\f620",
+  "wrench": "\f621",
+  "x-circle-fill": "\f622",
+  "x-circle": "\f623",
+  "x-diamond-fill": "\f624",
+  "x-diamond": "\f625",
+  "x-octagon-fill": "\f626",
+  "x-octagon": "\f627",
+  "x-square-fill": "\f628",
+  "x-square": "\f629",
+  "x": "\f62a",
+  "youtube": "\f62b",
+  "zoom-in": "\f62c",
+  "zoom-out": "\f62d",
+  "bank": "\f62e",
+  "bank2": "\f62f",
+  "bell-slash-fill": "\f630",
+  "bell-slash": "\f631",
+  "cash-coin": "\f632",
+  "check-lg": "\f633",
+  "coin": "\f634",
+  "currency-bitcoin": "\f635",
+  "currency-dollar": "\f636",
+  "currency-euro": "\f637",
+  "currency-exchange": "\f638",
+  "currency-pound": "\f639",
+  "currency-yen": "\f63a",
+  "dash-lg": "\f63b",
+  "exclamation-lg": "\f63c",
+  "file-earmark-pdf-fill": "\f63d",
+  "file-earmark-pdf": "\f63e",
+  "file-pdf-fill": "\f63f",
+  "file-pdf": "\f640",
+  "gender-ambiguous": "\f641",
+  "gender-female": "\f642",
+  "gender-male": "\f643",
+  "gender-trans": "\f644",
+  "headset-vr": "\f645",
+  "info-lg": "\f646",
+  "mastodon": "\f647",
+  "messenger": "\f648",
+  "piggy-bank-fill": "\f649",
+  "piggy-bank": "\f64a",
+  "pin-map-fill": "\f64b",
+  "pin-map": "\f64c",
+  "plus-lg": "\f64d",
+  "question-lg": "\f64e",
+  "recycle": "\f64f",
+  "reddit": "\f650",
+  "safe-fill": "\f651",
+  "safe2-fill": "\f652",
+  "safe2": "\f653",
+  "sd-card-fill": "\f654",
+  "sd-card": "\f655",
+  "skype": "\f656",
+  "slash-lg": "\f657",
+  "translate": "\f658",
+  "x-lg": "\f659",
+  "safe": "\f65a",
+  "apple": "\f65b",
+  "microsoft": "\f65d",
+  "windows": "\f65e",
+  "behance": "\f65c",
+  "dribbble": "\f65f",
+  "line": "\f660",
+  "medium": "\f661",
+  "paypal": "\f662",
+  "pinterest": "\f663",
+  "signal": "\f664",
+  "snapchat": "\f665",
+  "spotify": "\f666",
+  "stack-overflow": "\f667",
+  "strava": "\f668",
+  "wordpress": "\f669",
+  "vimeo": "\f66a",
+  "activity": "\f66b",
+  "easel2-fill": "\f66c",
+  "easel2": "\f66d",
+  "easel3-fill": "\f66e",
+  "easel3": "\f66f",
+  "fan": "\f670",
+  "fingerprint": "\f671",
+  "graph-down-arrow": "\f672",
+  "graph-up-arrow": "\f673",
+  "hypnotize": "\f674",
+  "magic": "\f675",
+  "person-rolodex": "\f676",
+  "person-video": "\f677",
+  "person-video2": "\f678",
+  "person-video3": "\f679",
+  "person-workspace": "\f67a",
+  "radioactive": "\f67b",
+  "webcam-fill": "\f67c",
+  "webcam": "\f67d",
+  "yin-yang": "\f67e",
+);
+
+.ei-alarm-fill::before { content: map-get($ellevate-icons-map, "alarm-fill"); }
+.ei-alarm::before { content: map-get($ellevate-icons-map, "alarm"); }
+.ei-align-bottom::before { content: map-get($ellevate-icons-map, "align-bottom"); }
+.ei-align-center::before { content: map-get($ellevate-icons-map, "align-center"); }
+.ei-align-end::before { content: map-get($ellevate-icons-map, "align-end"); }
+.ei-align-middle::before { content: map-get($ellevate-icons-map, "align-middle"); }
+.ei-align-start::before { content: map-get($ellevate-icons-map, "align-start"); }
+.ei-align-top::before { content: map-get($ellevate-icons-map, "align-top"); }
+.ei-alt::before { content: map-get($ellevate-icons-map, "alt"); }
+.ei-app-indicator::before { content: map-get($ellevate-icons-map, "app-indicator"); }
+.ei-app::before { content: map-get($ellevate-icons-map, "app"); }
+.ei-archive-fill::before { content: map-get($ellevate-icons-map, "archive-fill"); }
+.ei-archive::before { content: map-get($ellevate-icons-map, "archive"); }
+.ei-arrow-90deg-down::before { content: map-get($ellevate-icons-map, "arrow-90deg-down"); }
+.ei-arrow-90deg-left::before { content: map-get($ellevate-icons-map, "arrow-90deg-left"); }
+.ei-arrow-90deg-right::before { content: map-get($ellevate-icons-map, "arrow-90deg-right"); }
+.ei-arrow-90deg-up::before { content: map-get($ellevate-icons-map, "arrow-90deg-up"); }
+.ei-arrow-bar-down::before { content: map-get($ellevate-icons-map, "arrow-bar-down"); }
+.ei-arrow-bar-left::before { content: map-get($ellevate-icons-map, "arrow-bar-left"); }
+.ei-arrow-bar-right::before { content: map-get($ellevate-icons-map, "arrow-bar-right"); }
+.ei-arrow-bar-up::before { content: map-get($ellevate-icons-map, "arrow-bar-up"); }
+.ei-arrow-clockwise::before { content: map-get($ellevate-icons-map, "arrow-clockwise"); }
+.ei-arrow-counterclockwise::before { content: map-get($ellevate-icons-map, "arrow-counterclockwise"); }
+.ei-arrow-down-circle-fill::before { content: map-get($ellevate-icons-map, "arrow-down-circle-fill"); }
+.ei-arrow-down-circle::before { content: map-get($ellevate-icons-map, "arrow-down-circle"); }
+.ei-arrow-down-left-circle-fill::before { content: map-get($ellevate-icons-map, "arrow-down-left-circle-fill"); }
+.ei-arrow-down-left-circle::before { content: map-get($ellevate-icons-map, "arrow-down-left-circle"); }
+.ei-arrow-down-left-square-fill::before { content: map-get($ellevate-icons-map, "arrow-down-left-square-fill"); }
+.ei-arrow-down-left-square::before { content: map-get($ellevate-icons-map, "arrow-down-left-square"); }
+.ei-arrow-down-left::before { content: map-get($ellevate-icons-map, "arrow-down-left"); }
+.ei-arrow-down-right-circle-fill::before { content: map-get($ellevate-icons-map, "arrow-down-right-circle-fill"); }
+.ei-arrow-down-right-circle::before { content: map-get($ellevate-icons-map, "arrow-down-right-circle"); }
+.ei-arrow-down-right-square-fill::before { content: map-get($ellevate-icons-map, "arrow-down-right-square-fill"); }
+.ei-arrow-down-right-square::before { content: map-get($ellevate-icons-map, "arrow-down-right-square"); }
+.ei-arrow-down-right::before { content: map-get($ellevate-icons-map, "arrow-down-right"); }
+.ei-arrow-down-short::before { content: map-get($ellevate-icons-map, "arrow-down-short"); }
+.ei-arrow-down-square-fill::before { content: map-get($ellevate-icons-map, "arrow-down-square-fill"); }
+.ei-arrow-down-square::before { content: map-get($ellevate-icons-map, "arrow-down-square"); }
+.ei-arrow-down-up::before { content: map-get($ellevate-icons-map, "arrow-down-up"); }
+.ei-arrow-down::before { content: map-get($ellevate-icons-map, "arrow-down"); }
+.ei-arrow-left-circle-fill::before { content: map-get($ellevate-icons-map, "arrow-left-circle-fill"); }
+.ei-arrow-left-circle::before { content: map-get($ellevate-icons-map, "arrow-left-circle"); }
+.ei-arrow-left-right::before { content: map-get($ellevate-icons-map, "arrow-left-right"); }
+.ei-arrow-left-short::before { content: map-get($ellevate-icons-map, "arrow-left-short"); }
+.ei-arrow-left-square-fill::before { content: map-get($ellevate-icons-map, "arrow-left-square-fill"); }
+.ei-arrow-left-square::before { content: map-get($ellevate-icons-map, "arrow-left-square"); }
+.ei-arrow-left::before { content: map-get($ellevate-icons-map, "arrow-left"); }
+.ei-arrow-repeat::before { content: map-get($ellevate-icons-map, "arrow-repeat"); }
+.ei-arrow-return-left::before { content: map-get($ellevate-icons-map, "arrow-return-left"); }
+.ei-arrow-return-right::before { content: map-get($ellevate-icons-map, "arrow-return-right"); }
+.ei-arrow-right-circle-fill::before { content: map-get($ellevate-icons-map, "arrow-right-circle-fill"); }
+.ei-arrow-right-circle::before { content: map-get($ellevate-icons-map, "arrow-right-circle"); }
+.ei-arrow-right-short::before { content: map-get($ellevate-icons-map, "arrow-right-short"); }
+.ei-arrow-right-square-fill::before { content: map-get($ellevate-icons-map, "arrow-right-square-fill"); }
+.ei-arrow-right-square::before { content: map-get($ellevate-icons-map, "arrow-right-square"); }
+.ei-arrow-right::before { content: map-get($ellevate-icons-map, "arrow-right"); }
+.ei-arrow-up-circle-fill::before { content: map-get($ellevate-icons-map, "arrow-up-circle-fill"); }
+.ei-arrow-up-circle::before { content: map-get($ellevate-icons-map, "arrow-up-circle"); }
+.ei-arrow-up-left-circle-fill::before { content: map-get($ellevate-icons-map, "arrow-up-left-circle-fill"); }
+.ei-arrow-up-left-circle::before { content: map-get($ellevate-icons-map, "arrow-up-left-circle"); }
+.ei-arrow-up-left-square-fill::before { content: map-get($ellevate-icons-map, "arrow-up-left-square-fill"); }
+.ei-arrow-up-left-square::before { content: map-get($ellevate-icons-map, "arrow-up-left-square"); }
+.ei-arrow-up-left::before { content: map-get($ellevate-icons-map, "arrow-up-left"); }
+.ei-arrow-up-right-circle-fill::before { content: map-get($ellevate-icons-map, "arrow-up-right-circle-fill"); }
+.ei-arrow-up-right-circle::before { content: map-get($ellevate-icons-map, "arrow-up-right-circle"); }
+.ei-arrow-up-right-square-fill::before { content: map-get($ellevate-icons-map, "arrow-up-right-square-fill"); }
+.ei-arrow-up-right-square::before { content: map-get($ellevate-icons-map, "arrow-up-right-square"); }
+.ei-arrow-up-right::before { content: map-get($ellevate-icons-map, "arrow-up-right"); }
+.ei-arrow-up-short::before { content: map-get($ellevate-icons-map, "arrow-up-short"); }
+.ei-arrow-up-square-fill::before { content: map-get($ellevate-icons-map, "arrow-up-square-fill"); }
+.ei-arrow-up-square::before { content: map-get($ellevate-icons-map, "arrow-up-square"); }
+.ei-arrow-up::before { content: map-get($ellevate-icons-map, "arrow-up"); }
+.ei-arrows-angle-contract::before { content: map-get($ellevate-icons-map, "arrows-angle-contract"); }
+.ei-arrows-angle-expand::before { content: map-get($ellevate-icons-map, "arrows-angle-expand"); }
+.ei-arrows-collapse::before { content: map-get($ellevate-icons-map, "arrows-collapse"); }
+.ei-arrows-expand::before { content: map-get($ellevate-icons-map, "arrows-expand"); }
+.ei-arrows-fullscreen::before { content: map-get($ellevate-icons-map, "arrows-fullscreen"); }
+.ei-arrows-move::before { content: map-get($ellevate-icons-map, "arrows-move"); }
+.ei-aspect-ratio-fill::before { content: map-get($ellevate-icons-map, "aspect-ratio-fill"); }
+.ei-aspect-ratio::before { content: map-get($ellevate-icons-map, "aspect-ratio"); }
+.ei-asterisk::before { content: map-get($ellevate-icons-map, "asterisk"); }
+.ei-at::before { content: map-get($ellevate-icons-map, "at"); }
+.ei-award-fill::before { content: map-get($ellevate-icons-map, "award-fill"); }
+.ei-award::before { content: map-get($ellevate-icons-map, "award"); }
+.ei-back::before { content: map-get($ellevate-icons-map, "back"); }
+.ei-backspace-fill::before { content: map-get($ellevate-icons-map, "backspace-fill"); }
+.ei-backspace-reverse-fill::before { content: map-get($ellevate-icons-map, "backspace-reverse-fill"); }
+.ei-backspace-reverse::before { content: map-get($ellevate-icons-map, "backspace-reverse"); }
+.ei-backspace::before { content: map-get($ellevate-icons-map, "backspace"); }
+.ei-badge-3d-fill::before { content: map-get($ellevate-icons-map, "badge-3d-fill"); }
+.ei-badge-3d::before { content: map-get($ellevate-icons-map, "badge-3d"); }
+.ei-badge-4k-fill::before { content: map-get($ellevate-icons-map, "badge-4k-fill"); }
+.ei-badge-4k::before { content: map-get($ellevate-icons-map, "badge-4k"); }
+.ei-badge-8k-fill::before { content: map-get($ellevate-icons-map, "badge-8k-fill"); }
+.ei-badge-8k::before { content: map-get($ellevate-icons-map, "badge-8k"); }
+.ei-badge-ad-fill::before { content: map-get($ellevate-icons-map, "badge-ad-fill"); }
+.ei-badge-ad::before { content: map-get($ellevate-icons-map, "badge-ad"); }
+.ei-badge-ar-fill::before { content: map-get($ellevate-icons-map, "badge-ar-fill"); }
+.ei-badge-ar::before { content: map-get($ellevate-icons-map, "badge-ar"); }
+.ei-badge-cc-fill::before { content: map-get($ellevate-icons-map, "badge-cc-fill"); }
+.ei-badge-cc::before { content: map-get($ellevate-icons-map, "badge-cc"); }
+.ei-badge-hd-fill::before { content: map-get($ellevate-icons-map, "badge-hd-fill"); }
+.ei-badge-hd::before { content: map-get($ellevate-icons-map, "badge-hd"); }
+.ei-badge-tm-fill::before { content: map-get($ellevate-icons-map, "badge-tm-fill"); }
+.ei-badge-tm::before { content: map-get($ellevate-icons-map, "badge-tm"); }
+.ei-badge-vo-fill::before { content: map-get($ellevate-icons-map, "badge-vo-fill"); }
+.ei-badge-vo::before { content: map-get($ellevate-icons-map, "badge-vo"); }
+.ei-badge-vr-fill::before { content: map-get($ellevate-icons-map, "badge-vr-fill"); }
+.ei-badge-vr::before { content: map-get($ellevate-icons-map, "badge-vr"); }
+.ei-badge-wc-fill::before { content: map-get($ellevate-icons-map, "badge-wc-fill"); }
+.ei-badge-wc::before { content: map-get($ellevate-icons-map, "badge-wc"); }
+.ei-bag-check-fill::before { content: map-get($ellevate-icons-map, "bag-check-fill"); }
+.ei-bag-check::before { content: map-get($ellevate-icons-map, "bag-check"); }
+.ei-bag-dash-fill::before { content: map-get($ellevate-icons-map, "bag-dash-fill"); }
+.ei-bag-dash::before { content: map-get($ellevate-icons-map, "bag-dash"); }
+.ei-bag-fill::before { content: map-get($ellevate-icons-map, "bag-fill"); }
+.ei-bag-plus-fill::before { content: map-get($ellevate-icons-map, "bag-plus-fill"); }
+.ei-bag-plus::before { content: map-get($ellevate-icons-map, "bag-plus"); }
+.ei-bag-x-fill::before { content: map-get($ellevate-icons-map, "bag-x-fill"); }
+.ei-bag-x::before { content: map-get($ellevate-icons-map, "bag-x"); }
+.ei-bag::before { content: map-get($ellevate-icons-map, "bag"); }
+.ei-bar-chart-fill::before { content: map-get($ellevate-icons-map, "bar-chart-fill"); }
+.ei-bar-chart-line-fill::before { content: map-get($ellevate-icons-map, "bar-chart-line-fill"); }
+.ei-bar-chart-line::before { content: map-get($ellevate-icons-map, "bar-chart-line"); }
+.ei-bar-chart-steps::before { content: map-get($ellevate-icons-map, "bar-chart-steps"); }
+.ei-bar-chart::before { content: map-get($ellevate-icons-map, "bar-chart"); }
+.ei-basket-fill::before { content: map-get($ellevate-icons-map, "basket-fill"); }
+.ei-basket::before { content: map-get($ellevate-icons-map, "basket"); }
+.ei-basket2-fill::before { content: map-get($ellevate-icons-map, "basket2-fill"); }
+.ei-basket2::before { content: map-get($ellevate-icons-map, "basket2"); }
+.ei-basket3-fill::before { content: map-get($ellevate-icons-map, "basket3-fill"); }
+.ei-basket3::before { content: map-get($ellevate-icons-map, "basket3"); }
+.ei-battery-charging::before { content: map-get($ellevate-icons-map, "battery-charging"); }
+.ei-battery-full::before { content: map-get($ellevate-icons-map, "battery-full"); }
+.ei-battery-half::before { content: map-get($ellevate-icons-map, "battery-half"); }
+.ei-battery::before { content: map-get($ellevate-icons-map, "battery"); }
+.ei-bell-fill::before { content: map-get($ellevate-icons-map, "bell-fill"); }
+.ei-bell::before { content: map-get($ellevate-icons-map, "bell"); }
+.ei-bezier::before { content: map-get($ellevate-icons-map, "bezier"); }
+.ei-bezier2::before { content: map-get($ellevate-icons-map, "bezier2"); }
+.ei-bicycle::before { content: map-get($ellevate-icons-map, "bicycle"); }
+.ei-binoculars-fill::before { content: map-get($ellevate-icons-map, "binoculars-fill"); }
+.ei-binoculars::before { content: map-get($ellevate-icons-map, "binoculars"); }
+.ei-blockquote-left::before { content: map-get($ellevate-icons-map, "blockquote-left"); }
+.ei-blockquote-right::before { content: map-get($ellevate-icons-map, "blockquote-right"); }
+.ei-book-fill::before { content: map-get($ellevate-icons-map, "book-fill"); }
+.ei-book-half::before { content: map-get($ellevate-icons-map, "book-half"); }
+.ei-book::before { content: map-get($ellevate-icons-map, "book"); }
+.ei-bookmark-check-fill::before { content: map-get($ellevate-icons-map, "bookmark-check-fill"); }
+.ei-bookmark-check::before { content: map-get($ellevate-icons-map, "bookmark-check"); }
+.ei-bookmark-dash-fill::before { content: map-get($ellevate-icons-map, "bookmark-dash-fill"); }
+.ei-bookmark-dash::before { content: map-get($ellevate-icons-map, "bookmark-dash"); }
+.ei-bookmark-fill::before { content: map-get($ellevate-icons-map, "bookmark-fill"); }
+.ei-bookmark-heart-fill::before { content: map-get($ellevate-icons-map, "bookmark-heart-fill"); }
+.ei-bookmark-heart::before { content: map-get($ellevate-icons-map, "bookmark-heart"); }
+.ei-bookmark-plus-fill::before { content: map-get($ellevate-icons-map, "bookmark-plus-fill"); }
+.ei-bookmark-plus::before { content: map-get($ellevate-icons-map, "bookmark-plus"); }
+.ei-bookmark-star-fill::before { content: map-get($ellevate-icons-map, "bookmark-star-fill"); }
+.ei-bookmark-star::before { content: map-get($ellevate-icons-map, "bookmark-star"); }
+.ei-bookmark-x-fill::before { content: map-get($ellevate-icons-map, "bookmark-x-fill"); }
+.ei-bookmark-x::before { content: map-get($ellevate-icons-map, "bookmark-x"); }
+.ei-bookmark::before { content: map-get($ellevate-icons-map, "bookmark"); }
+.ei-bookmarks-fill::before { content: map-get($ellevate-icons-map, "bookmarks-fill"); }
+.ei-bookmarks::before { content: map-get($ellevate-icons-map, "bookmarks"); }
+.ei-bookshelf::before { content: map-get($ellevate-icons-map, "bookshelf"); }
+.ei-bootstrap-fill::before { content: map-get($ellevate-icons-map, "bootstrap-fill"); }
+.ei-bootstrap-reboot::before { content: map-get($ellevate-icons-map, "bootstrap-reboot"); }
+.ei-bootstrap::before { content: map-get($ellevate-icons-map, "bootstrap"); }
+.ei-border-all::before { content: map-get($ellevate-icons-map, "border-all"); }
+.ei-border-bottom::before { content: map-get($ellevate-icons-map, "border-bottom"); }
+.ei-border-center::before { content: map-get($ellevate-icons-map, "border-center"); }
+.ei-border-inner::before { content: map-get($ellevate-icons-map, "border-inner"); }
+.ei-border-left::before { content: map-get($ellevate-icons-map, "border-left"); }
+.ei-border-middle::before { content: map-get($ellevate-icons-map, "border-middle"); }
+.ei-border-outer::before { content: map-get($ellevate-icons-map, "border-outer"); }
+.ei-border-right::before { content: map-get($ellevate-icons-map, "border-right"); }
+.ei-border-style::before { content: map-get($ellevate-icons-map, "border-style"); }
+.ei-border-top::before { content: map-get($ellevate-icons-map, "border-top"); }
+.ei-border-width::before { content: map-get($ellevate-icons-map, "border-width"); }
+.ei-border::before { content: map-get($ellevate-icons-map, "border"); }
+.ei-bounding-box-circles::before { content: map-get($ellevate-icons-map, "bounding-box-circles"); }
+.ei-bounding-box::before { content: map-get($ellevate-icons-map, "bounding-box"); }
+.ei-box-arrow-down-left::before { content: map-get($ellevate-icons-map, "box-arrow-down-left"); }
+.ei-box-arrow-down-right::before { content: map-get($ellevate-icons-map, "box-arrow-down-right"); }
+.ei-box-arrow-down::before { content: map-get($ellevate-icons-map, "box-arrow-down"); }
+.ei-box-arrow-in-down-left::before { content: map-get($ellevate-icons-map, "box-arrow-in-down-left"); }
+.ei-box-arrow-in-down-right::before { content: map-get($ellevate-icons-map, "box-arrow-in-down-right"); }
+.ei-box-arrow-in-down::before { content: map-get($ellevate-icons-map, "box-arrow-in-down"); }
+.ei-box-arrow-in-left::before { content: map-get($ellevate-icons-map, "box-arrow-in-left"); }
+.ei-box-arrow-in-right::before { content: map-get($ellevate-icons-map, "box-arrow-in-right"); }
+.ei-box-arrow-in-up-left::before { content: map-get($ellevate-icons-map, "box-arrow-in-up-left"); }
+.ei-box-arrow-in-up-right::before { content: map-get($ellevate-icons-map, "box-arrow-in-up-right"); }
+.ei-box-arrow-in-up::before { content: map-get($ellevate-icons-map, "box-arrow-in-up"); }
+.ei-box-arrow-left::before { content: map-get($ellevate-icons-map, "box-arrow-left"); }
+.ei-box-arrow-right::before { content: map-get($ellevate-icons-map, "box-arrow-right"); }
+.ei-box-arrow-up-left::before { content: map-get($ellevate-icons-map, "box-arrow-up-left"); }
+.ei-box-arrow-up-right::before { content: map-get($ellevate-icons-map, "box-arrow-up-right"); }
+.ei-box-arrow-up::before { content: map-get($ellevate-icons-map, "box-arrow-up"); }
+.ei-box-seam::before { content: map-get($ellevate-icons-map, "box-seam"); }
+.ei-box::before { content: map-get($ellevate-icons-map, "box"); }
+.ei-braces::before { content: map-get($ellevate-icons-map, "braces"); }
+.ei-bricks::before { content: map-get($ellevate-icons-map, "bricks"); }
+.ei-briefcase-fill::before { content: map-get($ellevate-icons-map, "briefcase-fill"); }
+.ei-briefcase::before { content: map-get($ellevate-icons-map, "briefcase"); }
+.ei-brightness-alt-high-fill::before { content: map-get($ellevate-icons-map, "brightness-alt-high-fill"); }
+.ei-brightness-alt-high::before { content: map-get($ellevate-icons-map, "brightness-alt-high"); }
+.ei-brightness-alt-low-fill::before { content: map-get($ellevate-icons-map, "brightness-alt-low-fill"); }
+.ei-brightness-alt-low::before { content: map-get($ellevate-icons-map, "brightness-alt-low"); }
+.ei-brightness-high-fill::before { content: map-get($ellevate-icons-map, "brightness-high-fill"); }
+.ei-brightness-high::before { content: map-get($ellevate-icons-map, "brightness-high"); }
+.ei-brightness-low-fill::before { content: map-get($ellevate-icons-map, "brightness-low-fill"); }
+.ei-brightness-low::before { content: map-get($ellevate-icons-map, "brightness-low"); }
+.ei-broadcast-pin::before { content: map-get($ellevate-icons-map, "broadcast-pin"); }
+.ei-broadcast::before { content: map-get($ellevate-icons-map, "broadcast"); }
+.ei-brush-fill::before { content: map-get($ellevate-icons-map, "brush-fill"); }
+.ei-brush::before { content: map-get($ellevate-icons-map, "brush"); }
+.ei-bucket-fill::before { content: map-get($ellevate-icons-map, "bucket-fill"); }
+.ei-bucket::before { content: map-get($ellevate-icons-map, "bucket"); }
+.ei-bug-fill::before { content: map-get($ellevate-icons-map, "bug-fill"); }
+.ei-bug::before { content: map-get($ellevate-icons-map, "bug"); }
+.ei-building::before { content: map-get($ellevate-icons-map, "building"); }
+.ei-bullseye::before { content: map-get($ellevate-icons-map, "bullseye"); }
+.ei-calculator-fill::before { content: map-get($ellevate-icons-map, "calculator-fill"); }
+.ei-calculator::before { content: map-get($ellevate-icons-map, "calculator"); }
+.ei-calendar-check-fill::before { content: map-get($ellevate-icons-map, "calendar-check-fill"); }
+.ei-calendar-check::before { content: map-get($ellevate-icons-map, "calendar-check"); }
+.ei-calendar-date-fill::before { content: map-get($ellevate-icons-map, "calendar-date-fill"); }
+.ei-calendar-date::before { content: map-get($ellevate-icons-map, "calendar-date"); }
+.ei-calendar-day-fill::before { content: map-get($ellevate-icons-map, "calendar-day-fill"); }
+.ei-calendar-day::before { content: map-get($ellevate-icons-map, "calendar-day"); }
+.ei-calendar-event-fill::before { content: map-get($ellevate-icons-map, "calendar-event-fill"); }
+.ei-calendar-event::before { content: map-get($ellevate-icons-map, "calendar-event"); }
+.ei-calendar-fill::before { content: map-get($ellevate-icons-map, "calendar-fill"); }
+.ei-calendar-minus-fill::before { content: map-get($ellevate-icons-map, "calendar-minus-fill"); }
+.ei-calendar-minus::before { content: map-get($ellevate-icons-map, "calendar-minus"); }
+.ei-calendar-month-fill::before { content: map-get($ellevate-icons-map, "calendar-month-fill"); }
+.ei-calendar-month::before { content: map-get($ellevate-icons-map, "calendar-month"); }
+.ei-calendar-plus-fill::before { content: map-get($ellevate-icons-map, "calendar-plus-fill"); }
+.ei-calendar-plus::before { content: map-get($ellevate-icons-map, "calendar-plus"); }
+.ei-calendar-range-fill::before { content: map-get($ellevate-icons-map, "calendar-range-fill"); }
+.ei-calendar-range::before { content: map-get($ellevate-icons-map, "calendar-range"); }
+.ei-calendar-week-fill::before { content: map-get($ellevate-icons-map, "calendar-week-fill"); }
+.ei-calendar-week::before { content: map-get($ellevate-icons-map, "calendar-week"); }
+.ei-calendar-x-fill::before { content: map-get($ellevate-icons-map, "calendar-x-fill"); }
+.ei-calendar-x::before { content: map-get($ellevate-icons-map, "calendar-x"); }
+.ei-calendar::before { content: map-get($ellevate-icons-map, "calendar"); }
+.ei-calendar2-check-fill::before { content: map-get($ellevate-icons-map, "calendar2-check-fill"); }
+.ei-calendar2-check::before { content: map-get($ellevate-icons-map, "calendar2-check"); }
+.ei-calendar2-date-fill::before { content: map-get($ellevate-icons-map, "calendar2-date-fill"); }
+.ei-calendar2-date::before { content: map-get($ellevate-icons-map, "calendar2-date"); }
+.ei-calendar2-day-fill::before { content: map-get($ellevate-icons-map, "calendar2-day-fill"); }
+.ei-calendar2-day::before { content: map-get($ellevate-icons-map, "calendar2-day"); }
+.ei-calendar2-event-fill::before { content: map-get($ellevate-icons-map, "calendar2-event-fill"); }
+.ei-calendar2-event::before { content: map-get($ellevate-icons-map, "calendar2-event"); }
+.ei-calendar2-fill::before { content: map-get($ellevate-icons-map, "calendar2-fill"); }
+.ei-calendar2-minus-fill::before { content: map-get($ellevate-icons-map, "calendar2-minus-fill"); }
+.ei-calendar2-minus::before { content: map-get($ellevate-icons-map, "calendar2-minus"); }
+.ei-calendar2-month-fill::before { content: map-get($ellevate-icons-map, "calendar2-month-fill"); }
+.ei-calendar2-month::before { content: map-get($ellevate-icons-map, "calendar2-month"); }
+.ei-calendar2-plus-fill::before { content: map-get($ellevate-icons-map, "calendar2-plus-fill"); }
+.ei-calendar2-plus::before { content: map-get($ellevate-icons-map, "calendar2-plus"); }
+.ei-calendar2-range-fill::before { content: map-get($ellevate-icons-map, "calendar2-range-fill"); }
+.ei-calendar2-range::before { content: map-get($ellevate-icons-map, "calendar2-range"); }
+.ei-calendar2-week-fill::before { content: map-get($ellevate-icons-map, "calendar2-week-fill"); }
+.ei-calendar2-week::before { content: map-get($ellevate-icons-map, "calendar2-week"); }
+.ei-calendar2-x-fill::before { content: map-get($ellevate-icons-map, "calendar2-x-fill"); }
+.ei-calendar2-x::before { content: map-get($ellevate-icons-map, "calendar2-x"); }
+.ei-calendar2::before { content: map-get($ellevate-icons-map, "calendar2"); }
+.ei-calendar3-event-fill::before { content: map-get($ellevate-icons-map, "calendar3-event-fill"); }
+.ei-calendar3-event::before { content: map-get($ellevate-icons-map, "calendar3-event"); }
+.ei-calendar3-fill::before { content: map-get($ellevate-icons-map, "calendar3-fill"); }
+.ei-calendar3-range-fill::before { content: map-get($ellevate-icons-map, "calendar3-range-fill"); }
+.ei-calendar3-range::before { content: map-get($ellevate-icons-map, "calendar3-range"); }
+.ei-calendar3-week-fill::before { content: map-get($ellevate-icons-map, "calendar3-week-fill"); }
+.ei-calendar3-week::before { content: map-get($ellevate-icons-map, "calendar3-week"); }
+.ei-calendar3::before { content: map-get($ellevate-icons-map, "calendar3"); }
+.ei-calendar4-event::before { content: map-get($ellevate-icons-map, "calendar4-event"); }
+.ei-calendar4-range::before { content: map-get($ellevate-icons-map, "calendar4-range"); }
+.ei-calendar4-week::before { content: map-get($ellevate-icons-map, "calendar4-week"); }
+.ei-calendar4::before { content: map-get($ellevate-icons-map, "calendar4"); }
+.ei-camera-fill::before { content: map-get($ellevate-icons-map, "camera-fill"); }
+.ei-camera-reels-fill::before { content: map-get($ellevate-icons-map, "camera-reels-fill"); }
+.ei-camera-reels::before { content: map-get($ellevate-icons-map, "camera-reels"); }
+.ei-camera-video-fill::before { content: map-get($ellevate-icons-map, "camera-video-fill"); }
+.ei-camera-video-off-fill::before { content: map-get($ellevate-icons-map, "camera-video-off-fill"); }
+.ei-camera-video-off::before { content: map-get($ellevate-icons-map, "camera-video-off"); }
+.ei-camera-video::before { content: map-get($ellevate-icons-map, "camera-video"); }
+.ei-camera::before { content: map-get($ellevate-icons-map, "camera"); }
+.ei-camera2::before { content: map-get($ellevate-icons-map, "camera2"); }
+.ei-capslock-fill::before { content: map-get($ellevate-icons-map, "capslock-fill"); }
+.ei-capslock::before { content: map-get($ellevate-icons-map, "capslock"); }
+.ei-card-checklist::before { content: map-get($ellevate-icons-map, "card-checklist"); }
+.ei-card-heading::before { content: map-get($ellevate-icons-map, "card-heading"); }
+.ei-card-image::before { content: map-get($ellevate-icons-map, "card-image"); }
+.ei-card-list::before { content: map-get($ellevate-icons-map, "card-list"); }
+.ei-card-text::before { content: map-get($ellevate-icons-map, "card-text"); }
+.ei-caret-down-fill::before { content: map-get($ellevate-icons-map, "caret-down-fill"); }
+.ei-caret-down-square-fill::before { content: map-get($ellevate-icons-map, "caret-down-square-fill"); }
+.ei-caret-down-square::before { content: map-get($ellevate-icons-map, "caret-down-square"); }
+.ei-caret-down::before { content: map-get($ellevate-icons-map, "caret-down"); }
+.ei-caret-left-fill::before { content: map-get($ellevate-icons-map, "caret-left-fill"); }
+.ei-caret-left-square-fill::before { content: map-get($ellevate-icons-map, "caret-left-square-fill"); }
+.ei-caret-left-square::before { content: map-get($ellevate-icons-map, "caret-left-square"); }
+.ei-caret-left::before { content: map-get($ellevate-icons-map, "caret-left"); }
+.ei-caret-right-fill::before { content: map-get($ellevate-icons-map, "caret-right-fill"); }
+.ei-caret-right-square-fill::before { content: map-get($ellevate-icons-map, "caret-right-square-fill"); }
+.ei-caret-right-square::before { content: map-get($ellevate-icons-map, "caret-right-square"); }
+.ei-caret-right::before { content: map-get($ellevate-icons-map, "caret-right"); }
+.ei-caret-up-fill::before { content: map-get($ellevate-icons-map, "caret-up-fill"); }
+.ei-caret-up-square-fill::before { content: map-get($ellevate-icons-map, "caret-up-square-fill"); }
+.ei-caret-up-square::before { content: map-get($ellevate-icons-map, "caret-up-square"); }
+.ei-caret-up::before { content: map-get($ellevate-icons-map, "caret-up"); }
+.ei-cart-check-fill::before { content: map-get($ellevate-icons-map, "cart-check-fill"); }
+.ei-cart-check::before { content: map-get($ellevate-icons-map, "cart-check"); }
+.ei-cart-dash-fill::before { content: map-get($ellevate-icons-map, "cart-dash-fill"); }
+.ei-cart-dash::before { content: map-get($ellevate-icons-map, "cart-dash"); }
+.ei-cart-fill::before { content: map-get($ellevate-icons-map, "cart-fill"); }
+.ei-cart-plus-fill::before { content: map-get($ellevate-icons-map, "cart-plus-fill"); }
+.ei-cart-plus::before { content: map-get($ellevate-icons-map, "cart-plus"); }
+.ei-cart-x-fill::before { content: map-get($ellevate-icons-map, "cart-x-fill"); }
+.ei-cart-x::before { content: map-get($ellevate-icons-map, "cart-x"); }
+.ei-cart::before { content: map-get($ellevate-icons-map, "cart"); }
+.ei-cart2::before { content: map-get($ellevate-icons-map, "cart2"); }
+.ei-cart3::before { content: map-get($ellevate-icons-map, "cart3"); }
+.ei-cart4::before { content: map-get($ellevate-icons-map, "cart4"); }
+.ei-cash-stack::before { content: map-get($ellevate-icons-map, "cash-stack"); }
+.ei-cash::before { content: map-get($ellevate-icons-map, "cash"); }
+.ei-cast::before { content: map-get($ellevate-icons-map, "cast"); }
+.ei-chat-dots-fill::before { content: map-get($ellevate-icons-map, "chat-dots-fill"); }
+.ei-chat-dots::before { content: map-get($ellevate-icons-map, "chat-dots"); }
+.ei-chat-fill::before { content: map-get($ellevate-icons-map, "chat-fill"); }
+.ei-chat-left-dots-fill::before { content: map-get($ellevate-icons-map, "chat-left-dots-fill"); }
+.ei-chat-left-dots::before { content: map-get($ellevate-icons-map, "chat-left-dots"); }
+.ei-chat-left-fill::before { content: map-get($ellevate-icons-map, "chat-left-fill"); }
+.ei-chat-left-quote-fill::before { content: map-get($ellevate-icons-map, "chat-left-quote-fill"); }
+.ei-chat-left-quote::before { content: map-get($ellevate-icons-map, "chat-left-quote"); }
+.ei-chat-left-text-fill::before { content: map-get($ellevate-icons-map, "chat-left-text-fill"); }
+.ei-chat-left-text::before { content: map-get($ellevate-icons-map, "chat-left-text"); }
+.ei-chat-left::before { content: map-get($ellevate-icons-map, "chat-left"); }
+.ei-chat-quote-fill::before { content: map-get($ellevate-icons-map, "chat-quote-fill"); }
+.ei-chat-quote::before { content: map-get($ellevate-icons-map, "chat-quote"); }
+.ei-chat-right-dots-fill::before { content: map-get($ellevate-icons-map, "chat-right-dots-fill"); }
+.ei-chat-right-dots::before { content: map-get($ellevate-icons-map, "chat-right-dots"); }
+.ei-chat-right-fill::before { content: map-get($ellevate-icons-map, "chat-right-fill"); }
+.ei-chat-right-quote-fill::before { content: map-get($ellevate-icons-map, "chat-right-quote-fill"); }
+.ei-chat-right-quote::before { content: map-get($ellevate-icons-map, "chat-right-quote"); }
+.ei-chat-right-text-fill::before { content: map-get($ellevate-icons-map, "chat-right-text-fill"); }
+.ei-chat-right-text::before { content: map-get($ellevate-icons-map, "chat-right-text"); }
+.ei-chat-right::before { content: map-get($ellevate-icons-map, "chat-right"); }
+.ei-chat-square-dots-fill::before { content: map-get($ellevate-icons-map, "chat-square-dots-fill"); }
+.ei-chat-square-dots::before { content: map-get($ellevate-icons-map, "chat-square-dots"); }
+.ei-chat-square-fill::before { content: map-get($ellevate-icons-map, "chat-square-fill"); }
+.ei-chat-square-quote-fill::before { content: map-get($ellevate-icons-map, "chat-square-quote-fill"); }
+.ei-chat-square-quote::before { content: map-get($ellevate-icons-map, "chat-square-quote"); }
+.ei-chat-square-text-fill::before { content: map-get($ellevate-icons-map, "chat-square-text-fill"); }
+.ei-chat-square-text::before { content: map-get($ellevate-icons-map, "chat-square-text"); }
+.ei-chat-square::before { content: map-get($ellevate-icons-map, "chat-square"); }
+.ei-chat-text-fill::before { content: map-get($ellevate-icons-map, "chat-text-fill"); }
+.ei-chat-text::before { content: map-get($ellevate-icons-map, "chat-text"); }
+.ei-chat::before { content: map-get($ellevate-icons-map, "chat"); }
+.ei-check-all::before { content: map-get($ellevate-icons-map, "check-all"); }
+.ei-check-circle-fill::before { content: map-get($ellevate-icons-map, "check-circle-fill"); }
+.ei-check-circle::before { content: map-get($ellevate-icons-map, "check-circle"); }
+.ei-check-square-fill::before { content: map-get($ellevate-icons-map, "check-square-fill"); }
+.ei-check-square::before { content: map-get($ellevate-icons-map, "check-square"); }
+.ei-check::before { content: map-get($ellevate-icons-map, "check"); }
+.ei-check2-all::before { content: map-get($ellevate-icons-map, "check2-all"); }
+.ei-check2-circle::before { content: map-get($ellevate-icons-map, "check2-circle"); }
+.ei-check2-square::before { content: map-get($ellevate-icons-map, "check2-square"); }
+.ei-check2::before { content: map-get($ellevate-icons-map, "check2"); }
+.ei-chevron-bar-contract::before { content: map-get($ellevate-icons-map, "chevron-bar-contract"); }
+.ei-chevron-bar-down::before { content: map-get($ellevate-icons-map, "chevron-bar-down"); }
+.ei-chevron-bar-expand::before { content: map-get($ellevate-icons-map, "chevron-bar-expand"); }
+.ei-chevron-bar-left::before { content: map-get($ellevate-icons-map, "chevron-bar-left"); }
+.ei-chevron-bar-right::before { content: map-get($ellevate-icons-map, "chevron-bar-right"); }
+.ei-chevron-bar-up::before { content: map-get($ellevate-icons-map, "chevron-bar-up"); }
+.ei-chevron-compact-down::before { content: map-get($ellevate-icons-map, "chevron-compact-down"); }
+.ei-chevron-compact-left::before { content: map-get($ellevate-icons-map, "chevron-compact-left"); }
+.ei-chevron-compact-right::before { content: map-get($ellevate-icons-map, "chevron-compact-right"); }
+.ei-chevron-compact-up::before { content: map-get($ellevate-icons-map, "chevron-compact-up"); }
+.ei-chevron-contract::before { content: map-get($ellevate-icons-map, "chevron-contract"); }
+.ei-chevron-double-down::before { content: map-get($ellevate-icons-map, "chevron-double-down"); }
+.ei-chevron-double-left::before { content: map-get($ellevate-icons-map, "chevron-double-left"); }
+.ei-chevron-double-right::before { content: map-get($ellevate-icons-map, "chevron-double-right"); }
+.ei-chevron-double-up::before { content: map-get($ellevate-icons-map, "chevron-double-up"); }
+.ei-chevron-down::before { content: map-get($ellevate-icons-map, "chevron-down"); }
+.ei-chevron-expand::before { content: map-get($ellevate-icons-map, "chevron-expand"); }
+.ei-chevron-left::before { content: map-get($ellevate-icons-map, "chevron-left"); }
+.ei-chevron-right::before { content: map-get($ellevate-icons-map, "chevron-right"); }
+.ei-chevron-up::before { content: map-get($ellevate-icons-map, "chevron-up"); }
+.ei-circle-fill::before { content: map-get($ellevate-icons-map, "circle-fill"); }
+.ei-circle-half::before { content: map-get($ellevate-icons-map, "circle-half"); }
+.ei-circle-square::before { content: map-get($ellevate-icons-map, "circle-square"); }
+.ei-circle::before { content: map-get($ellevate-icons-map, "circle"); }
+.ei-clipboard-check::before { content: map-get($ellevate-icons-map, "clipboard-check"); }
+.ei-clipboard-data::before { content: map-get($ellevate-icons-map, "clipboard-data"); }
+.ei-clipboard-minus::before { content: map-get($ellevate-icons-map, "clipboard-minus"); }
+.ei-clipboard-plus::before { content: map-get($ellevate-icons-map, "clipboard-plus"); }
+.ei-clipboard-x::before { content: map-get($ellevate-icons-map, "clipboard-x"); }
+.ei-clipboard::before { content: map-get($ellevate-icons-map, "clipboard"); }
+.ei-clock-fill::before { content: map-get($ellevate-icons-map, "clock-fill"); }
+.ei-clock-history::before { content: map-get($ellevate-icons-map, "clock-history"); }
+.ei-clock::before { content: map-get($ellevate-icons-map, "clock"); }
+.ei-cloud-arrow-down-fill::before { content: map-get($ellevate-icons-map, "cloud-arrow-down-fill"); }
+.ei-cloud-arrow-down::before { content: map-get($ellevate-icons-map, "cloud-arrow-down"); }
+.ei-cloud-arrow-up-fill::before { content: map-get($ellevate-icons-map, "cloud-arrow-up-fill"); }
+.ei-cloud-arrow-up::before { content: map-get($ellevate-icons-map, "cloud-arrow-up"); }
+.ei-cloud-check-fill::before { content: map-get($ellevate-icons-map, "cloud-check-fill"); }
+.ei-cloud-check::before { content: map-get($ellevate-icons-map, "cloud-check"); }
+.ei-cloud-download-fill::before { content: map-get($ellevate-icons-map, "cloud-download-fill"); }
+.ei-cloud-download::before { content: map-get($ellevate-icons-map, "cloud-download"); }
+.ei-cloud-drizzle-fill::before { content: map-get($ellevate-icons-map, "cloud-drizzle-fill"); }
+.ei-cloud-drizzle::before { content: map-get($ellevate-icons-map, "cloud-drizzle"); }
+.ei-cloud-fill::before { content: map-get($ellevate-icons-map, "cloud-fill"); }
+.ei-cloud-fog-fill::before { content: map-get($ellevate-icons-map, "cloud-fog-fill"); }
+.ei-cloud-fog::before { content: map-get($ellevate-icons-map, "cloud-fog"); }
+.ei-cloud-fog2-fill::before { content: map-get($ellevate-icons-map, "cloud-fog2-fill"); }
+.ei-cloud-fog2::before { content: map-get($ellevate-icons-map, "cloud-fog2"); }
+.ei-cloud-hail-fill::before { content: map-get($ellevate-icons-map, "cloud-hail-fill"); }
+.ei-cloud-hail::before { content: map-get($ellevate-icons-map, "cloud-hail"); }
+.ei-cloud-haze-1::before { content: map-get($ellevate-icons-map, "cloud-haze-1"); }
+.ei-cloud-haze-fill::before { content: map-get($ellevate-icons-map, "cloud-haze-fill"); }
+.ei-cloud-haze::before { content: map-get($ellevate-icons-map, "cloud-haze"); }
+.ei-cloud-haze2-fill::before { content: map-get($ellevate-icons-map, "cloud-haze2-fill"); }
+.ei-cloud-lightning-fill::before { content: map-get($ellevate-icons-map, "cloud-lightning-fill"); }
+.ei-cloud-lightning-rain-fill::before { content: map-get($ellevate-icons-map, "cloud-lightning-rain-fill"); }
+.ei-cloud-lightning-rain::before { content: map-get($ellevate-icons-map, "cloud-lightning-rain"); }
+.ei-cloud-lightning::before { content: map-get($ellevate-icons-map, "cloud-lightning"); }
+.ei-cloud-minus-fill::before { content: map-get($ellevate-icons-map, "cloud-minus-fill"); }
+.ei-cloud-minus::before { content: map-get($ellevate-icons-map, "cloud-minus"); }
+.ei-cloud-moon-fill::before { content: map-get($ellevate-icons-map, "cloud-moon-fill"); }
+.ei-cloud-moon::before { content: map-get($ellevate-icons-map, "cloud-moon"); }
+.ei-cloud-plus-fill::before { content: map-get($ellevate-icons-map, "cloud-plus-fill"); }
+.ei-cloud-plus::before { content: map-get($ellevate-icons-map, "cloud-plus"); }
+.ei-cloud-rain-fill::before { content: map-get($ellevate-icons-map, "cloud-rain-fill"); }
+.ei-cloud-rain-heavy-fill::before { content: map-get($ellevate-icons-map, "cloud-rain-heavy-fill"); }
+.ei-cloud-rain-heavy::before { content: map-get($ellevate-icons-map, "cloud-rain-heavy"); }
+.ei-cloud-rain::before { content: map-get($ellevate-icons-map, "cloud-rain"); }
+.ei-cloud-slash-fill::before { content: map-get($ellevate-icons-map, "cloud-slash-fill"); }
+.ei-cloud-slash::before { content: map-get($ellevate-icons-map, "cloud-slash"); }
+.ei-cloud-sleet-fill::before { content: map-get($ellevate-icons-map, "cloud-sleet-fill"); }
+.ei-cloud-sleet::before { content: map-get($ellevate-icons-map, "cloud-sleet"); }
+.ei-cloud-snow-fill::before { content: map-get($ellevate-icons-map, "cloud-snow-fill"); }
+.ei-cloud-snow::before { content: map-get($ellevate-icons-map, "cloud-snow"); }
+.ei-cloud-sun-fill::before { content: map-get($ellevate-icons-map, "cloud-sun-fill"); }
+.ei-cloud-sun::before { content: map-get($ellevate-icons-map, "cloud-sun"); }
+.ei-cloud-upload-fill::before { content: map-get($ellevate-icons-map, "cloud-upload-fill"); }
+.ei-cloud-upload::before { content: map-get($ellevate-icons-map, "cloud-upload"); }
+.ei-cloud::before { content: map-get($ellevate-icons-map, "cloud"); }
+.ei-clouds-fill::before { content: map-get($ellevate-icons-map, "clouds-fill"); }
+.ei-clouds::before { content: map-get($ellevate-icons-map, "clouds"); }
+.ei-cloudy-fill::before { content: map-get($ellevate-icons-map, "cloudy-fill"); }
+.ei-cloudy::before { content: map-get($ellevate-icons-map, "cloudy"); }
+.ei-code-slash::before { content: map-get($ellevate-icons-map, "code-slash"); }
+.ei-code-square::before { content: map-get($ellevate-icons-map, "code-square"); }
+.ei-code::before { content: map-get($ellevate-icons-map, "code"); }
+.ei-collection-fill::before { content: map-get($ellevate-icons-map, "collection-fill"); }
+.ei-collection-play-fill::before { content: map-get($ellevate-icons-map, "collection-play-fill"); }
+.ei-collection-play::before { content: map-get($ellevate-icons-map, "collection-play"); }
+.ei-collection::before { content: map-get($ellevate-icons-map, "collection"); }
+.ei-columns-gap::before { content: map-get($ellevate-icons-map, "columns-gap"); }
+.ei-columns::before { content: map-get($ellevate-icons-map, "columns"); }
+.ei-command::before { content: map-get($ellevate-icons-map, "command"); }
+.ei-compass-fill::before { content: map-get($ellevate-icons-map, "compass-fill"); }
+.ei-compass::before { content: map-get($ellevate-icons-map, "compass"); }
+.ei-cone-striped::before { content: map-get($ellevate-icons-map, "cone-striped"); }
+.ei-cone::before { content: map-get($ellevate-icons-map, "cone"); }
+.ei-controller::before { content: map-get($ellevate-icons-map, "controller"); }
+.ei-cpu-fill::before { content: map-get($ellevate-icons-map, "cpu-fill"); }
+.ei-cpu::before { content: map-get($ellevate-icons-map, "cpu"); }
+.ei-credit-card-2-back-fill::before { content: map-get($ellevate-icons-map, "credit-card-2-back-fill"); }
+.ei-credit-card-2-back::before { content: map-get($ellevate-icons-map, "credit-card-2-back"); }
+.ei-credit-card-2-front-fill::before { content: map-get($ellevate-icons-map, "credit-card-2-front-fill"); }
+.ei-credit-card-2-front::before { content: map-get($ellevate-icons-map, "credit-card-2-front"); }
+.ei-credit-card-fill::before { content: map-get($ellevate-icons-map, "credit-card-fill"); }
+.ei-credit-card::before { content: map-get($ellevate-icons-map, "credit-card"); }
+.ei-crop::before { content: map-get($ellevate-icons-map, "crop"); }
+.ei-cup-fill::before { content: map-get($ellevate-icons-map, "cup-fill"); }
+.ei-cup-straw::before { content: map-get($ellevate-icons-map, "cup-straw"); }
+.ei-cup::before { content: map-get($ellevate-icons-map, "cup"); }
+.ei-cursor-fill::before { content: map-get($ellevate-icons-map, "cursor-fill"); }
+.ei-cursor-text::before { content: map-get($ellevate-icons-map, "cursor-text"); }
+.ei-cursor::before { content: map-get($ellevate-icons-map, "cursor"); }
+.ei-dash-circle-dotted::before { content: map-get($ellevate-icons-map, "dash-circle-dotted"); }
+.ei-dash-circle-fill::before { content: map-get($ellevate-icons-map, "dash-circle-fill"); }
+.ei-dash-circle::before { content: map-get($ellevate-icons-map, "dash-circle"); }
+.ei-dash-square-dotted::before { content: map-get($ellevate-icons-map, "dash-square-dotted"); }
+.ei-dash-square-fill::before { content: map-get($ellevate-icons-map, "dash-square-fill"); }
+.ei-dash-square::before { content: map-get($ellevate-icons-map, "dash-square"); }
+.ei-dash::before { content: map-get($ellevate-icons-map, "dash"); }
+.ei-diagram-2-fill::before { content: map-get($ellevate-icons-map, "diagram-2-fill"); }
+.ei-diagram-2::before { content: map-get($ellevate-icons-map, "diagram-2"); }
+.ei-diagram-3-fill::before { content: map-get($ellevate-icons-map, "diagram-3-fill"); }
+.ei-diagram-3::before { content: map-get($ellevate-icons-map, "diagram-3"); }
+.ei-diamond-fill::before { content: map-get($ellevate-icons-map, "diamond-fill"); }
+.ei-diamond-half::before { content: map-get($ellevate-icons-map, "diamond-half"); }
+.ei-diamond::before { content: map-get($ellevate-icons-map, "diamond"); }
+.ei-dice-1-fill::before { content: map-get($ellevate-icons-map, "dice-1-fill"); }
+.ei-dice-1::before { content: map-get($ellevate-icons-map, "dice-1"); }
+.ei-dice-2-fill::before { content: map-get($ellevate-icons-map, "dice-2-fill"); }
+.ei-dice-2::before { content: map-get($ellevate-icons-map, "dice-2"); }
+.ei-dice-3-fill::before { content: map-get($ellevate-icons-map, "dice-3-fill"); }
+.ei-dice-3::before { content: map-get($ellevate-icons-map, "dice-3"); }
+.ei-dice-4-fill::before { content: map-get($ellevate-icons-map, "dice-4-fill"); }
+.ei-dice-4::before { content: map-get($ellevate-icons-map, "dice-4"); }
+.ei-dice-5-fill::before { content: map-get($ellevate-icons-map, "dice-5-fill"); }
+.ei-dice-5::before { content: map-get($ellevate-icons-map, "dice-5"); }
+.ei-dice-6-fill::before { content: map-get($ellevate-icons-map, "dice-6-fill"); }
+.ei-dice-6::before { content: map-get($ellevate-icons-map, "dice-6"); }
+.ei-disc-fill::before { content: map-get($ellevate-icons-map, "disc-fill"); }
+.ei-disc::before { content: map-get($ellevate-icons-map, "disc"); }
+.ei-discord::before { content: map-get($ellevate-icons-map, "discord"); }
+.ei-display-fill::before { content: map-get($ellevate-icons-map, "display-fill"); }
+.ei-display::before { content: map-get($ellevate-icons-map, "display"); }
+.ei-distribute-horizontal::before { content: map-get($ellevate-icons-map, "distribute-horizontal"); }
+.ei-distribute-vertical::before { content: map-get($ellevate-icons-map, "distribute-vertical"); }
+.ei-door-closed-fill::before { content: map-get($ellevate-icons-map, "door-closed-fill"); }
+.ei-door-closed::before { content: map-get($ellevate-icons-map, "door-closed"); }
+.ei-door-open-fill::before { content: map-get($ellevate-icons-map, "door-open-fill"); }
+.ei-door-open::before { content: map-get($ellevate-icons-map, "door-open"); }
+.ei-dot::before { content: map-get($ellevate-icons-map, "dot"); }
+.ei-download::before { content: map-get($ellevate-icons-map, "download"); }
+.ei-droplet-fill::before { content: map-get($ellevate-icons-map, "droplet-fill"); }
+.ei-droplet-half::before { content: map-get($ellevate-icons-map, "droplet-half"); }
+.ei-droplet::before { content: map-get($ellevate-icons-map, "droplet"); }
+.ei-earbuds::before { content: map-get($ellevate-icons-map, "earbuds"); }
+.ei-easel-fill::before { content: map-get($ellevate-icons-map, "easel-fill"); }
+.ei-easel::before { content: map-get($ellevate-icons-map, "easel"); }
+.ei-egg-fill::before { content: map-get($ellevate-icons-map, "egg-fill"); }
+.ei-egg-fried::before { content: map-get($ellevate-icons-map, "egg-fried"); }
+.ei-egg::before { content: map-get($ellevate-icons-map, "egg"); }
+.ei-eject-fill::before { content: map-get($ellevate-icons-map, "eject-fill"); }
+.ei-eject::before { content: map-get($ellevate-icons-map, "eject"); }
+.ei-emoji-angry-fill::before { content: map-get($ellevate-icons-map, "emoji-angry-fill"); }
+.ei-emoji-angry::before { content: map-get($ellevate-icons-map, "emoji-angry"); }
+.ei-emoji-dizzy-fill::before { content: map-get($ellevate-icons-map, "emoji-dizzy-fill"); }
+.ei-emoji-dizzy::before { content: map-get($ellevate-icons-map, "emoji-dizzy"); }
+.ei-emoji-expressionless-fill::before { content: map-get($ellevate-icons-map, "emoji-expressionless-fill"); }
+.ei-emoji-expressionless::before { content: map-get($ellevate-icons-map, "emoji-expressionless"); }
+.ei-emoji-frown-fill::before { content: map-get($ellevate-icons-map, "emoji-frown-fill"); }
+.ei-emoji-frown::before { content: map-get($ellevate-icons-map, "emoji-frown"); }
+.ei-emoji-heart-eyes-fill::before { content: map-get($ellevate-icons-map, "emoji-heart-eyes-fill"); }
+.ei-emoji-heart-eyes::before { content: map-get($ellevate-icons-map, "emoji-heart-eyes"); }
+.ei-emoji-laughing-fill::before { content: map-get($ellevate-icons-map, "emoji-laughing-fill"); }
+.ei-emoji-laughing::before { content: map-get($ellevate-icons-map, "emoji-laughing"); }
+.ei-emoji-neutral-fill::before { content: map-get($ellevate-icons-map, "emoji-neutral-fill"); }
+.ei-emoji-neutral::before { content: map-get($ellevate-icons-map, "emoji-neutral"); }
+.ei-emoji-smile-fill::before { content: map-get($ellevate-icons-map, "emoji-smile-fill"); }
+.ei-emoji-smile-upside-down-fill::before { content: map-get($ellevate-icons-map, "emoji-smile-upside-down-fill"); }
+.ei-emoji-smile-upside-down::before { content: map-get($ellevate-icons-map, "emoji-smile-upside-down"); }
+.ei-emoji-smile::before { content: map-get($ellevate-icons-map, "emoji-smile"); }
+.ei-emoji-sunglasses-fill::before { content: map-get($ellevate-icons-map, "emoji-sunglasses-fill"); }
+.ei-emoji-sunglasses::before { content: map-get($ellevate-icons-map, "emoji-sunglasses"); }
+.ei-emoji-wink-fill::before { content: map-get($ellevate-icons-map, "emoji-wink-fill"); }
+.ei-emoji-wink::before { content: map-get($ellevate-icons-map, "emoji-wink"); }
+.ei-envelope-fill::before { content: map-get($ellevate-icons-map, "envelope-fill"); }
+.ei-envelope-open-fill::before { content: map-get($ellevate-icons-map, "envelope-open-fill"); }
+.ei-envelope-open::before { content: map-get($ellevate-icons-map, "envelope-open"); }
+.ei-envelope::before { content: map-get($ellevate-icons-map, "envelope"); }
+.ei-eraser-fill::before { content: map-get($ellevate-icons-map, "eraser-fill"); }
+.ei-eraser::before { content: map-get($ellevate-icons-map, "eraser"); }
+.ei-exclamation-circle-fill::before { content: map-get($ellevate-icons-map, "exclamation-circle-fill"); }
+.ei-exclamation-circle::before { content: map-get($ellevate-icons-map, "exclamation-circle"); }
+.ei-exclamation-diamond-fill::before { content: map-get($ellevate-icons-map, "exclamation-diamond-fill"); }
+.ei-exclamation-diamond::before { content: map-get($ellevate-icons-map, "exclamation-diamond"); }
+.ei-exclamation-octagon-fill::before { content: map-get($ellevate-icons-map, "exclamation-octagon-fill"); }
+.ei-exclamation-octagon::before { content: map-get($ellevate-icons-map, "exclamation-octagon"); }
+.ei-exclamation-square-fill::before { content: map-get($ellevate-icons-map, "exclamation-square-fill"); }
+.ei-exclamation-square::before { content: map-get($ellevate-icons-map, "exclamation-square"); }
+.ei-exclamation-triangle-fill::before { content: map-get($ellevate-icons-map, "exclamation-triangle-fill"); }
+.ei-exclamation-triangle::before { content: map-get($ellevate-icons-map, "exclamation-triangle"); }
+.ei-exclamation::before { content: map-get($ellevate-icons-map, "exclamation"); }
+.ei-exclude::before { content: map-get($ellevate-icons-map, "exclude"); }
+.ei-eye-fill::before { content: map-get($ellevate-icons-map, "eye-fill"); }
+.ei-eye-slash-fill::before { content: map-get($ellevate-icons-map, "eye-slash-fill"); }
+.ei-eye-slash::before { content: map-get($ellevate-icons-map, "eye-slash"); }
+.ei-eye::before { content: map-get($ellevate-icons-map, "eye"); }
+.ei-eyedropper::before { content: map-get($ellevate-icons-map, "eyedropper"); }
+.ei-eyeglasses::before { content: map-get($ellevate-icons-map, "eyeglasses"); }
+.ei-facebook::before { content: map-get($ellevate-icons-map, "facebook"); }
+.ei-file-arrow-down-fill::before { content: map-get($ellevate-icons-map, "file-arrow-down-fill"); }
+.ei-file-arrow-down::before { content: map-get($ellevate-icons-map, "file-arrow-down"); }
+.ei-file-arrow-up-fill::before { content: map-get($ellevate-icons-map, "file-arrow-up-fill"); }
+.ei-file-arrow-up::before { content: map-get($ellevate-icons-map, "file-arrow-up"); }
+.ei-file-bar-graph-fill::before { content: map-get($ellevate-icons-map, "file-bar-graph-fill"); }
+.ei-file-bar-graph::before { content: map-get($ellevate-icons-map, "file-bar-graph"); }
+.ei-file-binary-fill::before { content: map-get($ellevate-icons-map, "file-binary-fill"); }
+.ei-file-binary::before { content: map-get($ellevate-icons-map, "file-binary"); }
+.ei-file-break-fill::before { content: map-get($ellevate-icons-map, "file-break-fill"); }
+.ei-file-break::before { content: map-get($ellevate-icons-map, "file-break"); }
+.ei-file-check-fill::before { content: map-get($ellevate-icons-map, "file-check-fill"); }
+.ei-file-check::before { content: map-get($ellevate-icons-map, "file-check"); }
+.ei-file-code-fill::before { content: map-get($ellevate-icons-map, "file-code-fill"); }
+.ei-file-code::before { content: map-get($ellevate-icons-map, "file-code"); }
+.ei-file-diff-fill::before { content: map-get($ellevate-icons-map, "file-diff-fill"); }
+.ei-file-diff::before { content: map-get($ellevate-icons-map, "file-diff"); }
+.ei-file-earmark-arrow-down-fill::before { content: map-get($ellevate-icons-map, "file-earmark-arrow-down-fill"); }
+.ei-file-earmark-arrow-down::before { content: map-get($ellevate-icons-map, "file-earmark-arrow-down"); }
+.ei-file-earmark-arrow-up-fill::before { content: map-get($ellevate-icons-map, "file-earmark-arrow-up-fill"); }
+.ei-file-earmark-arrow-up::before { content: map-get($ellevate-icons-map, "file-earmark-arrow-up"); }
+.ei-file-earmark-bar-graph-fill::before { content: map-get($ellevate-icons-map, "file-earmark-bar-graph-fill"); }
+.ei-file-earmark-bar-graph::before { content: map-get($ellevate-icons-map, "file-earmark-bar-graph"); }
+.ei-file-earmark-binary-fill::before { content: map-get($ellevate-icons-map, "file-earmark-binary-fill"); }
+.ei-file-earmark-binary::before { content: map-get($ellevate-icons-map, "file-earmark-binary"); }
+.ei-file-earmark-break-fill::before { content: map-get($ellevate-icons-map, "file-earmark-break-fill"); }
+.ei-file-earmark-break::before { content: map-get($ellevate-icons-map, "file-earmark-break"); }
+.ei-file-earmark-check-fill::before { content: map-get($ellevate-icons-map, "file-earmark-check-fill"); }
+.ei-file-earmark-check::before { content: map-get($ellevate-icons-map, "file-earmark-check"); }
+.ei-file-earmark-code-fill::before { content: map-get($ellevate-icons-map, "file-earmark-code-fill"); }
+.ei-file-earmark-code::before { content: map-get($ellevate-icons-map, "file-earmark-code"); }
+.ei-file-earmark-diff-fill::before { content: map-get($ellevate-icons-map, "file-earmark-diff-fill"); }
+.ei-file-earmark-diff::before { content: map-get($ellevate-icons-map, "file-earmark-diff"); }
+.ei-file-earmark-easel-fill::before { content: map-get($ellevate-icons-map, "file-earmark-easel-fill"); }
+.ei-file-earmark-easel::before { content: map-get($ellevate-icons-map, "file-earmark-easel"); }
+.ei-file-earmark-excel-fill::before { content: map-get($ellevate-icons-map, "file-earmark-excel-fill"); }
+.ei-file-earmark-excel::before { content: map-get($ellevate-icons-map, "file-earmark-excel"); }
+.ei-file-earmark-fill::before { content: map-get($ellevate-icons-map, "file-earmark-fill"); }
+.ei-file-earmark-font-fill::before { content: map-get($ellevate-icons-map, "file-earmark-font-fill"); }
+.ei-file-earmark-font::before { content: map-get($ellevate-icons-map, "file-earmark-font"); }
+.ei-file-earmark-image-fill::before { content: map-get($ellevate-icons-map, "file-earmark-image-fill"); }
+.ei-file-earmark-image::before { content: map-get($ellevate-icons-map, "file-earmark-image"); }
+.ei-file-earmark-lock-fill::before { content: map-get($ellevate-icons-map, "file-earmark-lock-fill"); }
+.ei-file-earmark-lock::before { content: map-get($ellevate-icons-map, "file-earmark-lock"); }
+.ei-file-earmark-lock2-fill::before { content: map-get($ellevate-icons-map, "file-earmark-lock2-fill"); }
+.ei-file-earmark-lock2::before { content: map-get($ellevate-icons-map, "file-earmark-lock2"); }
+.ei-file-earmark-medical-fill::before { content: map-get($ellevate-icons-map, "file-earmark-medical-fill"); }
+.ei-file-earmark-medical::before { content: map-get($ellevate-icons-map, "file-earmark-medical"); }
+.ei-file-earmark-minus-fill::before { content: map-get($ellevate-icons-map, "file-earmark-minus-fill"); }
+.ei-file-earmark-minus::before { content: map-get($ellevate-icons-map, "file-earmark-minus"); }
+.ei-file-earmark-music-fill::before { content: map-get($ellevate-icons-map, "file-earmark-music-fill"); }
+.ei-file-earmark-music::before { content: map-get($ellevate-icons-map, "file-earmark-music"); }
+.ei-file-earmark-person-fill::before { content: map-get($ellevate-icons-map, "file-earmark-person-fill"); }
+.ei-file-earmark-person::before { content: map-get($ellevate-icons-map, "file-earmark-person"); }
+.ei-file-earmark-play-fill::before { content: map-get($ellevate-icons-map, "file-earmark-play-fill"); }
+.ei-file-earmark-play::before { content: map-get($ellevate-icons-map, "file-earmark-play"); }
+.ei-file-earmark-plus-fill::before { content: map-get($ellevate-icons-map, "file-earmark-plus-fill"); }
+.ei-file-earmark-plus::before { content: map-get($ellevate-icons-map, "file-earmark-plus"); }
+.ei-file-earmark-post-fill::before { content: map-get($ellevate-icons-map, "file-earmark-post-fill"); }
+.ei-file-earmark-post::before { content: map-get($ellevate-icons-map, "file-earmark-post"); }
+.ei-file-earmark-ppt-fill::before { content: map-get($ellevate-icons-map, "file-earmark-ppt-fill"); }
+.ei-file-earmark-ppt::before { content: map-get($ellevate-icons-map, "file-earmark-ppt"); }
+.ei-file-earmark-richtext-fill::before { content: map-get($ellevate-icons-map, "file-earmark-richtext-fill"); }
+.ei-file-earmark-richtext::before { content: map-get($ellevate-icons-map, "file-earmark-richtext"); }
+.ei-file-earmark-ruled-fill::before { content: map-get($ellevate-icons-map, "file-earmark-ruled-fill"); }
+.ei-file-earmark-ruled::before { content: map-get($ellevate-icons-map, "file-earmark-ruled"); }
+.ei-file-earmark-slides-fill::before { content: map-get($ellevate-icons-map, "file-earmark-slides-fill"); }
+.ei-file-earmark-slides::before { content: map-get($ellevate-icons-map, "file-earmark-slides"); }
+.ei-file-earmark-spreadsheet-fill::before { content: map-get($ellevate-icons-map, "file-earmark-spreadsheet-fill"); }
+.ei-file-earmark-spreadsheet::before { content: map-get($ellevate-icons-map, "file-earmark-spreadsheet"); }
+.ei-file-earmark-text-fill::before { content: map-get($ellevate-icons-map, "file-earmark-text-fill"); }
+.ei-file-earmark-text::before { content: map-get($ellevate-icons-map, "file-earmark-text"); }
+.ei-file-earmark-word-fill::before { content: map-get($ellevate-icons-map, "file-earmark-word-fill"); }
+.ei-file-earmark-word::before { content: map-get($ellevate-icons-map, "file-earmark-word"); }
+.ei-file-earmark-x-fill::before { content: map-get($ellevate-icons-map, "file-earmark-x-fill"); }
+.ei-file-earmark-x::before { content: map-get($ellevate-icons-map, "file-earmark-x"); }
+.ei-file-earmark-zip-fill::before { content: map-get($ellevate-icons-map, "file-earmark-zip-fill"); }
+.ei-file-earmark-zip::before { content: map-get($ellevate-icons-map, "file-earmark-zip"); }
+.ei-file-earmark::before { content: map-get($ellevate-icons-map, "file-earmark"); }
+.ei-file-easel-fill::before { content: map-get($ellevate-icons-map, "file-easel-fill"); }
+.ei-file-easel::before { content: map-get($ellevate-icons-map, "file-easel"); }
+.ei-file-excel-fill::before { content: map-get($ellevate-icons-map, "file-excel-fill"); }
+.ei-file-excel::before { content: map-get($ellevate-icons-map, "file-excel"); }
+.ei-file-fill::before { content: map-get($ellevate-icons-map, "file-fill"); }
+.ei-file-font-fill::before { content: map-get($ellevate-icons-map, "file-font-fill"); }
+.ei-file-font::before { content: map-get($ellevate-icons-map, "file-font"); }
+.ei-file-image-fill::before { content: map-get($ellevate-icons-map, "file-image-fill"); }
+.ei-file-image::before { content: map-get($ellevate-icons-map, "file-image"); }
+.ei-file-lock-fill::before { content: map-get($ellevate-icons-map, "file-lock-fill"); }
+.ei-file-lock::before { content: map-get($ellevate-icons-map, "file-lock"); }
+.ei-file-lock2-fill::before { content: map-get($ellevate-icons-map, "file-lock2-fill"); }
+.ei-file-lock2::before { content: map-get($ellevate-icons-map, "file-lock2"); }
+.ei-file-medical-fill::before { content: map-get($ellevate-icons-map, "file-medical-fill"); }
+.ei-file-medical::before { content: map-get($ellevate-icons-map, "file-medical"); }
+.ei-file-minus-fill::before { content: map-get($ellevate-icons-map, "file-minus-fill"); }
+.ei-file-minus::before { content: map-get($ellevate-icons-map, "file-minus"); }
+.ei-file-music-fill::before { content: map-get($ellevate-icons-map, "file-music-fill"); }
+.ei-file-music::before { content: map-get($ellevate-icons-map, "file-music"); }
+.ei-file-person-fill::before { content: map-get($ellevate-icons-map, "file-person-fill"); }
+.ei-file-person::before { content: map-get($ellevate-icons-map, "file-person"); }
+.ei-file-play-fill::before { content: map-get($ellevate-icons-map, "file-play-fill"); }
+.ei-file-play::before { content: map-get($ellevate-icons-map, "file-play"); }
+.ei-file-plus-fill::before { content: map-get($ellevate-icons-map, "file-plus-fill"); }
+.ei-file-plus::before { content: map-get($ellevate-icons-map, "file-plus"); }
+.ei-file-post-fill::before { content: map-get($ellevate-icons-map, "file-post-fill"); }
+.ei-file-post::before { content: map-get($ellevate-icons-map, "file-post"); }
+.ei-file-ppt-fill::before { content: map-get($ellevate-icons-map, "file-ppt-fill"); }
+.ei-file-ppt::before { content: map-get($ellevate-icons-map, "file-ppt"); }
+.ei-file-richtext-fill::before { content: map-get($ellevate-icons-map, "file-richtext-fill"); }
+.ei-file-richtext::before { content: map-get($ellevate-icons-map, "file-richtext"); }
+.ei-file-ruled-fill::before { content: map-get($ellevate-icons-map, "file-ruled-fill"); }
+.ei-file-ruled::before { content: map-get($ellevate-icons-map, "file-ruled"); }
+.ei-file-slides-fill::before { content: map-get($ellevate-icons-map, "file-slides-fill"); }
+.ei-file-slides::before { content: map-get($ellevate-icons-map, "file-slides"); }
+.ei-file-spreadsheet-fill::before { content: map-get($ellevate-icons-map, "file-spreadsheet-fill"); }
+.ei-file-spreadsheet::before { content: map-get($ellevate-icons-map, "file-spreadsheet"); }
+.ei-file-text-fill::before { content: map-get($ellevate-icons-map, "file-text-fill"); }
+.ei-file-text::before { content: map-get($ellevate-icons-map, "file-text"); }
+.ei-file-word-fill::before { content: map-get($ellevate-icons-map, "file-word-fill"); }
+.ei-file-word::before { content: map-get($ellevate-icons-map, "file-word"); }
+.ei-file-x-fill::before { content: map-get($ellevate-icons-map, "file-x-fill"); }
+.ei-file-x::before { content: map-get($ellevate-icons-map, "file-x"); }
+.ei-file-zip-fill::before { content: map-get($ellevate-icons-map, "file-zip-fill"); }
+.ei-file-zip::before { content: map-get($ellevate-icons-map, "file-zip"); }
+.ei-file::before { content: map-get($ellevate-icons-map, "file"); }
+.ei-files-alt::before { content: map-get($ellevate-icons-map, "files-alt"); }
+.ei-files::before { content: map-get($ellevate-icons-map, "files"); }
+.ei-film::before { content: map-get($ellevate-icons-map, "film"); }
+.ei-filter-circle-fill::before { content: map-get($ellevate-icons-map, "filter-circle-fill"); }
+.ei-filter-circle::before { content: map-get($ellevate-icons-map, "filter-circle"); }
+.ei-filter-left::before { content: map-get($ellevate-icons-map, "filter-left"); }
+.ei-filter-right::before { content: map-get($ellevate-icons-map, "filter-right"); }
+.ei-filter-square-fill::before { content: map-get($ellevate-icons-map, "filter-square-fill"); }
+.ei-filter-square::before { content: map-get($ellevate-icons-map, "filter-square"); }
+.ei-filter::before { content: map-get($ellevate-icons-map, "filter"); }
+.ei-flag-fill::before { content: map-get($ellevate-icons-map, "flag-fill"); }
+.ei-flag::before { content: map-get($ellevate-icons-map, "flag"); }
+.ei-flower1::before { content: map-get($ellevate-icons-map, "flower1"); }
+.ei-flower2::before { content: map-get($ellevate-icons-map, "flower2"); }
+.ei-flower3::before { content: map-get($ellevate-icons-map, "flower3"); }
+.ei-folder-check::before { content: map-get($ellevate-icons-map, "folder-check"); }
+.ei-folder-fill::before { content: map-get($ellevate-icons-map, "folder-fill"); }
+.ei-folder-minus::before { content: map-get($ellevate-icons-map, "folder-minus"); }
+.ei-folder-plus::before { content: map-get($ellevate-icons-map, "folder-plus"); }
+.ei-folder-symlink-fill::before { content: map-get($ellevate-icons-map, "folder-symlink-fill"); }
+.ei-folder-symlink::before { content: map-get($ellevate-icons-map, "folder-symlink"); }
+.ei-folder-x::before { content: map-get($ellevate-icons-map, "folder-x"); }
+.ei-folder::before { content: map-get($ellevate-icons-map, "folder"); }
+.ei-folder2-open::before { content: map-get($ellevate-icons-map, "folder2-open"); }
+.ei-folder2::before { content: map-get($ellevate-icons-map, "folder2"); }
+.ei-fonts::before { content: map-get($ellevate-icons-map, "fonts"); }
+.ei-forward-fill::before { content: map-get($ellevate-icons-map, "forward-fill"); }
+.ei-forward::before { content: map-get($ellevate-icons-map, "forward"); }
+.ei-front::before { content: map-get($ellevate-icons-map, "front"); }
+.ei-fullscreen-exit::before { content: map-get($ellevate-icons-map, "fullscreen-exit"); }
+.ei-fullscreen::before { content: map-get($ellevate-icons-map, "fullscreen"); }
+.ei-funnel-fill::before { content: map-get($ellevate-icons-map, "funnel-fill"); }
+.ei-funnel::before { content: map-get($ellevate-icons-map, "funnel"); }
+.ei-gear-fill::before { content: map-get($ellevate-icons-map, "gear-fill"); }
+.ei-gear-wide-connected::before { content: map-get($ellevate-icons-map, "gear-wide-connected"); }
+.ei-gear-wide::before { content: map-get($ellevate-icons-map, "gear-wide"); }
+.ei-gear::before { content: map-get($ellevate-icons-map, "gear"); }
+.ei-gem::before { content: map-get($ellevate-icons-map, "gem"); }
+.ei-geo-alt-fill::before { content: map-get($ellevate-icons-map, "geo-alt-fill"); }
+.ei-geo-alt::before { content: map-get($ellevate-icons-map, "geo-alt"); }
+.ei-geo-fill::before { content: map-get($ellevate-icons-map, "geo-fill"); }
+.ei-geo::before { content: map-get($ellevate-icons-map, "geo"); }
+.ei-gift-fill::before { content: map-get($ellevate-icons-map, "gift-fill"); }
+.ei-gift::before { content: map-get($ellevate-icons-map, "gift"); }
+.ei-github::before { content: map-get($ellevate-icons-map, "github"); }
+.ei-globe::before { content: map-get($ellevate-icons-map, "globe"); }
+.ei-globe2::before { content: map-get($ellevate-icons-map, "globe2"); }
+.ei-google::before { content: map-get($ellevate-icons-map, "google"); }
+.ei-graph-down::before { content: map-get($ellevate-icons-map, "graph-down"); }
+.ei-graph-up::before { content: map-get($ellevate-icons-map, "graph-up"); }
+.ei-grid-1x2-fill::before { content: map-get($ellevate-icons-map, "grid-1x2-fill"); }
+.ei-grid-1x2::before { content: map-get($ellevate-icons-map, "grid-1x2"); }
+.ei-grid-3x2-gap-fill::before { content: map-get($ellevate-icons-map, "grid-3x2-gap-fill"); }
+.ei-grid-3x2-gap::before { content: map-get($ellevate-icons-map, "grid-3x2-gap"); }
+.ei-grid-3x2::before { content: map-get($ellevate-icons-map, "grid-3x2"); }
+.ei-grid-3x3-gap-fill::before { content: map-get($ellevate-icons-map, "grid-3x3-gap-fill"); }
+.ei-grid-3x3-gap::before { content: map-get($ellevate-icons-map, "grid-3x3-gap"); }
+.ei-grid-3x3::before { content: map-get($ellevate-icons-map, "grid-3x3"); }
+.ei-grid-fill::before { content: map-get($ellevate-icons-map, "grid-fill"); }
+.ei-grid::before { content: map-get($ellevate-icons-map, "grid"); }
+.ei-grip-horizontal::before { content: map-get($ellevate-icons-map, "grip-horizontal"); }
+.ei-grip-vertical::before { content: map-get($ellevate-icons-map, "grip-vertical"); }
+.ei-hammer::before { content: map-get($ellevate-icons-map, "hammer"); }
+.ei-hand-index-fill::before { content: map-get($ellevate-icons-map, "hand-index-fill"); }
+.ei-hand-index-thumb-fill::before { content: map-get($ellevate-icons-map, "hand-index-thumb-fill"); }
+.ei-hand-index-thumb::before { content: map-get($ellevate-icons-map, "hand-index-thumb"); }
+.ei-hand-index::before { content: map-get($ellevate-icons-map, "hand-index"); }
+.ei-hand-thumbs-down-fill::before { content: map-get($ellevate-icons-map, "hand-thumbs-down-fill"); }
+.ei-hand-thumbs-down::before { content: map-get($ellevate-icons-map, "hand-thumbs-down"); }
+.ei-hand-thumbs-up-fill::before { content: map-get($ellevate-icons-map, "hand-thumbs-up-fill"); }
+.ei-hand-thumbs-up::before { content: map-get($ellevate-icons-map, "hand-thumbs-up"); }
+.ei-handbag-fill::before { content: map-get($ellevate-icons-map, "handbag-fill"); }
+.ei-handbag::before { content: map-get($ellevate-icons-map, "handbag"); }
+.ei-hash::before { content: map-get($ellevate-icons-map, "hash"); }
+.ei-hdd-fill::before { content: map-get($ellevate-icons-map, "hdd-fill"); }
+.ei-hdd-network-fill::before { content: map-get($ellevate-icons-map, "hdd-network-fill"); }
+.ei-hdd-network::before { content: map-get($ellevate-icons-map, "hdd-network"); }
+.ei-hdd-rack-fill::before { content: map-get($ellevate-icons-map, "hdd-rack-fill"); }
+.ei-hdd-rack::before { content: map-get($ellevate-icons-map, "hdd-rack"); }
+.ei-hdd-stack-fill::before { content: map-get($ellevate-icons-map, "hdd-stack-fill"); }
+.ei-hdd-stack::before { content: map-get($ellevate-icons-map, "hdd-stack"); }
+.ei-hdd::before { content: map-get($ellevate-icons-map, "hdd"); }
+.ei-headphones::before { content: map-get($ellevate-icons-map, "headphones"); }
+.ei-headset::before { content: map-get($ellevate-icons-map, "headset"); }
+.ei-heart-fill::before { content: map-get($ellevate-icons-map, "heart-fill"); }
+.ei-heart-half::before { content: map-get($ellevate-icons-map, "heart-half"); }
+.ei-heart::before { content: map-get($ellevate-icons-map, "heart"); }
+.ei-heptagon-fill::before { content: map-get($ellevate-icons-map, "heptagon-fill"); }
+.ei-heptagon-half::before { content: map-get($ellevate-icons-map, "heptagon-half"); }
+.ei-heptagon::before { content: map-get($ellevate-icons-map, "heptagon"); }
+.ei-hexagon-fill::before { content: map-get($ellevate-icons-map, "hexagon-fill"); }
+.ei-hexagon-half::before { content: map-get($ellevate-icons-map, "hexagon-half"); }
+.ei-hexagon::before { content: map-get($ellevate-icons-map, "hexagon"); }
+.ei-hourglass-bottom::before { content: map-get($ellevate-icons-map, "hourglass-bottom"); }
+.ei-hourglass-split::before { content: map-get($ellevate-icons-map, "hourglass-split"); }
+.ei-hourglass-top::before { content: map-get($ellevate-icons-map, "hourglass-top"); }
+.ei-hourglass::before { content: map-get($ellevate-icons-map, "hourglass"); }
+.ei-house-door-fill::before { content: map-get($ellevate-icons-map, "house-door-fill"); }
+.ei-house-door::before { content: map-get($ellevate-icons-map, "house-door"); }
+.ei-house-fill::before { content: map-get($ellevate-icons-map, "house-fill"); }
+.ei-house::before { content: map-get($ellevate-icons-map, "house"); }
+.ei-hr::before { content: map-get($ellevate-icons-map, "hr"); }
+.ei-hurricane::before { content: map-get($ellevate-icons-map, "hurricane"); }
+.ei-image-alt::before { content: map-get($ellevate-icons-map, "image-alt"); }
+.ei-image-fill::before { content: map-get($ellevate-icons-map, "image-fill"); }
+.ei-image::before { content: map-get($ellevate-icons-map, "image"); }
+.ei-images::before { content: map-get($ellevate-icons-map, "images"); }
+.ei-inbox-fill::before { content: map-get($ellevate-icons-map, "inbox-fill"); }
+.ei-inbox::before { content: map-get($ellevate-icons-map, "inbox"); }
+.ei-inboxes-fill::before { content: map-get($ellevate-icons-map, "inboxes-fill"); }
+.ei-inboxes::before { content: map-get($ellevate-icons-map, "inboxes"); }
+.ei-info-circle-fill::before { content: map-get($ellevate-icons-map, "info-circle-fill"); }
+.ei-info-circle::before { content: map-get($ellevate-icons-map, "info-circle"); }
+.ei-info-square-fill::before { content: map-get($ellevate-icons-map, "info-square-fill"); }
+.ei-info-square::before { content: map-get($ellevate-icons-map, "info-square"); }
+.ei-info::before { content: map-get($ellevate-icons-map, "info"); }
+.ei-input-cursor-text::before { content: map-get($ellevate-icons-map, "input-cursor-text"); }
+.ei-input-cursor::before { content: map-get($ellevate-icons-map, "input-cursor"); }
+.ei-instagram::before { content: map-get($ellevate-icons-map, "instagram"); }
+.ei-intersect::before { content: map-get($ellevate-icons-map, "intersect"); }
+.ei-journal-album::before { content: map-get($ellevate-icons-map, "journal-album"); }
+.ei-journal-arrow-down::before { content: map-get($ellevate-icons-map, "journal-arrow-down"); }
+.ei-journal-arrow-up::before { content: map-get($ellevate-icons-map, "journal-arrow-up"); }
+.ei-journal-bookmark-fill::before { content: map-get($ellevate-icons-map, "journal-bookmark-fill"); }
+.ei-journal-bookmark::before { content: map-get($ellevate-icons-map, "journal-bookmark"); }
+.ei-journal-check::before { content: map-get($ellevate-icons-map, "journal-check"); }
+.ei-journal-code::before { content: map-get($ellevate-icons-map, "journal-code"); }
+.ei-journal-medical::before { content: map-get($ellevate-icons-map, "journal-medical"); }
+.ei-journal-minus::before { content: map-get($ellevate-icons-map, "journal-minus"); }
+.ei-journal-plus::before { content: map-get($ellevate-icons-map, "journal-plus"); }
+.ei-journal-richtext::before { content: map-get($ellevate-icons-map, "journal-richtext"); }
+.ei-journal-text::before { content: map-get($ellevate-icons-map, "journal-text"); }
+.ei-journal-x::before { content: map-get($ellevate-icons-map, "journal-x"); }
+.ei-journal::before { content: map-get($ellevate-icons-map, "journal"); }
+.ei-journals::before { content: map-get($ellevate-icons-map, "journals"); }
+.ei-joystick::before { content: map-get($ellevate-icons-map, "joystick"); }
+.ei-justify-left::before { content: map-get($ellevate-icons-map, "justify-left"); }
+.ei-justify-right::before { content: map-get($ellevate-icons-map, "justify-right"); }
+.ei-justify::before { content: map-get($ellevate-icons-map, "justify"); }
+.ei-kanban-fill::before { content: map-get($ellevate-icons-map, "kanban-fill"); }
+.ei-kanban::before { content: map-get($ellevate-icons-map, "kanban"); }
+.ei-key-fill::before { content: map-get($ellevate-icons-map, "key-fill"); }
+.ei-key::before { content: map-get($ellevate-icons-map, "key"); }
+.ei-keyboard-fill::before { content: map-get($ellevate-icons-map, "keyboard-fill"); }
+.ei-keyboard::before { content: map-get($ellevate-icons-map, "keyboard"); }
+.ei-ladder::before { content: map-get($ellevate-icons-map, "ladder"); }
+.ei-lamp-fill::before { content: map-get($ellevate-icons-map, "lamp-fill"); }
+.ei-lamp::before { content: map-get($ellevate-icons-map, "lamp"); }
+.ei-laptop-fill::before { content: map-get($ellevate-icons-map, "laptop-fill"); }
+.ei-laptop::before { content: map-get($ellevate-icons-map, "laptop"); }
+.ei-layer-backward::before { content: map-get($ellevate-icons-map, "layer-backward"); }
+.ei-layer-forward::before { content: map-get($ellevate-icons-map, "layer-forward"); }
+.ei-layers-fill::before { content: map-get($ellevate-icons-map, "layers-fill"); }
+.ei-layers-half::before { content: map-get($ellevate-icons-map, "layers-half"); }
+.ei-layers::before { content: map-get($ellevate-icons-map, "layers"); }
+.ei-layout-sidebar-inset-reverse::before { content: map-get($ellevate-icons-map, "layout-sidebar-inset-reverse"); }
+.ei-layout-sidebar-inset::before { content: map-get($ellevate-icons-map, "layout-sidebar-inset"); }
+.ei-layout-sidebar-reverse::before { content: map-get($ellevate-icons-map, "layout-sidebar-reverse"); }
+.ei-layout-sidebar::before { content: map-get($ellevate-icons-map, "layout-sidebar"); }
+.ei-layout-split::before { content: map-get($ellevate-icons-map, "layout-split"); }
+.ei-layout-text-sidebar-reverse::before { content: map-get($ellevate-icons-map, "layout-text-sidebar-reverse"); }
+.ei-layout-text-sidebar::before { content: map-get($ellevate-icons-map, "layout-text-sidebar"); }
+.ei-layout-text-window-reverse::before { content: map-get($ellevate-icons-map, "layout-text-window-reverse"); }
+.ei-layout-text-window::before { content: map-get($ellevate-icons-map, "layout-text-window"); }
+.ei-layout-three-columns::before { content: map-get($ellevate-icons-map, "layout-three-columns"); }
+.ei-layout-wtf::before { content: map-get($ellevate-icons-map, "layout-wtf"); }
+.ei-life-preserver::before { content: map-get($ellevate-icons-map, "life-preserver"); }
+.ei-lightbulb-fill::before { content: map-get($ellevate-icons-map, "lightbulb-fill"); }
+.ei-lightbulb-off-fill::before { content: map-get($ellevate-icons-map, "lightbulb-off-fill"); }
+.ei-lightbulb-off::before { content: map-get($ellevate-icons-map, "lightbulb-off"); }
+.ei-lightbulb::before { content: map-get($ellevate-icons-map, "lightbulb"); }
+.ei-lightning-charge-fill::before { content: map-get($ellevate-icons-map, "lightning-charge-fill"); }
+.ei-lightning-charge::before { content: map-get($ellevate-icons-map, "lightning-charge"); }
+.ei-lightning-fill::before { content: map-get($ellevate-icons-map, "lightning-fill"); }
+.ei-lightning::before { content: map-get($ellevate-icons-map, "lightning"); }
+.ei-link-45deg::before { content: map-get($ellevate-icons-map, "link-45deg"); }
+.ei-link::before { content: map-get($ellevate-icons-map, "link"); }
+.ei-linkedin::before { content: map-get($ellevate-icons-map, "linkedin"); }
+.ei-list-check::before { content: map-get($ellevate-icons-map, "list-check"); }
+.ei-list-nested::before { content: map-get($ellevate-icons-map, "list-nested"); }
+.ei-list-ol::before { content: map-get($ellevate-icons-map, "list-ol"); }
+.ei-list-stars::before { content: map-get($ellevate-icons-map, "list-stars"); }
+.ei-list-task::before { content: map-get($ellevate-icons-map, "list-task"); }
+.ei-list-ul::before { content: map-get($ellevate-icons-map, "list-ul"); }
+.ei-list::before { content: map-get($ellevate-icons-map, "list"); }
+.ei-lock-fill::before { content: map-get($ellevate-icons-map, "lock-fill"); }
+.ei-lock::before { content: map-get($ellevate-icons-map, "lock"); }
+.ei-mailbox::before { content: map-get($ellevate-icons-map, "mailbox"); }
+.ei-mailbox2::before { content: map-get($ellevate-icons-map, "mailbox2"); }
+.ei-map-fill::before { content: map-get($ellevate-icons-map, "map-fill"); }
+.ei-map::before { content: map-get($ellevate-icons-map, "map"); }
+.ei-markdown-fill::before { content: map-get($ellevate-icons-map, "markdown-fill"); }
+.ei-markdown::before { content: map-get($ellevate-icons-map, "markdown"); }
+.ei-mask::before { content: map-get($ellevate-icons-map, "mask"); }
+.ei-megaphone-fill::before { content: map-get($ellevate-icons-map, "megaphone-fill"); }
+.ei-megaphone::before { content: map-get($ellevate-icons-map, "megaphone"); }
+.ei-menu-app-fill::before { content: map-get($ellevate-icons-map, "menu-app-fill"); }
+.ei-menu-app::before { content: map-get($ellevate-icons-map, "menu-app"); }
+.ei-menu-button-fill::before { content: map-get($ellevate-icons-map, "menu-button-fill"); }
+.ei-menu-button-wide-fill::before { content: map-get($ellevate-icons-map, "menu-button-wide-fill"); }
+.ei-menu-button-wide::before { content: map-get($ellevate-icons-map, "menu-button-wide"); }
+.ei-menu-button::before { content: map-get($ellevate-icons-map, "menu-button"); }
+.ei-menu-down::before { content: map-get($ellevate-icons-map, "menu-down"); }
+.ei-menu-up::before { content: map-get($ellevate-icons-map, "menu-up"); }
+.ei-mic-fill::before { content: map-get($ellevate-icons-map, "mic-fill"); }
+.ei-mic-mute-fill::before { content: map-get($ellevate-icons-map, "mic-mute-fill"); }
+.ei-mic-mute::before { content: map-get($ellevate-icons-map, "mic-mute"); }
+.ei-mic::before { content: map-get($ellevate-icons-map, "mic"); }
+.ei-minecart-loaded::before { content: map-get($ellevate-icons-map, "minecart-loaded"); }
+.ei-minecart::before { content: map-get($ellevate-icons-map, "minecart"); }
+.ei-moisture::before { content: map-get($ellevate-icons-map, "moisture"); }
+.ei-moon-fill::before { content: map-get($ellevate-icons-map, "moon-fill"); }
+.ei-moon-stars-fill::before { content: map-get($ellevate-icons-map, "moon-stars-fill"); }
+.ei-moon-stars::before { content: map-get($ellevate-icons-map, "moon-stars"); }
+.ei-moon::before { content: map-get($ellevate-icons-map, "moon"); }
+.ei-mouse-fill::before { content: map-get($ellevate-icons-map, "mouse-fill"); }
+.ei-mouse::before { content: map-get($ellevate-icons-map, "mouse"); }
+.ei-mouse2-fill::before { content: map-get($ellevate-icons-map, "mouse2-fill"); }
+.ei-mouse2::before { content: map-get($ellevate-icons-map, "mouse2"); }
+.ei-mouse3-fill::before { content: map-get($ellevate-icons-map, "mouse3-fill"); }
+.ei-mouse3::before { content: map-get($ellevate-icons-map, "mouse3"); }
+.ei-music-note-beamed::before { content: map-get($ellevate-icons-map, "music-note-beamed"); }
+.ei-music-note-list::before { content: map-get($ellevate-icons-map, "music-note-list"); }
+.ei-music-note::before { content: map-get($ellevate-icons-map, "music-note"); }
+.ei-music-player-fill::before { content: map-get($ellevate-icons-map, "music-player-fill"); }
+.ei-music-player::before { content: map-get($ellevate-icons-map, "music-player"); }
+.ei-newspaper::before { content: map-get($ellevate-icons-map, "newspaper"); }
+.ei-node-minus-fill::before { content: map-get($ellevate-icons-map, "node-minus-fill"); }
+.ei-node-minus::before { content: map-get($ellevate-icons-map, "node-minus"); }
+.ei-node-plus-fill::before { content: map-get($ellevate-icons-map, "node-plus-fill"); }
+.ei-node-plus::before { content: map-get($ellevate-icons-map, "node-plus"); }
+.ei-nut-fill::before { content: map-get($ellevate-icons-map, "nut-fill"); }
+.ei-nut::before { content: map-get($ellevate-icons-map, "nut"); }
+.ei-octagon-fill::before { content: map-get($ellevate-icons-map, "octagon-fill"); }
+.ei-octagon-half::before { content: map-get($ellevate-icons-map, "octagon-half"); }
+.ei-octagon::before { content: map-get($ellevate-icons-map, "octagon"); }
+.ei-option::before { content: map-get($ellevate-icons-map, "option"); }
+.ei-outlet::before { content: map-get($ellevate-icons-map, "outlet"); }
+.ei-paint-bucket::before { content: map-get($ellevate-icons-map, "paint-bucket"); }
+.ei-palette-fill::before { content: map-get($ellevate-icons-map, "palette-fill"); }
+.ei-palette::before { content: map-get($ellevate-icons-map, "palette"); }
+.ei-palette2::before { content: map-get($ellevate-icons-map, "palette2"); }
+.ei-paperclip::before { content: map-get($ellevate-icons-map, "paperclip"); }
+.ei-paragraph::before { content: map-get($ellevate-icons-map, "paragraph"); }
+.ei-patch-check-fill::before { content: map-get($ellevate-icons-map, "patch-check-fill"); }
+.ei-patch-check::before { content: map-get($ellevate-icons-map, "patch-check"); }
+.ei-patch-exclamation-fill::before { content: map-get($ellevate-icons-map, "patch-exclamation-fill"); }
+.ei-patch-exclamation::before { content: map-get($ellevate-icons-map, "patch-exclamation"); }
+.ei-patch-minus-fill::before { content: map-get($ellevate-icons-map, "patch-minus-fill"); }
+.ei-patch-minus::before { content: map-get($ellevate-icons-map, "patch-minus"); }
+.ei-patch-plus-fill::before { content: map-get($ellevate-icons-map, "patch-plus-fill"); }
+.ei-patch-plus::before { content: map-get($ellevate-icons-map, "patch-plus"); }
+.ei-patch-question-fill::before { content: map-get($ellevate-icons-map, "patch-question-fill"); }
+.ei-patch-question::before { content: map-get($ellevate-icons-map, "patch-question"); }
+.ei-pause-btn-fill::before { content: map-get($ellevate-icons-map, "pause-btn-fill"); }
+.ei-pause-btn::before { content: map-get($ellevate-icons-map, "pause-btn"); }
+.ei-pause-circle-fill::before { content: map-get($ellevate-icons-map, "pause-circle-fill"); }
+.ei-pause-circle::before { content: map-get($ellevate-icons-map, "pause-circle"); }
+.ei-pause-fill::before { content: map-get($ellevate-icons-map, "pause-fill"); }
+.ei-pause::before { content: map-get($ellevate-icons-map, "pause"); }
+.ei-peace-fill::before { content: map-get($ellevate-icons-map, "peace-fill"); }
+.ei-peace::before { content: map-get($ellevate-icons-map, "peace"); }
+.ei-pen-fill::before { content: map-get($ellevate-icons-map, "pen-fill"); }
+.ei-pen::before { content: map-get($ellevate-icons-map, "pen"); }
+.ei-pencil-fill::before { content: map-get($ellevate-icons-map, "pencil-fill"); }
+.ei-pencil-square::before { content: map-get($ellevate-icons-map, "pencil-square"); }
+.ei-pencil::before { content: map-get($ellevate-icons-map, "pencil"); }
+.ei-pentagon-fill::before { content: map-get($ellevate-icons-map, "pentagon-fill"); }
+.ei-pentagon-half::before { content: map-get($ellevate-icons-map, "pentagon-half"); }
+.ei-pentagon::before { content: map-get($ellevate-icons-map, "pentagon"); }
+.ei-people-fill::before { content: map-get($ellevate-icons-map, "people-fill"); }
+.ei-people::before { content: map-get($ellevate-icons-map, "people"); }
+.ei-percent::before { content: map-get($ellevate-icons-map, "percent"); }
+.ei-person-badge-fill::before { content: map-get($ellevate-icons-map, "person-badge-fill"); }
+.ei-person-badge::before { content: map-get($ellevate-icons-map, "person-badge"); }
+.ei-person-bounding-box::before { content: map-get($ellevate-icons-map, "person-bounding-box"); }
+.ei-person-check-fill::before { content: map-get($ellevate-icons-map, "person-check-fill"); }
+.ei-person-check::before { content: map-get($ellevate-icons-map, "person-check"); }
+.ei-person-circle::before { content: map-get($ellevate-icons-map, "person-circle"); }
+.ei-person-dash-fill::before { content: map-get($ellevate-icons-map, "person-dash-fill"); }
+.ei-person-dash::before { content: map-get($ellevate-icons-map, "person-dash"); }
+.ei-person-fill::before { content: map-get($ellevate-icons-map, "person-fill"); }
+.ei-person-lines-fill::before { content: map-get($ellevate-icons-map, "person-lines-fill"); }
+.ei-person-plus-fill::before { content: map-get($ellevate-icons-map, "person-plus-fill"); }
+.ei-person-plus::before { content: map-get($ellevate-icons-map, "person-plus"); }
+.ei-person-square::before { content: map-get($ellevate-icons-map, "person-square"); }
+.ei-person-x-fill::before { content: map-get($ellevate-icons-map, "person-x-fill"); }
+.ei-person-x::before { content: map-get($ellevate-icons-map, "person-x"); }
+.ei-person::before { content: map-get($ellevate-icons-map, "person"); }
+.ei-phone-fill::before { content: map-get($ellevate-icons-map, "phone-fill"); }
+.ei-phone-landscape-fill::before { content: map-get($ellevate-icons-map, "phone-landscape-fill"); }
+.ei-phone-landscape::before { content: map-get($ellevate-icons-map, "phone-landscape"); }
+.ei-phone-vibrate-fill::before { content: map-get($ellevate-icons-map, "phone-vibrate-fill"); }
+.ei-phone-vibrate::before { content: map-get($ellevate-icons-map, "phone-vibrate"); }
+.ei-phone::before { content: map-get($ellevate-icons-map, "phone"); }
+.ei-pie-chart-fill::before { content: map-get($ellevate-icons-map, "pie-chart-fill"); }
+.ei-pie-chart::before { content: map-get($ellevate-icons-map, "pie-chart"); }
+.ei-pin-angle-fill::before { content: map-get($ellevate-icons-map, "pin-angle-fill"); }
+.ei-pin-angle::before { content: map-get($ellevate-icons-map, "pin-angle"); }
+.ei-pin-fill::before { content: map-get($ellevate-icons-map, "pin-fill"); }
+.ei-pin::before { content: map-get($ellevate-icons-map, "pin"); }
+.ei-pip-fill::before { content: map-get($ellevate-icons-map, "pip-fill"); }
+.ei-pip::before { content: map-get($ellevate-icons-map, "pip"); }
+.ei-play-btn-fill::before { content: map-get($ellevate-icons-map, "play-btn-fill"); }
+.ei-play-btn::before { content: map-get($ellevate-icons-map, "play-btn"); }
+.ei-play-circle-fill::before { content: map-get($ellevate-icons-map, "play-circle-fill"); }
+.ei-play-circle::before { content: map-get($ellevate-icons-map, "play-circle"); }
+.ei-play-fill::before { content: map-get($ellevate-icons-map, "play-fill"); }
+.ei-play::before { content: map-get($ellevate-icons-map, "play"); }
+.ei-plug-fill::before { content: map-get($ellevate-icons-map, "plug-fill"); }
+.ei-plug::before { content: map-get($ellevate-icons-map, "plug"); }
+.ei-plus-circle-dotted::before { content: map-get($ellevate-icons-map, "plus-circle-dotted"); }
+.ei-plus-circle-fill::before { content: map-get($ellevate-icons-map, "plus-circle-fill"); }
+.ei-plus-circle::before { content: map-get($ellevate-icons-map, "plus-circle"); }
+.ei-plus-square-dotted::before { content: map-get($ellevate-icons-map, "plus-square-dotted"); }
+.ei-plus-square-fill::before { content: map-get($ellevate-icons-map, "plus-square-fill"); }
+.ei-plus-square::before { content: map-get($ellevate-icons-map, "plus-square"); }
+.ei-plus::before { content: map-get($ellevate-icons-map, "plus"); }
+.ei-power::before { content: map-get($ellevate-icons-map, "power"); }
+.ei-printer-fill::before { content: map-get($ellevate-icons-map, "printer-fill"); }
+.ei-printer::before { content: map-get($ellevate-icons-map, "printer"); }
+.ei-puzzle-fill::before { content: map-get($ellevate-icons-map, "puzzle-fill"); }
+.ei-puzzle::before { content: map-get($ellevate-icons-map, "puzzle"); }
+.ei-question-circle-fill::before { content: map-get($ellevate-icons-map, "question-circle-fill"); }
+.ei-question-circle::before { content: map-get($ellevate-icons-map, "question-circle"); }
+.ei-question-diamond-fill::before { content: map-get($ellevate-icons-map, "question-diamond-fill"); }
+.ei-question-diamond::before { content: map-get($ellevate-icons-map, "question-diamond"); }
+.ei-question-octagon-fill::before { content: map-get($ellevate-icons-map, "question-octagon-fill"); }
+.ei-question-octagon::before { content: map-get($ellevate-icons-map, "question-octagon"); }
+.ei-question-square-fill::before { content: map-get($ellevate-icons-map, "question-square-fill"); }
+.ei-question-square::before { content: map-get($ellevate-icons-map, "question-square"); }
+.ei-question::before { content: map-get($ellevate-icons-map, "question"); }
+.ei-rainbow::before { content: map-get($ellevate-icons-map, "rainbow"); }
+.ei-receipt-cutoff::before { content: map-get($ellevate-icons-map, "receipt-cutoff"); }
+.ei-receipt::before { content: map-get($ellevate-icons-map, "receipt"); }
+.ei-reception-0::before { content: map-get($ellevate-icons-map, "reception-0"); }
+.ei-reception-1::before { content: map-get($ellevate-icons-map, "reception-1"); }
+.ei-reception-2::before { content: map-get($ellevate-icons-map, "reception-2"); }
+.ei-reception-3::before { content: map-get($ellevate-icons-map, "reception-3"); }
+.ei-reception-4::before { content: map-get($ellevate-icons-map, "reception-4"); }
+.ei-record-btn-fill::before { content: map-get($ellevate-icons-map, "record-btn-fill"); }
+.ei-record-btn::before { content: map-get($ellevate-icons-map, "record-btn"); }
+.ei-record-circle-fill::before { content: map-get($ellevate-icons-map, "record-circle-fill"); }
+.ei-record-circle::before { content: map-get($ellevate-icons-map, "record-circle"); }
+.ei-record-fill::before { content: map-get($ellevate-icons-map, "record-fill"); }
+.ei-record::before { content: map-get($ellevate-icons-map, "record"); }
+.ei-record2-fill::before { content: map-get($ellevate-icons-map, "record2-fill"); }
+.ei-record2::before { content: map-get($ellevate-icons-map, "record2"); }
+.ei-reply-all-fill::before { content: map-get($ellevate-icons-map, "reply-all-fill"); }
+.ei-reply-all::before { content: map-get($ellevate-icons-map, "reply-all"); }
+.ei-reply-fill::before { content: map-get($ellevate-icons-map, "reply-fill"); }
+.ei-reply::before { content: map-get($ellevate-icons-map, "reply"); }
+.ei-rss-fill::before { content: map-get($ellevate-icons-map, "rss-fill"); }
+.ei-rss::before { content: map-get($ellevate-icons-map, "rss"); }
+.ei-rulers::before { content: map-get($ellevate-icons-map, "rulers"); }
+.ei-save-fill::before { content: map-get($ellevate-icons-map, "save-fill"); }
+.ei-save::before { content: map-get($ellevate-icons-map, "save"); }
+.ei-save2-fill::before { content: map-get($ellevate-icons-map, "save2-fill"); }
+.ei-save2::before { content: map-get($ellevate-icons-map, "save2"); }
+.ei-scissors::before { content: map-get($ellevate-icons-map, "scissors"); }
+.ei-screwdriver::before { content: map-get($ellevate-icons-map, "screwdriver"); }
+.ei-search::before { content: map-get($ellevate-icons-map, "search"); }
+.ei-segmented-nav::before { content: map-get($ellevate-icons-map, "segmented-nav"); }
+.ei-server::before { content: map-get($ellevate-icons-map, "server"); }
+.ei-share-fill::before { content: map-get($ellevate-icons-map, "share-fill"); }
+.ei-share::before { content: map-get($ellevate-icons-map, "share"); }
+.ei-shield-check::before { content: map-get($ellevate-icons-map, "shield-check"); }
+.ei-shield-exclamation::before { content: map-get($ellevate-icons-map, "shield-exclamation"); }
+.ei-shield-fill-check::before { content: map-get($ellevate-icons-map, "shield-fill-check"); }
+.ei-shield-fill-exclamation::before { content: map-get($ellevate-icons-map, "shield-fill-exclamation"); }
+.ei-shield-fill-minus::before { content: map-get($ellevate-icons-map, "shield-fill-minus"); }
+.ei-shield-fill-plus::before { content: map-get($ellevate-icons-map, "shield-fill-plus"); }
+.ei-shield-fill-x::before { content: map-get($ellevate-icons-map, "shield-fill-x"); }
+.ei-shield-fill::before { content: map-get($ellevate-icons-map, "shield-fill"); }
+.ei-shield-lock-fill::before { content: map-get($ellevate-icons-map, "shield-lock-fill"); }
+.ei-shield-lock::before { content: map-get($ellevate-icons-map, "shield-lock"); }
+.ei-shield-minus::before { content: map-get($ellevate-icons-map, "shield-minus"); }
+.ei-shield-plus::before { content: map-get($ellevate-icons-map, "shield-plus"); }
+.ei-shield-shaded::before { content: map-get($ellevate-icons-map, "shield-shaded"); }
+.ei-shield-slash-fill::before { content: map-get($ellevate-icons-map, "shield-slash-fill"); }
+.ei-shield-slash::before { content: map-get($ellevate-icons-map, "shield-slash"); }
+.ei-shield-x::before { content: map-get($ellevate-icons-map, "shield-x"); }
+.ei-shield::before { content: map-get($ellevate-icons-map, "shield"); }
+.ei-shift-fill::before { content: map-get($ellevate-icons-map, "shift-fill"); }
+.ei-shift::before { content: map-get($ellevate-icons-map, "shift"); }
+.ei-shop-window::before { content: map-get($ellevate-icons-map, "shop-window"); }
+.ei-shop::before { content: map-get($ellevate-icons-map, "shop"); }
+.ei-shuffle::before { content: map-get($ellevate-icons-map, "shuffle"); }
+.ei-signpost-2-fill::before { content: map-get($ellevate-icons-map, "signpost-2-fill"); }
+.ei-signpost-2::before { content: map-get($ellevate-icons-map, "signpost-2"); }
+.ei-signpost-fill::before { content: map-get($ellevate-icons-map, "signpost-fill"); }
+.ei-signpost-split-fill::before { content: map-get($ellevate-icons-map, "signpost-split-fill"); }
+.ei-signpost-split::before { content: map-get($ellevate-icons-map, "signpost-split"); }
+.ei-signpost::before { content: map-get($ellevate-icons-map, "signpost"); }
+.ei-sim-fill::before { content: map-get($ellevate-icons-map, "sim-fill"); }
+.ei-sim::before { content: map-get($ellevate-icons-map, "sim"); }
+.ei-skip-backward-btn-fill::before { content: map-get($ellevate-icons-map, "skip-backward-btn-fill"); }
+.ei-skip-backward-btn::before { content: map-get($ellevate-icons-map, "skip-backward-btn"); }
+.ei-skip-backward-circle-fill::before { content: map-get($ellevate-icons-map, "skip-backward-circle-fill"); }
+.ei-skip-backward-circle::before { content: map-get($ellevate-icons-map, "skip-backward-circle"); }
+.ei-skip-backward-fill::before { content: map-get($ellevate-icons-map, "skip-backward-fill"); }
+.ei-skip-backward::before { content: map-get($ellevate-icons-map, "skip-backward"); }
+.ei-skip-end-btn-fill::before { content: map-get($ellevate-icons-map, "skip-end-btn-fill"); }
+.ei-skip-end-btn::before { content: map-get($ellevate-icons-map, "skip-end-btn"); }
+.ei-skip-end-circle-fill::before { content: map-get($ellevate-icons-map, "skip-end-circle-fill"); }
+.ei-skip-end-circle::before { content: map-get($ellevate-icons-map, "skip-end-circle"); }
+.ei-skip-end-fill::before { content: map-get($ellevate-icons-map, "skip-end-fill"); }
+.ei-skip-end::before { content: map-get($ellevate-icons-map, "skip-end"); }
+.ei-skip-forward-btn-fill::before { content: map-get($ellevate-icons-map, "skip-forward-btn-fill"); }
+.ei-skip-forward-btn::before { content: map-get($ellevate-icons-map, "skip-forward-btn"); }
+.ei-skip-forward-circle-fill::before { content: map-get($ellevate-icons-map, "skip-forward-circle-fill"); }
+.ei-skip-forward-circle::before { content: map-get($ellevate-icons-map, "skip-forward-circle"); }
+.ei-skip-forward-fill::before { content: map-get($ellevate-icons-map, "skip-forward-fill"); }
+.ei-skip-forward::before { content: map-get($ellevate-icons-map, "skip-forward"); }
+.ei-skip-start-btn-fill::before { content: map-get($ellevate-icons-map, "skip-start-btn-fill"); }
+.ei-skip-start-btn::before { content: map-get($ellevate-icons-map, "skip-start-btn"); }
+.ei-skip-start-circle-fill::before { content: map-get($ellevate-icons-map, "skip-start-circle-fill"); }
+.ei-skip-start-circle::before { content: map-get($ellevate-icons-map, "skip-start-circle"); }
+.ei-skip-start-fill::before { content: map-get($ellevate-icons-map, "skip-start-fill"); }
+.ei-skip-start::before { content: map-get($ellevate-icons-map, "skip-start"); }
+.ei-slack::before { content: map-get($ellevate-icons-map, "slack"); }
+.ei-slash-circle-fill::before { content: map-get($ellevate-icons-map, "slash-circle-fill"); }
+.ei-slash-circle::before { content: map-get($ellevate-icons-map, "slash-circle"); }
+.ei-slash-square-fill::before { content: map-get($ellevate-icons-map, "slash-square-fill"); }
+.ei-slash-square::before { content: map-get($ellevate-icons-map, "slash-square"); }
+.ei-slash::before { content: map-get($ellevate-icons-map, "slash"); }
+.ei-sliders::before { content: map-get($ellevate-icons-map, "sliders"); }
+.ei-smartwatch::before { content: map-get($ellevate-icons-map, "smartwatch"); }
+.ei-snow::before { content: map-get($ellevate-icons-map, "snow"); }
+.ei-snow2::before { content: map-get($ellevate-icons-map, "snow2"); }
+.ei-snow3::before { content: map-get($ellevate-icons-map, "snow3"); }
+.ei-sort-alpha-down-alt::before { content: map-get($ellevate-icons-map, "sort-alpha-down-alt"); }
+.ei-sort-alpha-down::before { content: map-get($ellevate-icons-map, "sort-alpha-down"); }
+.ei-sort-alpha-up-alt::before { content: map-get($ellevate-icons-map, "sort-alpha-up-alt"); }
+.ei-sort-alpha-up::before { content: map-get($ellevate-icons-map, "sort-alpha-up"); }
+.ei-sort-down-alt::before { content: map-get($ellevate-icons-map, "sort-down-alt"); }
+.ei-sort-down::before { content: map-get($ellevate-icons-map, "sort-down"); }
+.ei-sort-numeric-down-alt::before { content: map-get($ellevate-icons-map, "sort-numeric-down-alt"); }
+.ei-sort-numeric-down::before { content: map-get($ellevate-icons-map, "sort-numeric-down"); }
+.ei-sort-numeric-up-alt::before { content: map-get($ellevate-icons-map, "sort-numeric-up-alt"); }
+.ei-sort-numeric-up::before { content: map-get($ellevate-icons-map, "sort-numeric-up"); }
+.ei-sort-up-alt::before { content: map-get($ellevate-icons-map, "sort-up-alt"); }
+.ei-sort-up::before { content: map-get($ellevate-icons-map, "sort-up"); }
+.ei-soundwave::before { content: map-get($ellevate-icons-map, "soundwave"); }
+.ei-speaker-fill::before { content: map-get($ellevate-icons-map, "speaker-fill"); }
+.ei-speaker::before { content: map-get($ellevate-icons-map, "speaker"); }
+.ei-speedometer::before { content: map-get($ellevate-icons-map, "speedometer"); }
+.ei-speedometer2::before { content: map-get($ellevate-icons-map, "speedometer2"); }
+.ei-spellcheck::before { content: map-get($ellevate-icons-map, "spellcheck"); }
+.ei-square-fill::before { content: map-get($ellevate-icons-map, "square-fill"); }
+.ei-square-half::before { content: map-get($ellevate-icons-map, "square-half"); }
+.ei-square::before { content: map-get($ellevate-icons-map, "square"); }
+.ei-stack::before { content: map-get($ellevate-icons-map, "stack"); }
+.ei-star-fill::before { content: map-get($ellevate-icons-map, "star-fill"); }
+.ei-star-half::before { content: map-get($ellevate-icons-map, "star-half"); }
+.ei-star::before { content: map-get($ellevate-icons-map, "star"); }
+.ei-stars::before { content: map-get($ellevate-icons-map, "stars"); }
+.ei-stickies-fill::before { content: map-get($ellevate-icons-map, "stickies-fill"); }
+.ei-stickies::before { content: map-get($ellevate-icons-map, "stickies"); }
+.ei-sticky-fill::before { content: map-get($ellevate-icons-map, "sticky-fill"); }
+.ei-sticky::before { content: map-get($ellevate-icons-map, "sticky"); }
+.ei-stop-btn-fill::before { content: map-get($ellevate-icons-map, "stop-btn-fill"); }
+.ei-stop-btn::before { content: map-get($ellevate-icons-map, "stop-btn"); }
+.ei-stop-circle-fill::before { content: map-get($ellevate-icons-map, "stop-circle-fill"); }
+.ei-stop-circle::before { content: map-get($ellevate-icons-map, "stop-circle"); }
+.ei-stop-fill::before { content: map-get($ellevate-icons-map, "stop-fill"); }
+.ei-stop::before { content: map-get($ellevate-icons-map, "stop"); }
+.ei-stoplights-fill::before { content: map-get($ellevate-icons-map, "stoplights-fill"); }
+.ei-stoplights::before { content: map-get($ellevate-icons-map, "stoplights"); }
+.ei-stopwatch-fill::before { content: map-get($ellevate-icons-map, "stopwatch-fill"); }
+.ei-stopwatch::before { content: map-get($ellevate-icons-map, "stopwatch"); }
+.ei-subtract::before { content: map-get($ellevate-icons-map, "subtract"); }
+.ei-suit-club-fill::before { content: map-get($ellevate-icons-map, "suit-club-fill"); }
+.ei-suit-club::before { content: map-get($ellevate-icons-map, "suit-club"); }
+.ei-suit-diamond-fill::before { content: map-get($ellevate-icons-map, "suit-diamond-fill"); }
+.ei-suit-diamond::before { content: map-get($ellevate-icons-map, "suit-diamond"); }
+.ei-suit-heart-fill::before { content: map-get($ellevate-icons-map, "suit-heart-fill"); }
+.ei-suit-heart::before { content: map-get($ellevate-icons-map, "suit-heart"); }
+.ei-suit-spade-fill::before { content: map-get($ellevate-icons-map, "suit-spade-fill"); }
+.ei-suit-spade::before { content: map-get($ellevate-icons-map, "suit-spade"); }
+.ei-sun-fill::before { content: map-get($ellevate-icons-map, "sun-fill"); }
+.ei-sun::before { content: map-get($ellevate-icons-map, "sun"); }
+.ei-sunglasses::before { content: map-get($ellevate-icons-map, "sunglasses"); }
+.ei-sunrise-fill::before { content: map-get($ellevate-icons-map, "sunrise-fill"); }
+.ei-sunrise::before { content: map-get($ellevate-icons-map, "sunrise"); }
+.ei-sunset-fill::before { content: map-get($ellevate-icons-map, "sunset-fill"); }
+.ei-sunset::before { content: map-get($ellevate-icons-map, "sunset"); }
+.ei-symmetry-horizontal::before { content: map-get($ellevate-icons-map, "symmetry-horizontal"); }
+.ei-symmetry-vertical::before { content: map-get($ellevate-icons-map, "symmetry-vertical"); }
+.ei-table::before { content: map-get($ellevate-icons-map, "table"); }
+.ei-tablet-fill::before { content: map-get($ellevate-icons-map, "tablet-fill"); }
+.ei-tablet-landscape-fill::before { content: map-get($ellevate-icons-map, "tablet-landscape-fill"); }
+.ei-tablet-landscape::before { content: map-get($ellevate-icons-map, "tablet-landscape"); }
+.ei-tablet::before { content: map-get($ellevate-icons-map, "tablet"); }
+.ei-tag-fill::before { content: map-get($ellevate-icons-map, "tag-fill"); }
+.ei-tag::before { content: map-get($ellevate-icons-map, "tag"); }
+.ei-tags-fill::before { content: map-get($ellevate-icons-map, "tags-fill"); }
+.ei-tags::before { content: map-get($ellevate-icons-map, "tags"); }
+.ei-telegram::before { content: map-get($ellevate-icons-map, "telegram"); }
+.ei-telephone-fill::before { content: map-get($ellevate-icons-map, "telephone-fill"); }
+.ei-telephone-forward-fill::before { content: map-get($ellevate-icons-map, "telephone-forward-fill"); }
+.ei-telephone-forward::before { content: map-get($ellevate-icons-map, "telephone-forward"); }
+.ei-telephone-inbound-fill::before { content: map-get($ellevate-icons-map, "telephone-inbound-fill"); }
+.ei-telephone-inbound::before { content: map-get($ellevate-icons-map, "telephone-inbound"); }
+.ei-telephone-minus-fill::before { content: map-get($ellevate-icons-map, "telephone-minus-fill"); }
+.ei-telephone-minus::before { content: map-get($ellevate-icons-map, "telephone-minus"); }
+.ei-telephone-outbound-fill::before { content: map-get($ellevate-icons-map, "telephone-outbound-fill"); }
+.ei-telephone-outbound::before { content: map-get($ellevate-icons-map, "telephone-outbound"); }
+.ei-telephone-plus-fill::before { content: map-get($ellevate-icons-map, "telephone-plus-fill"); }
+.ei-telephone-plus::before { content: map-get($ellevate-icons-map, "telephone-plus"); }
+.ei-telephone-x-fill::before { content: map-get($ellevate-icons-map, "telephone-x-fill"); }
+.ei-telephone-x::before { content: map-get($ellevate-icons-map, "telephone-x"); }
+.ei-telephone::before { content: map-get($ellevate-icons-map, "telephone"); }
+.ei-terminal-fill::before { content: map-get($ellevate-icons-map, "terminal-fill"); }
+.ei-terminal::before { content: map-get($ellevate-icons-map, "terminal"); }
+.ei-text-center::before { content: map-get($ellevate-icons-map, "text-center"); }
+.ei-text-indent-left::before { content: map-get($ellevate-icons-map, "text-indent-left"); }
+.ei-text-indent-right::before { content: map-get($ellevate-icons-map, "text-indent-right"); }
+.ei-text-left::before { content: map-get($ellevate-icons-map, "text-left"); }
+.ei-text-paragraph::before { content: map-get($ellevate-icons-map, "text-paragraph"); }
+.ei-text-right::before { content: map-get($ellevate-icons-map, "text-right"); }
+.ei-textarea-resize::before { content: map-get($ellevate-icons-map, "textarea-resize"); }
+.ei-textarea-t::before { content: map-get($ellevate-icons-map, "textarea-t"); }
+.ei-textarea::before { content: map-get($ellevate-icons-map, "textarea"); }
+.ei-thermometer-half::before { content: map-get($ellevate-icons-map, "thermometer-half"); }
+.ei-thermometer-high::before { content: map-get($ellevate-icons-map, "thermometer-high"); }
+.ei-thermometer-low::before { content: map-get($ellevate-icons-map, "thermometer-low"); }
+.ei-thermometer-snow::before { content: map-get($ellevate-icons-map, "thermometer-snow"); }
+.ei-thermometer-sun::before { content: map-get($ellevate-icons-map, "thermometer-sun"); }
+.ei-thermometer::before { content: map-get($ellevate-icons-map, "thermometer"); }
+.ei-three-dots-vertical::before { content: map-get($ellevate-icons-map, "three-dots-vertical"); }
+.ei-three-dots::before { content: map-get($ellevate-icons-map, "three-dots"); }
+.ei-toggle-off::before { content: map-get($ellevate-icons-map, "toggle-off"); }
+.ei-toggle-on::before { content: map-get($ellevate-icons-map, "toggle-on"); }
+.ei-toggle2-off::before { content: map-get($ellevate-icons-map, "toggle2-off"); }
+.ei-toggle2-on::before { content: map-get($ellevate-icons-map, "toggle2-on"); }
+.ei-toggles::before { content: map-get($ellevate-icons-map, "toggles"); }
+.ei-toggles2::before { content: map-get($ellevate-icons-map, "toggles2"); }
+.ei-tools::before { content: map-get($ellevate-icons-map, "tools"); }
+.ei-tornado::before { content: map-get($ellevate-icons-map, "tornado"); }
+.ei-trash-fill::before { content: map-get($ellevate-icons-map, "trash-fill"); }
+.ei-trash::before { content: map-get($ellevate-icons-map, "trash"); }
+.ei-trash2-fill::before { content: map-get($ellevate-icons-map, "trash2-fill"); }
+.ei-trash2::before { content: map-get($ellevate-icons-map, "trash2"); }
+.ei-tree-fill::before { content: map-get($ellevate-icons-map, "tree-fill"); }
+.ei-tree::before { content: map-get($ellevate-icons-map, "tree"); }
+.ei-triangle-fill::before { content: map-get($ellevate-icons-map, "triangle-fill"); }
+.ei-triangle-half::before { content: map-get($ellevate-icons-map, "triangle-half"); }
+.ei-triangle::before { content: map-get($ellevate-icons-map, "triangle"); }
+.ei-trophy-fill::before { content: map-get($ellevate-icons-map, "trophy-fill"); }
+.ei-trophy::before { content: map-get($ellevate-icons-map, "trophy"); }
+.ei-tropical-storm::before { content: map-get($ellevate-icons-map, "tropical-storm"); }
+.ei-truck-flatbed::before { content: map-get($ellevate-icons-map, "truck-flatbed"); }
+.ei-truck::before { content: map-get($ellevate-icons-map, "truck"); }
+.ei-tsunami::before { content: map-get($ellevate-icons-map, "tsunami"); }
+.ei-tv-fill::before { content: map-get($ellevate-icons-map, "tv-fill"); }
+.ei-tv::before { content: map-get($ellevate-icons-map, "tv"); }
+.ei-twitch::before { content: map-get($ellevate-icons-map, "twitch"); }
+.ei-twitter::before { content: map-get($ellevate-icons-map, "twitter"); }
+.ei-type-bold::before { content: map-get($ellevate-icons-map, "type-bold"); }
+.ei-type-h1::before { content: map-get($ellevate-icons-map, "type-h1"); }
+.ei-type-h2::before { content: map-get($ellevate-icons-map, "type-h2"); }
+.ei-type-h3::before { content: map-get($ellevate-icons-map, "type-h3"); }
+.ei-type-italic::before { content: map-get($ellevate-icons-map, "type-italic"); }
+.ei-type-strikethrough::before { content: map-get($ellevate-icons-map, "type-strikethrough"); }
+.ei-type-underline::before { content: map-get($ellevate-icons-map, "type-underline"); }
+.ei-type::before { content: map-get($ellevate-icons-map, "type"); }
+.ei-ui-checks-grid::before { content: map-get($ellevate-icons-map, "ui-checks-grid"); }
+.ei-ui-checks::before { content: map-get($ellevate-icons-map, "ui-checks"); }
+.ei-ui-radios-grid::before { content: map-get($ellevate-icons-map, "ui-radios-grid"); }
+.ei-ui-radios::before { content: map-get($ellevate-icons-map, "ui-radios"); }
+.ei-umbrella-fill::before { content: map-get($ellevate-icons-map, "umbrella-fill"); }
+.ei-umbrella::before { content: map-get($ellevate-icons-map, "umbrella"); }
+.ei-union::before { content: map-get($ellevate-icons-map, "union"); }
+.ei-unlock-fill::before { content: map-get($ellevate-icons-map, "unlock-fill"); }
+.ei-unlock::before { content: map-get($ellevate-icons-map, "unlock"); }
+.ei-upc-scan::before { content: map-get($ellevate-icons-map, "upc-scan"); }
+.ei-upc::before { content: map-get($ellevate-icons-map, "upc"); }
+.ei-upload::before { content: map-get($ellevate-icons-map, "upload"); }
+.ei-vector-pen::before { content: map-get($ellevate-icons-map, "vector-pen"); }
+.ei-view-list::before { content: map-get($ellevate-icons-map, "view-list"); }
+.ei-view-stacked::before { content: map-get($ellevate-icons-map, "view-stacked"); }
+.ei-vinyl-fill::before { content: map-get($ellevate-icons-map, "vinyl-fill"); }
+.ei-vinyl::before { content: map-get($ellevate-icons-map, "vinyl"); }
+.ei-voicemail::before { content: map-get($ellevate-icons-map, "voicemail"); }
+.ei-volume-down-fill::before { content: map-get($ellevate-icons-map, "volume-down-fill"); }
+.ei-volume-down::before { content: map-get($ellevate-icons-map, "volume-down"); }
+.ei-volume-mute-fill::before { content: map-get($ellevate-icons-map, "volume-mute-fill"); }
+.ei-volume-mute::before { content: map-get($ellevate-icons-map, "volume-mute"); }
+.ei-volume-off-fill::before { content: map-get($ellevate-icons-map, "volume-off-fill"); }
+.ei-volume-off::before { content: map-get($ellevate-icons-map, "volume-off"); }
+.ei-volume-up-fill::before { content: map-get($ellevate-icons-map, "volume-up-fill"); }
+.ei-volume-up::before { content: map-get($ellevate-icons-map, "volume-up"); }
+.ei-vr::before { content: map-get($ellevate-icons-map, "vr"); }
+.ei-wallet-fill::before { content: map-get($ellevate-icons-map, "wallet-fill"); }
+.ei-wallet::before { content: map-get($ellevate-icons-map, "wallet"); }
+.ei-wallet2::before { content: map-get($ellevate-icons-map, "wallet2"); }
+.ei-watch::before { content: map-get($ellevate-icons-map, "watch"); }
+.ei-water::before { content: map-get($ellevate-icons-map, "water"); }
+.ei-whatsapp::before { content: map-get($ellevate-icons-map, "whatsapp"); }
+.ei-wifi-1::before { content: map-get($ellevate-icons-map, "wifi-1"); }
+.ei-wifi-2::before { content: map-get($ellevate-icons-map, "wifi-2"); }
+.ei-wifi-off::before { content: map-get($ellevate-icons-map, "wifi-off"); }
+.ei-wifi::before { content: map-get($ellevate-icons-map, "wifi"); }
+.ei-wind::before { content: map-get($ellevate-icons-map, "wind"); }
+.ei-window-dock::before { content: map-get($ellevate-icons-map, "window-dock"); }
+.ei-window-sidebar::before { content: map-get($ellevate-icons-map, "window-sidebar"); }
+.ei-window::before { content: map-get($ellevate-icons-map, "window"); }
+.ei-wrench::before { content: map-get($ellevate-icons-map, "wrench"); }
+.ei-x-circle-fill::before { content: map-get($ellevate-icons-map, "x-circle-fill"); }
+.ei-x-circle::before { content: map-get($ellevate-icons-map, "x-circle"); }
+.ei-x-diamond-fill::before { content: map-get($ellevate-icons-map, "x-diamond-fill"); }
+.ei-x-diamond::before { content: map-get($ellevate-icons-map, "x-diamond"); }
+.ei-x-octagon-fill::before { content: map-get($ellevate-icons-map, "x-octagon-fill"); }
+.ei-x-octagon::before { content: map-get($ellevate-icons-map, "x-octagon"); }
+.ei-x-square-fill::before { content: map-get($ellevate-icons-map, "x-square-fill"); }
+.ei-x-square::before { content: map-get($ellevate-icons-map, "x-square"); }
+.ei-x::before { content: map-get($ellevate-icons-map, "x"); }
+.ei-youtube::before { content: map-get($ellevate-icons-map, "youtube"); }
+.ei-zoom-in::before { content: map-get($ellevate-icons-map, "zoom-in"); }
+.ei-zoom-out::before { content: map-get($ellevate-icons-map, "zoom-out"); }
+.ei-bank::before { content: map-get($ellevate-icons-map, "bank"); }
+.ei-bank2::before { content: map-get($ellevate-icons-map, "bank2"); }
+.ei-bell-slash-fill::before { content: map-get($ellevate-icons-map, "bell-slash-fill"); }
+.ei-bell-slash::before { content: map-get($ellevate-icons-map, "bell-slash"); }
+.ei-cash-coin::before { content: map-get($ellevate-icons-map, "cash-coin"); }
+.ei-check-lg::before { content: map-get($ellevate-icons-map, "check-lg"); }
+.ei-coin::before { content: map-get($ellevate-icons-map, "coin"); }
+.ei-currency-bitcoin::before { content: map-get($ellevate-icons-map, "currency-bitcoin"); }
+.ei-currency-dollar::before { content: map-get($ellevate-icons-map, "currency-dollar"); }
+.ei-currency-euro::before { content: map-get($ellevate-icons-map, "currency-euro"); }
+.ei-currency-exchange::before { content: map-get($ellevate-icons-map, "currency-exchange"); }
+.ei-currency-pound::before { content: map-get($ellevate-icons-map, "currency-pound"); }
+.ei-currency-yen::before { content: map-get($ellevate-icons-map, "currency-yen"); }
+.ei-dash-lg::before { content: map-get($ellevate-icons-map, "dash-lg"); }
+.ei-exclamation-lg::before { content: map-get($ellevate-icons-map, "exclamation-lg"); }
+.ei-file-earmark-pdf-fill::before { content: map-get($ellevate-icons-map, "file-earmark-pdf-fill"); }
+.ei-file-earmark-pdf::before { content: map-get($ellevate-icons-map, "file-earmark-pdf"); }
+.ei-file-pdf-fill::before { content: map-get($ellevate-icons-map, "file-pdf-fill"); }
+.ei-file-pdf::before { content: map-get($ellevate-icons-map, "file-pdf"); }
+.ei-gender-ambiguous::before { content: map-get($ellevate-icons-map, "gender-ambiguous"); }
+.ei-gender-female::before { content: map-get($ellevate-icons-map, "gender-female"); }
+.ei-gender-male::before { content: map-get($ellevate-icons-map, "gender-male"); }
+.ei-gender-trans::before { content: map-get($ellevate-icons-map, "gender-trans"); }
+.ei-headset-vr::before { content: map-get($ellevate-icons-map, "headset-vr"); }
+.ei-info-lg::before { content: map-get($ellevate-icons-map, "info-lg"); }
+.ei-mastodon::before { content: map-get($ellevate-icons-map, "mastodon"); }
+.ei-messenger::before { content: map-get($ellevate-icons-map, "messenger"); }
+.ei-piggy-bank-fill::before { content: map-get($ellevate-icons-map, "piggy-bank-fill"); }
+.ei-piggy-bank::before { content: map-get($ellevate-icons-map, "piggy-bank"); }
+.ei-pin-map-fill::before { content: map-get($ellevate-icons-map, "pin-map-fill"); }
+.ei-pin-map::before { content: map-get($ellevate-icons-map, "pin-map"); }
+.ei-plus-lg::before { content: map-get($ellevate-icons-map, "plus-lg"); }
+.ei-question-lg::before { content: map-get($ellevate-icons-map, "question-lg"); }
+.ei-recycle::before { content: map-get($ellevate-icons-map, "recycle"); }
+.ei-reddit::before { content: map-get($ellevate-icons-map, "reddit"); }
+.ei-safe-fill::before { content: map-get($ellevate-icons-map, "safe-fill"); }
+.ei-safe2-fill::before { content: map-get($ellevate-icons-map, "safe2-fill"); }
+.ei-safe2::before { content: map-get($ellevate-icons-map, "safe2"); }
+.ei-sd-card-fill::before { content: map-get($ellevate-icons-map, "sd-card-fill"); }
+.ei-sd-card::before { content: map-get($ellevate-icons-map, "sd-card"); }
+.ei-skype::before { content: map-get($ellevate-icons-map, "skype"); }
+.ei-slash-lg::before { content: map-get($ellevate-icons-map, "slash-lg"); }
+.ei-translate::before { content: map-get($ellevate-icons-map, "translate"); }
+.ei-x-lg::before { content: map-get($ellevate-icons-map, "x-lg"); }
+.ei-safe::before { content: map-get($ellevate-icons-map, "safe"); }
+.ei-apple::before { content: map-get($ellevate-icons-map, "apple"); }
+.ei-microsoft::before { content: map-get($ellevate-icons-map, "microsoft"); }
+.ei-windows::before { content: map-get($ellevate-icons-map, "windows"); }
+.ei-behance::before { content: map-get($ellevate-icons-map, "behance"); }
+.ei-dribbble::before { content: map-get($ellevate-icons-map, "dribbble"); }
+.ei-line::before { content: map-get($ellevate-icons-map, "line"); }
+.ei-medium::before { content: map-get($ellevate-icons-map, "medium"); }
+.ei-paypal::before { content: map-get($ellevate-icons-map, "paypal"); }
+.ei-pinterest::before { content: map-get($ellevate-icons-map, "pinterest"); }
+.ei-signal::before { content: map-get($ellevate-icons-map, "signal"); }
+.ei-snapchat::before { content: map-get($ellevate-icons-map, "snapchat"); }
+.ei-spotify::before { content: map-get($ellevate-icons-map, "spotify"); }
+.ei-stack-overflow::before { content: map-get($ellevate-icons-map, "stack-overflow"); }
+.ei-strava::before { content: map-get($ellevate-icons-map, "strava"); }
+.ei-wordpress::before { content: map-get($ellevate-icons-map, "wordpress"); }
+.ei-vimeo::before { content: map-get($ellevate-icons-map, "vimeo"); }
+.ei-activity::before { content: map-get($ellevate-icons-map, "activity"); }
+.ei-easel2-fill::before { content: map-get($ellevate-icons-map, "easel2-fill"); }
+.ei-easel2::before { content: map-get($ellevate-icons-map, "easel2"); }
+.ei-easel3-fill::before { content: map-get($ellevate-icons-map, "easel3-fill"); }
+.ei-easel3::before { content: map-get($ellevate-icons-map, "easel3"); }
+.ei-fan::before { content: map-get($ellevate-icons-map, "fan"); }
+.ei-fingerprint::before { content: map-get($ellevate-icons-map, "fingerprint"); }
+.ei-graph-down-arrow::before { content: map-get($ellevate-icons-map, "graph-down-arrow"); }
+.ei-graph-up-arrow::before { content: map-get($ellevate-icons-map, "graph-up-arrow"); }
+.ei-hypnotize::before { content: map-get($ellevate-icons-map, "hypnotize"); }
+.ei-magic::before { content: map-get($ellevate-icons-map, "magic"); }
+.ei-person-rolodex::before { content: map-get($ellevate-icons-map, "person-rolodex"); }
+.ei-person-video::before { content: map-get($ellevate-icons-map, "person-video"); }
+.ei-person-video2::before { content: map-get($ellevate-icons-map, "person-video2"); }
+.ei-person-video3::before { content: map-get($ellevate-icons-map, "person-video3"); }
+.ei-person-workspace::before { content: map-get($ellevate-icons-map, "person-workspace"); }
+.ei-radioactive::before { content: map-get($ellevate-icons-map, "radioactive"); }
+.ei-webcam-fill::before { content: map-get($ellevate-icons-map, "webcam-fill"); }
+.ei-webcam::before { content: map-get($ellevate-icons-map, "webcam"); }
+.ei-yin-yang::before { content: map-get($ellevate-icons-map, "yin-yang"); }

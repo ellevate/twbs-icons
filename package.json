@@ -35,9 +35,9 @@
     "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
     "test:lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
     "test:vnu": "node build/vnu-jar.js",
-    "test": "npm-run-all docs-build --parallel --aggregate-output --continue-on-error test:*"
+    "test": "npm-run-all docs-build --parallel --aggregate-output --continue-on-error test:*",
+    "ellevate-icons-font": "fantasticon && purgecss --css font/ellevate-icons.css --content font/index.html --output font/css/"
   },
-  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^10.3.7",
     "chalk": "^4.1.2",

@@ -40,11 +40,11 @@
 
   <h1>{{ name }}</h1>
 
-  <div class="icons">
+  <div class="row text-center icons">
   {{# each assets }}
-    <div class="icon">
+    <div class="col-6 col-lg-3 icon py-2">
       <{{ ../tag }} class="{{ ../prefix }} {{ ../prefix }}-{{ @key }}"></{{ ../tag }}>
-      <div class="label">{{ @key }}</div>
+      <code class="d-block mt-2">{{ ../prefix }}-{{ @key }}</code>
     </div>
   {{/ each }}
   </div>
