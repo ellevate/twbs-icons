@@ -1,10 +1,10 @@
 @font-face {
   font-family: "ellevate-icons";
-  src: url("./fonts/ellevate-icons.woff2?41f7fe8d0bf6feeb27f7c151e6c00e0f") format("woff2"),
-url("./fonts/ellevate-icons.woff?41f7fe8d0bf6feeb27f7c151e6c00e0f") format("woff"),
-url("./fonts/ellevate-icons.ttf?41f7fe8d0bf6feeb27f7c151e6c00e0f") format("truetype"),
-url("./fonts/ellevate-icons.eot?41f7fe8d0bf6feeb27f7c151e6c00e0f#iefix") format("embedded-opentype"),
-url("./fonts/ellevate-icons.svg?41f7fe8d0bf6feeb27f7c151e6c00e0f#ellevate-icons") format("svg");
+  src: url("./fonts/ellevate-icons.woff2?f841a34cfb3fa6fa3677f1557a13aed9") format("woff2"),
+url("./fonts/ellevate-icons.woff?f841a34cfb3fa6fa3677f1557a13aed9") format("woff"),
+url("./fonts/ellevate-icons.ttf?f841a34cfb3fa6fa3677f1557a13aed9") format("truetype"),
+url("./fonts/ellevate-icons.eot?f841a34cfb3fa6fa3677f1557a13aed9#iefix") format("embedded-opentype"),
+url("./fonts/ellevate-icons.svg?f841a34cfb3fa6fa3677f1557a13aed9#ellevate-icons") format("svg");
 }
 
 .ei::before,
@@ -22,11 +22,16 @@ url("./fonts/ellevate-icons.svg?41f7fe8d0bf6feeb27f7c151e6c00e0f#ellevate-icons"
   -moz-osx-font-smoothing: grayscale;
 }
 .ei-archive::before { content: "\f10d"; }
+.ei-arrow-bar-left::before { content: "\f113"; }
+.ei-arrow-bar-right::before { content: "\f114"; }
 .ei-arrow-clockwise::before { content: "\f116"; }
 .ei-arrow-counterclockwise::before { content: "\f117"; }
+.ei-arrow-left-short::before { content: "\f12c"; }
+.ei-arrow-left::before { content: "\f12f"; }
+.ei-arrow-right-short::before { content: "\f135"; }
+.ei-arrow-right::before { content: "\f138"; }
 .ei-at::before { content: "\f152"; }
 .ei-award::before { content: "\f154"; }
-.ei-bar-chart-fill::before { content: "\f17a"; }
 .ei-bar-chart::before { content: "\f17e"; }
 .ei-bell::before { content: "\f18a"; }
 .ei-book::before { content: "\f194"; }
@@ -42,7 +47,6 @@ url("./fonts/ellevate-icons.svg?41f7fe8d0bf6feeb27f7c151e6c00e0f#ellevate-icons"
 .ei-broadcast::before { content: "\f1d6"; }
 .ei-building::before { content: "\f1dd"; }
 .ei-bullseye::before { content: "\f1de"; }
-.ei-calculator::before { content: "\f1e0"; }
 .ei-calendar-check::before { content: "\f1e2"; }
 .ei-calendar-event::before { content: "\f1e8"; }
 .ei-calendar::before { content: "\f1f6"; }
@@ -63,25 +67,27 @@ url("./fonts/ellevate-icons.svg?41f7fe8d0bf6feeb27f7c151e6c00e0f#ellevate-icons"
 .ei-chat::before { content: "\f268"; }
 .ei-check-all::before { content: "\f269"; }
 .ei-check-circle::before { content: "\f26b"; }
-.ei-check-square-fill::before { content: "\f26c"; }
-.ei-check-square::before { content: "\f26d"; }
 .ei-check::before { content: "\f26e"; }
 .ei-chevron-contract::before { content: "\f27d"; }
 .ei-chevron-down::before { content: "\f282"; }
 .ei-chevron-expand::before { content: "\f283"; }
 .ei-chevron-up::before { content: "\f286"; }
 .ei-clipboard-check::before { content: "\f28b"; }
+.ei-clipboard-plus::before { content: "\f28e"; }
 .ei-clipboard::before { content: "\f290"; }
 .ei-clock::before { content: "\f293"; }
 .ei-credit-card-fill::before { content: "\f2db"; }
 .ei-credit-card::before { content: "\f2dc"; }
+.ei-diagram-2-fill::before { content: "\f2eb"; }
+.ei-diagram-2::before { content: "\f2ec"; }
+.ei-diagram-3-fill::before { content: "\f2ed"; }
+.ei-diagram-3::before { content: "\f2ee"; }
 .ei-dot::before { content: "\f309"; }
 .ei-download::before { content: "\f30a"; }
 .ei-envelope-open::before { content: "\f32e"; }
 .ei-envelope::before { content: "\f32f"; }
 .ei-exclamation-circle::before { content: "\f333"; }
 .ei-exclamation-triangle::before { content: "\f33b"; }
-.ei-eyedropper::before { content: "\f342"; }
 .ei-facebook::before { content: "\f344"; }
 .ei-file-earmark-excel::before { content: "\f368"; }
 .ei-file-earmark::before { content: "\f392"; }
@@ -98,6 +104,7 @@ url("./fonts/ellevate-icons.svg?41f7fe8d0bf6feeb27f7c151e6c00e0f#ellevate-icons"
 .ei-google::before { content: "\f3f0"; }
 .ei-graph-down::before { content: "\f3f1"; }
 .ei-graph-up::before { content: "\f3f2"; }
+.ei-hammer::before { content: "\f3ff"; }
 .ei-hash::before { content: "\f40a"; }
 .ei-heart-fill::before { content: "\f415"; }
 .ei-heart-half::before { content: "\f416"; }
@@ -119,13 +126,11 @@ url("./fonts/ellevate-icons.svg?41f7fe8d0bf6feeb27f7c151e6c00e0f#ellevate-icons"
 .ei-lamp::before { content: "\f454"; }
 .ei-life-preserver::before { content: "\f467"; }
 .ei-link-45deg::before { content: "\f470"; }
-.ei-link::before { content: "\f471"; }
 .ei-linkedin::before { content: "\f472"; }
 .ei-list-check::before { content: "\f473"; }
+.ei-list-nested::before { content: "\f474"; }
 .ei-list-ol::before { content: "\f475"; }
-.ei-list-stars::before { content: "\f476"; }
 .ei-list-ul::before { content: "\f478"; }
-.ei-list::before { content: "\f479"; }
 .ei-lock-fill::before { content: "\f47a"; }
 .ei-lock::before { content: "\f47b"; }
 .ei-map::before { content: "\f47f"; }
@@ -155,7 +160,6 @@ url("./fonts/ellevate-icons.svg?41f7fe8d0bf6feeb27f7c151e6c00e0f#ellevate-icons"
 .ei-rss::before { content: "\f522"; }
 .ei-search::before { content: "\f52a"; }
 .ei-share::before { content: "\f52e"; }
-.ei-slash::before { content: "\f56a"; }
 .ei-star-fill::before { content: "\f586"; }
 .ei-star-half::before { content: "\f587"; }
 .ei-star::before { content: "\f588"; }
@@ -168,13 +172,14 @@ url("./fonts/ellevate-icons.svg?41f7fe8d0bf6feeb27f7c151e6c00e0f#ellevate-icons"
 .ei-trophy::before { content: "\f5e7"; }
 .ei-twitter::before { content: "\f5ef"; }
 .ei-upload::before { content: "\f603"; }
-.ei-x-circle::before { content: "\f623"; }
 .ei-x::before { content: "\f62a"; }
 .ei-youtube::before { content: "\f62b"; }
 .ei-bell-slash::before { content: "\f631"; }
 .ei-check-lg::before { content: "\f633"; }
+.ei-pin-map-fill::before { content: "\f64b"; }
+.ei-pin-map::before { content: "\f64c"; }
 .ei-x-lg::before { content: "\f659"; }
-.ei-medium::before { content: "\f661"; }
+.ei-apple::before { content: "\f65b"; }
 .ei-spotify::before { content: "\f666"; }
 .ei-vimeo::before { content: "\f66a"; }
 .ei-person-rolodex::before { content: "\f676"; }
