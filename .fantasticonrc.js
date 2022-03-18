@@ -1,8 +1,10 @@
-const codepoints = require('./font/bootstrap-icons.json');
+'use strict'
+
+const codepoints = require('./font/bootstrap-icons.json')
 
 module.exports = {
   inputDir: './icons-ellevate', // (required)
-  outputDir: './font', // (required)
+  outputDir: './font-ellevate', // (required)
   fontTypes: ['woff2', 'woff', 'ttf', 'eot', 'svg'],
   assetTypes: ['css', 'scss', 'json', 'html'],
   name: 'ellevate-icons',
@@ -17,18 +19,18 @@ module.exports = {
   },
   // Use a custom Handlebars template
   templates: {
-    css: './build/font/css.hbs',
-    scss: './build/font/scss.hbs',
-    html: './build/font/html.hbs'
+    css: './build/font-ellevate/css.hbs',
+    scss: './build/font-ellevate/scss.hbs',
+    html: './build/font-ellevate/html.hbs'
   },
   pathOptions: {
-    json: './font/bootstrap-icons.json',
-    css: './font/ellevate-icons.css',
-    scss: './font/ellevate-icons.scss',
-    html: './font/index.html',
+    json: './font-ellevate/ellevate-icons.json',
+    css: './font-ellevate/ellevate-icons.css',
+    scss: './font-ellevate/ellevate-icons.scss',
+    html: './font-ellevate/index.html',
     ttf: './font/fonts/ellevate-icons.ttf',
-    woff: './font/fonts/ellevate-icons.woff',
-    woff2: './font/fonts/ellevate-icons.woff2',
-    eot: './font/fonts/ellevate-icons.eot'
+    woff: './font-ellevate/fonts/ellevate-icons.woff',
+    woff2: './font-ellevate/fonts/ellevate-icons.woff2',
+    eot: './font-ellevate/fonts/ellevate-icons.eot'
   }
-};
+}

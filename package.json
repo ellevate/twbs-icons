@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-icons",
-  "version": "1.6.1",
+  "version": "1.8.1",
   "description": "Official open source SVG icon library for Bootstrap",
   "author": "mdo",
   "license": "MIT",
@@ -27,17 +27,22 @@
     "icons-zip": "cross-env-shell \"rm -rf bootstrap-icons-$npm_package_version && cp -r icons/ bootstrap-icons-$npm_package_version && cp bootstrap-icons.svg bootstrap-icons-$npm_package_version && cp -r font/ bootstrap-icons-$npm_package_version && zip -r9 bootstrap-icons-$npm_package_version.zip bootstrap-icons-$npm_package_version && rm -rf bootstrap-icons-$npm_package_version\"",
     "icons-sprite": "svg-sprite --config svg-sprite.json --log=info icons/*.svg",
     "icons-font": "fantasticon",
-    "publish": "npm-run-all icons docs-build icons-zip",
+    "release": "npm-run-all icons docs-build icons-zip",
     "netlify": "cross-env-shell HUGO_BASEURL=$DEPLOY_PRIME_URL npm-run-all icons docs-purge docs-build",
     "test:fusv": "fusv docs/assets/scss/",
     "test:eslint": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives .",
     "test:stylelint": "stylelint docs/assets/scss/ --cache --cache-location node_modules/.cache/.stylelintcache --rd",
-    "test:linkinator": "linkinator _site --recurse --silent --skip \"^(?!http://localhost)\"",
     "test:lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
     "test:vnu": "node build/vnu-jar.js",
     "test": "npm-run-all docs-build --parallel --aggregate-output --continue-on-error test:*",
-    "ellevate-icons-font": "fantasticon && purgecss --css font/ellevate-icons.css --content font/index.html --output font/css/"
+    "ellevate-icons": "npm-run-all ellevate-icons-font --aggregate-output --parallel ellevate-icons-purge",
+    "ellevate-icons-main": "node build/build-ellevate-svgs.js",
+    "ellevate-icons-sprite": "svg-sprite --config svg-sprite.json --log=info font-ellevate/*.svg",
+    "ellevate-icons-font": "fantasticon",
+    "ellevate-icons-purge": "purgecss --css font-ellevate/ellevate-icons.css --content font-ellevate/index.html --output font-ellevate/ellevate-icons.css"
   },
+  "style": "font-ellevate/bootstrap-icons.css",
+  "sass": "font-ellevate/bootstrap-icons.scss",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "cheerio": "^1.0.0-rc.10",

@@ -39,11 +39,12 @@
 <body class="text-center">
 
   <h1>{{ name }}</h1>
-  <div class="row text-center icons">
+
+  <div class="icons">
   {{# each assets }}
-    <div class="col-6 col-lg-3 icon py-2">
+    <div class="icon">
       <{{ ../tag }} class="{{ ../prefix }} {{ ../prefix }}-{{ @key }}"></{{ ../tag }}>
-      <code class="d-block mt-2">{{ ../prefix }}-{{ @key }}</code>
+      <div class="label">{{ @key }}</div>
     </div>
   {{/ each }}
   </div>

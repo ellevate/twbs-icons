@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "ellevate-icons";
+  src: url("./fonts/ellevate-icons.woff2?b74555f85267be65a3f714c59ce9c7e9") format("woff2"),
+url("./fonts/ellevate-icons.woff?b74555f85267be65a3f714c59ce9c7e9") format("woff"),
+url("./fonts/ellevate-icons.ttf?b74555f85267be65a3f714c59ce9c7e9") format("truetype"),
+url("./fonts/ellevate-icons.eot?b74555f85267be65a3f714c59ce9c7e9#iefix") format("embedded-opentype"),
+url("./fonts/ellevate-icons.svg?b74555f85267be65a3f714c59ce9c7e9#ellevate-icons") format("svg");
+}
+
+.ei::before,
+[class^="ei-"]::before,
+[class*=" ei-"]::before {
+  display: inline-block;
+  font-family: ellevate-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ei-archive::before { content: "\f10d"; }
+.ei-arrow-bar-left::before { content: "\f113"; }
+.ei-arrow-bar-right::before { content: "\f114"; }
+.ei-arrow-clockwise::before { content: "\f116"; }
+.ei-arrow-counterclockwise::before { content: "\f117"; }
+.ei-arrow-left-short::before { content: "\f12c"; }
+.ei-arrow-left::before { content: "\f12f"; }
+.ei-arrow-right-short::before { content: "\f135"; }
+.ei-arrow-right::before { content: "\f138"; }
+.ei-at::before { content: "\f152"; }
+.ei-award::before { content: "\f154"; }
+.ei-bar-chart::before { content: "\f17e"; }
+.ei-bell::before { content: "\f18a"; }
+.ei-book::before { content: "\f194"; }
+.ei-bookmark::before { content: "\f1a2"; }
+.ei-bookmarks::before { content: "\f1a4"; }
+.ei-box-arrow-down::before { content: "\f1b9"; }
+.ei-box-arrow-in-down::before { content: "\f1bc"; }
+.ei-box-arrow-in-up-right::before { content: "\f1c0"; }
+.ei-box-arrow-in-up::before { content: "\f1c1"; }
+.ei-box-arrow-up::before { content: "\f1c6"; }
+.ei-braces::before { content: "\f1c9"; }
+.ei-briefcase::before { content: "\f1cc"; }
+.ei-broadcast::before { content: "\f1d6"; }
+.ei-building::before { content: "\f1dd"; }
+.ei-bullseye::before { content: "\f1de"; }
+.ei-calendar-check::before { content: "\f1e2"; }
+.ei-calendar-event::before { content: "\f1e8"; }
+.ei-calendar::before { content: "\f1f6"; }
+.ei-camera-video::before { content: "\f21f"; }
+.ei-camera::before { content: "\f220"; }
+.ei-card-checklist::before { content: "\f224"; }
+.ei-card-heading::before { content: "\f225"; }
+.ei-card-image::before { content: "\f226"; }
+.ei-card-list::before { content: "\f227"; }
+.ei-card-text::before { content: "\f228"; }
+.ei-caret-down-fill::before { content: "\f229"; }
+.ei-caret-down::before { content: "\f22c"; }
+.ei-caret-up-fill::before { content: "\f235"; }
+.ei-caret-up::before { content: "\f238"; }
+.ei-chat-dots::before { content: "\f24a"; }
+.ei-chat-quote::before { content: "\f255"; }
+.ei-chat-text::before { content: "\f267"; }
+.ei-chat::before { content: "\f268"; }
+.ei-check-all::before { content: "\f269"; }
+.ei-check-circle::before { content: "\f26b"; }
+.ei-check::before { content: "\f26e"; }
+.ei-chevron-compact-left::before { content: "\f27a"; }
+.ei-chevron-compact-right::before { content: "\f27b"; }
+.ei-chevron-contract::before { content: "\f27d"; }
+.ei-chevron-down::before { content: "\f282"; }
+.ei-chevron-expand::before { content: "\f283"; }
+.ei-chevron-left::before { content: "\f284"; }
+.ei-chevron-right::before { content: "\f285"; }
+.ei-chevron-up::before { content: "\f286"; }
+.ei-clipboard-check::before { content: "\f28b"; }
+.ei-clipboard-plus::before { content: "\f28e"; }
+.ei-clipboard::before { content: "\f290"; }
+.ei-clock::before { content: "\f293"; }
+.ei-credit-card-fill::before { content: "\f2db"; }
+.ei-credit-card::before { content: "\f2dc"; }
+.ei-diagram-2-fill::before { content: "\f2eb"; }
+.ei-diagram-2::before { content: "\f2ec"; }
+.ei-diagram-3-fill::before { content: "\f2ed"; }
+.ei-diagram-3::before { content: "\f2ee"; }
+.ei-dot::before { content: "\f309"; }
+.ei-download::before { content: "\f30a"; }
+.ei-envelope-open::before { content: "\f32e"; }
+.ei-envelope::before { content: "\f32f"; }
+.ei-exclamation-circle::before { content: "\f333"; }
+.ei-exclamation-triangle::before { content: "\f33b"; }
+.ei-facebook::before { content: "\f344"; }
+.ei-file-earmark-excel::before { content: "\f368"; }
+.ei-file-earmark::before { content: "\f392"; }
+.ei-files::before { content: "\f3c2"; }
+.ei-filter::before { content: "\f3ca"; }
+.ei-flag::before { content: "\f3cc"; }
+.ei-folder::before { content: "\f3d7"; }
+.ei-gear::before { content: "\f3e5"; }
+.ei-gem::before { content: "\f3e6"; }
+.ei-geo-alt::before { content: "\f3e8"; }
+.ei-geo::before { content: "\f3ea"; }
+.ei-gift::before { content: "\f3ec"; }
+.ei-globe::before { content: "\f3ee"; }
+.ei-google::before { content: "\f3f0"; }
+.ei-graph-down::before { content: "\f3f1"; }
+.ei-graph-up::before { content: "\f3f2"; }
+.ei-hammer::before { content: "\f3ff"; }
+.ei-hash::before { content: "\f40a"; }
+.ei-heart-fill::before { content: "\f415"; }
+.ei-heart-half::before { content: "\f416"; }
+.ei-heart::before { content: "\f417"; }
+.ei-hourglass-bottom::before { content: "\f41e"; }
+.ei-hourglass-split::before { content: "\f41f"; }
+.ei-hourglass-top::before { content: "\f420"; }
+.ei-hourglass::before { content: "\f421"; }
+.ei-image-alt::before { content: "\f428"; }
+.ei-image::before { content: "\f42a"; }
+.ei-images::before { content: "\f42b"; }
+.ei-inbox::before { content: "\f42d"; }
+.ei-inboxes::before { content: "\f42f"; }
+.ei-info-circle::before { content: "\f431"; }
+.ei-instagram::before { content: "\f437"; }
+.ei-journal::before { content: "\f446"; }
+.ei-journals::before { content: "\f447"; }
+.ei-key::before { content: "\f44f"; }
+.ei-lamp::before { content: "\f454"; }
+.ei-life-preserver::before { content: "\f467"; }
+.ei-link-45deg::before { content: "\f470"; }
+.ei-linkedin::before { content: "\f472"; }
+.ei-list-check::before { content: "\f473"; }
+.ei-list-nested::before { content: "\f474"; }
+.ei-list-ol::before { content: "\f475"; }
+.ei-list-ul::before { content: "\f478"; }
+.ei-lock-fill::before { content: "\f47a"; }
+.ei-lock::before { content: "\f47b"; }
+.ei-map::before { content: "\f47f"; }
+.ei-megaphone::before { content: "\f484"; }
+.ei-mic::before { content: "\f490"; }
+.ei-music-player::before { content: "\f4a2"; }
+.ei-paperclip::before { content: "\f4b3"; }
+.ei-pencil-fill::before { content: "\f4c9"; }
+.ei-pencil::before { content: "\f4cb"; }
+.ei-people::before { content: "\f4d0"; }
+.ei-person-badge::before { content: "\f4d3"; }
+.ei-person-check::before { content: "\f4d6"; }
+.ei-person-dash::before { content: "\f4d9"; }
+.ei-person-plus::before { content: "\f4dd"; }
+.ei-person-x::before { content: "\f4e0"; }
+.ei-person::before { content: "\f4e1"; }
+.ei-pie-chart::before { content: "\f4e9"; }
+.ei-pin-angle::before { content: "\f4eb"; }
+.ei-pin::before { content: "\f4ed"; }
+.ei-plus-circle::before { content: "\f4fa"; }
+.ei-printer::before { content: "\f501"; }
+.ei-question-circle::before { content: "\f505"; }
+.ei-receipt-cutoff::before { content: "\f50e"; }
+.ei-receipt::before { content: "\f50f"; }
+.ei-reply-all::before { content: "\f51e"; }
+.ei-reply::before { content: "\f520"; }
+.ei-rss::before { content: "\f522"; }
+.ei-search::before { content: "\f52a"; }
+.ei-share::before { content: "\f52e"; }
+.ei-star-fill::before { content: "\f586"; }
+.ei-star-half::before { content: "\f587"; }
+.ei-star::before { content: "\f588"; }
+.ei-tag::before { content: "\f5b0"; }
+.ei-tags::before { content: "\f5b2"; }
+.ei-three-dots-vertical::before { content: "\f5d3"; }
+.ei-three-dots::before { content: "\f5d4"; }
+.ei-tools::before { content: "\f5db"; }
+.ei-trash::before { content: "\f5de"; }
+.ei-trophy::before { content: "\f5e7"; }
+.ei-twitter::before { content: "\f5ef"; }
+.ei-upload::before { content: "\f603"; }
+.ei-x::before { content: "\f62a"; }
+.ei-youtube::before { content: "\f62b"; }
+.ei-bell-slash::before { content: "\f631"; }
+.ei-check-lg::before { content: "\f633"; }
+.ei-pin-map-fill::before { content: "\f64b"; }
+.ei-pin-map::before { content: "\f64c"; }
+.ei-x-lg::before { content: "\f659"; }
+.ei-apple::before { content: "\f65b"; }
+.ei-spotify::before { content: "\f666"; }
+.ei-vimeo::before { content: "\f66a"; }
+.ei-person-rolodex::before { content: "\f676"; }
